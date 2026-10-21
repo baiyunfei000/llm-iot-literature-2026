@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>大模型 × 物联网工程：高质量期刊文献精选</title>
+  <style>
+    :root {
+      --ink: #17212b;
+      --muted: #5d6a73;
+      --navy: #123b55;
+      --teal: #14746f;
+      --orange: #c96a32;
+      --paper: #ffffff;
+      --wash: #eef4f3;
+      --line: #d6dfdf;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: #f4f7f6;
+      font-family: "Microsoft YaHei", "PingFang SC", "Segoe UI", sans-serif;
+      line-height: 1.75;
+    }
+    a { color: var(--teal); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    .hero {
+      background: linear-gradient(115deg, #103b55 0%, #0c5a58 58%, #28725d 100%);
+      color: white;
+      padding: 54px 24px 48px;
+    }
+    .hero-inner, .section-inner { width: min(1180px, calc(100% - 40px)); margin: 0 auto; }
+    .eyebrow { margin: 0 0 12px; font-size: 13px; letter-spacing: .08em; text-transform: uppercase; opacity: .86; }
+    h1 { margin: 0; max-width: 900px; font-family: Georgia, "Noto Serif SC", serif; font-size: clamp(34px, 5vw, 60px); line-height: 1.18; }
+    .dek { max-width: 860px; margin: 20px 0 0; font-size: 18px; color: #e4f2ef; }
+    .meta-strip { display: flex; flex-wrap: wrap; gap: 10px 18px; margin-top: 24px; font-size: 14px; color: #d3e8e5; }
+    .section { padding: 46px 0; }
+    .section.white { background: var(--paper); }
+    h2 { margin: 0 0 10px; font-family: Georgia, "Noto Serif SC", serif; font-size: 30px; color: var(--navy); }
+    .lede { margin: 0 0 28px; max-width: 900px; color: var(--muted); font-size: 17px; }
+    .map {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+    .map-item { background: var(--wash); border-left: 4px solid var(--teal); padding: 17px 18px; border-radius: 0 6px 6px 0; }
+    .map-item b { display: block; color: var(--navy); margin-bottom: 5px; }
+    .map-item span { color: var(--muted); font-size: 14px; }
+    .notice {
+      border: 1px solid #d7c8b3;
+      border-left: 5px solid var(--orange);
+      background: #fffaf3;
+      padding: 16px 18px;
+      margin: 24px 0 0;
+      border-radius: 0 6px 6px 0;
+    }
+    .papers {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+    .paper-card {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 22px;
+    }
+    .paper-card h3 { margin: 10px 0 8px; font-size: 20px; line-height: 1.45; color: var(--navy); }
+    .paper-top { display: flex; justify-content: space-between; gap: 12px; align-items: center; }
+    .tier, .citations { font-size: 12px; border-radius: 999px; padding: 3px 9px; white-space: nowrap; }
+    .tier { background: #e2f1ee; color: #0c5a58; }
+    .citations { background: #f7e8dd; color: #8b431d; }
+    .meta { margin: 0; color: var(--muted); font-weight: 600; }
+    .authors { margin: 2px 0 14px; color: var(--muted); font-size: 13px; }
+    .focus { font-size: 14px; }
+    .links { display: flex; flex-wrap: wrap; gap: 8px 14px; margin-top: 16px; font-size: 14px; font-weight: 700; }
+    .muted { color: #849198; }
+    .figures { display: grid; gap: 24px; }
+    .figure-card { margin: 0; background: var(--paper); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+    .figure-card img { display: block; width: 100%; height: auto; background: white; }
+    figcaption { padding: 16px 18px 20px; display: grid; gap: 6px; }
+    .figure-source { color: var(--orange); font-size: 13px; font-weight: 700; }
+    figcaption strong { color: var(--navy); }
+    figcaption span:last-child { color: var(--muted); }
+    .reading-path { display: grid; gap: 12px; counter-reset: step; }
+    .step { position: relative; background: var(--paper); border: 1px solid var(--line); border-radius: 8px; padding: 16px 18px 16px 58px; }
+    .step::before {
+      counter-increment: step;
+      content: counter(step);
+      position: absolute;
+      left: 16px;
+      top: 16px;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: var(--navy);
+      color: white;
+      font-weight: 700;
+    }
+    .step b { color: var(--navy); }
+    .step span { display: block; color: var(--muted); font-size: 14px; margin-top: 3px; }
+    .search-note { color: var(--muted); font-size: 14px; }
+    footer { background: #112630; color: #c9d8dc; padding: 28px 24px; font-size: 13px; }
+    footer div { width: min(1180px, calc(100% - 40px)); margin: 0 auto; }
+    @media (max-width: 820px) {
+      .papers, .map { grid-template-columns: 1fr; }
+      .hero { padding-top: 38px; }
+      .dek { font-size: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">Literature briefing · 2026</p>
+      <h1>大模型 × 物联网工程：高质量期刊文献精选</h1>
+      <p class="dek">聚焦“大模型如何进入物联网工程”的六条主线：边缘部署、提示词系统、网络运维、工业物联网、入侵检测与低碳 AIoT。</p>
+      <div class="meta-strip">
+        <span>检索日期：2026-10-22</span>
+        <span>检索源：OpenAlex + Crossref + arXiv</span>
+        <span>筛选范围：2023 年后、期刊/杂志论文、主题直接相关</span>
+      </div>
+    </div>
+  </header>
+
+  <section class="section white">
+    <div class="section-inner">
+      <h2>结论先说</h2>
+      <p class="lede">有，而且已经形成较完整的研究版图。最值得先看的不是单篇“应用案例”，而是权威综述加代表性系统论文：先建立架构认识，再看边缘部署与工业场景。</p>
+      <div class="map">
+        <div class="map-item"><b>LLM on IoT</b><span>模型压缩、缓存、传输、边缘微调与推理，是物联网工程最核心的资源约束问题。</span></div>
+        <div class="map-item"><b>LLM for IoT</b><span>用自然语言理解传感器数据、管理设备、生成程序并形成任务型接口。</span></div>
+        <div class="map-item"><b>LLM for Network</b><span>网络健康评估、故障诊断、意图驱动配置和 6G 自优化。</span></div>
+        <div class="map-item"><b>IIoT + Digital Twin</b><span>多智能体 LLM 接入实时工业数据，形成可视化、诊断和专家问答。</span></div>
+        <div class="map-item"><b>Security</b><span>Transformer/LLM 用于网络流量、日志和物联网入侵检测。</span></div>
+        <div class="map-item"><b>Low-carbon AIoT</b><span>LLM+RAG 建模，生成式模型优化带宽、功率和绿色能源策略。</span></div>
+      </div>
+      <div class="notice"><b>阅读建议：</b>先读 <a href="#discover">Discover Internet of Things 的应用综述</a>，再读 <a href="#comst">IEEE COMST 边缘智能综述</a>，随后进入 <a href="#jiot">IEEE IoT Journal 的 GIoT 系统</a>与工业物联网论文。</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>精选论文</h2>
+      <p class="lede">按“期刊质量、主题贴合度、可读性与是否提供开放版本”综合排序。引用次数来自 OpenAlex，统计日期为 2026-10-22，不等同于 Google Scholar 或期刊影响因子。</p>
+      <div class="papers">
+    <article class="paper-card" id="comst">
+      <div class="paper-top">
+        <span class="tier">领域顶级综述</span>
+        <span class="citations">238 次引用</span>
+      </div>
+      <h3>Mobile Edge Intelligence for Large Language Models: A Contemporary Survey</h3>
+      <p class="meta">IEEE Communications Surveys &amp; Tutorials · 2025</p>
+      <p class="authors">Guanqiao Qu; Qiyuan Chen; Wei Wei; Zheng Lin; Xianhao Chen; Kaibin Huang</p>
+      <p class="focus"><b>研究重点：</b>边缘智能、模型压缩、缓存与传输、分布式训练、边缘推理、6G</p>
+      <p>最贴近物联网工程中的现实约束：终端算力、存储、带宽、能耗和云边端协同。非常适合作为整个方向的总览与系统架构参考。</p>
+      <div class="links">
+        <a href="https://doi.org/10.1109/comst.2025.3527641">DOI / 正式版</a>
+        <a href="https://arxiv.org/abs/2407.18921">开放版本</a>
+        <a href="ieee_comst_mobile_edge_llm_survey.pdf">本地 PDF</a>
+      </div>
+    </article>
+    
+
+    <article class="paper-card" id="inffus">
+      <div class="paper-top">
+        <span class="tier">权威综述</span>
+        <span class="citations">172 次引用</span>
+      </div>
+      <h3>Transformers and Large Language Models for Efficient Intrusion Detection Systems: A Comprehensive Survey</h3>
+      <p class="meta">Information Fusion · 2025</p>
+      <p class="authors">Hamza Kheddar</p>
+      <p class="focus"><b>研究重点：</b>物联网安全、Transformer、LLM、入侵检测、异常检测</p>
+      <p>把 Transformer/LLM 用到网络与物联网入侵检测的模型、数据集、评价指标和部署场景串成完整路线图，适合做安全方向综述或选题依据。</p>
+      <div class="links">
+        <a href="https://doi.org/10.1016/j.inffus.2025.103347">DOI / 正式版</a>
+        <a href="https://arxiv.org/abs/2408.07583">开放版本</a>
+        <a href="information_fusion_llm_ids_survey.pdf">本地 PDF</a>
+      </div>
+    </article>
+    
+
+    <article class="paper-card" id="mnet">
+      <div class="paper-top">
+        <span class="tier">通信网络主流期刊</span>
+        <span class="citations">64 次引用</span>
+      </div>
+      <h3>6G Comprehensive Intelligence: Network Operations and Optimization Based on Large Language Models</h3>
+      <p class="meta">IEEE Network · 2025</p>
+      <p class="authors">Sifan Long; Fengxiao Tang; Yangfan Li; Tiao Tan; Zhengjie Jin; Ming Zhao; Nei Kato</p>
+      <p class="focus"><b>研究重点：</b>6G、网络运维、健康评估、ReAct、性能优化</p>
+      <p>直接回答“大模型怎样参与物联网网络运维”，给出 LLM 驱动的场景层、逻辑层、函数池、模型层和数据层架构。</p>
+      <div class="links">
+        <a href="https://doi.org/10.1109/mnet.2024.3470774">DOI / 正式版</a>
+        <a href="https://arxiv.org/abs/2404.18373">开放版本</a>
+        <a href="ieee_network_6g_llm_operations.pdf">本地 PDF</a>
+      </div>
+    </article>
+    
+
+    <article class="paper-card" id="jiot">
+      <div class="paper-top">
+        <span class="tier">物联网旗舰期刊</span>
+        <span class="citations">60 次引用</span>
+      </div>
+      <h3>Efficient Prompting for LLM-Based Generative Internet of Things</h3>
+      <p class="meta">IEEE Internet of Things Journal · 2024</p>
+      <p class="authors">Bin Xiao; Burak Kantarci; Jiawen Kang; Dusit Niyato; Mohsen Guizani</p>
+      <p class="focus"><b>研究重点：</b>本地开源 LLM、边缘部署、提示词管理、后处理、Table-QA</p>
+      <p>给出可落地的 GIoT 系统：物联网设备请求任务，边缘服务器调用本地开源模型，由提示词管理器和后处理模块提升推理质量，适合做毕业设计或系统原型。</p>
+      <div class="links">
+        <a href="https://doi.org/10.1109/jiot.2024.3470210">DOI / 正式版</a>
+        <a href="https://arxiv.org/abs/2406.10382">开放版本</a>
+        <a href="ieee_iotj_efficient_prompting_giot.pdf">本地 PDF</a>
+      </div>
+    </article>
+    
+
+    <article class="paper-card" id="tmc">
+      <div class="paper-top">
+        <span class="tier">移动计算顶级期刊</span>
+        <span class="citations">62 次引用</span>
+      </div>
+      <h3>Industrial Internet of Things With Large Language Models (LLMs): An Intelligence-Based Reinforcement Learning Approach</h3>
+      <p class="meta">IEEE Transactions on Mobile Computing · 2025</p>
+      <p class="authors">Yuzheng Ren; Haijun Zhang; Fei Richard Yu; Wei Li; Pincan Zhao; Ying He</p>
+      <p class="focus"><b>研究重点：</b>工业物联网、云边协同、LLM 推理任务卸载、强化学习、可信身份</p>
+      <p>把工业物联网里“模型放哪里、推理任务如何调度、怎样兼顾信任与能耗”做成了可量化的问题，适合系统工程、边缘计算和资源调度方向。</p>
+      <div class="links">
+        <a href="https://doi.org/10.1109/tmc.2024.3522130">DOI / 正式版</a>
+        <span class="muted">开放版本未找到</span>
+        <span class="muted">本地 PDF 暂无</span>
+      </div>
+    </article>
+    
+
+    <article class="paper-card" id="jms">
+      <div class="paper-top">
+        <span class="tier">制造系统权威期刊</span>
+        <span class="citations">51 次引用</span>
+      </div>
+      <h3>IIoT-enabled digital twin for legacy and smart factory machines with LLM integration</h3>
+      <p class="meta">Journal of Manufacturing Systems · 2025</p>
+      <p class="authors">Anuj Gautam; Manish Raj Aryal; Sourabh Deshpande; Shailesh Padalkar; Mikhail Nikolaenko; Ming Tang; Sam Anand</p>
+      <p class="focus"><b>研究重点：</b>工业物联网、数字孪生、多智能体 LLM、故障诊断、老旧设备改造</p>
+      <p>把 LLM 多智能体接入 IIoT 实时数据和数字孪生，覆盖可视化、故障诊断与专家问答，比纯算法论文更接近物联网工程落地。</p>
+      <div class="links">
+        <a href="https://doi.org/10.1016/j.jmsy.2025.03.022">DOI / 正式版</a>
+        <span class="muted">开放版本未找到</span>
+        <span class="muted">本地 PDF 暂无</span>
+      </div>
+    </article>
+    
+
+    <article class="paper-card" id="discover">
+      <div class="paper-top">
+        <span class="tier">开放获取综述</span>
+        <span class="citations">37 次引用</span>
+      </div>
+      <h3>Integrating large language models with internet of things: applications</h3>
+      <p class="meta">Discover Internet of Things · 2025</p>
+      <p class="authors">Mingyu Zong; Arvin Hekmati; Michael Guastalla; Yiyi Li; Bhaskar Krishnamachari</p>
+      <p class="focus"><b>研究重点：</b>DDoS 检测、物联网宏编程、传感器数据处理</p>
+      <p>最适合作为入门材料：用三个案例展示 LLM 如何把物联网系统变成自然语言接口，覆盖识别、编程和数据理解三类任务。</p>
+      <div class="links">
+        <a href="https://doi.org/10.1007/s43926-024-00083-4">DOI / 正式版</a>
+        <a href="https://link.springer.com/article/10.1007/s43926-024-00083-4">开放版本</a>
+        <span class="muted">本地 PDF 暂无</span>
+      </div>
+    </article>
+    
+
+    <article class="paper-card" id="iotm">
+      <div class="paper-top">
+        <span class="tier">IEEE 延伸阅读</span>
+        <span class="citations">27 次引用</span>
+      </div>
+      <h3>LLM-Empowered IoT for 6G Networks: Architecture, Challenges, and Solutions</h3>
+      <p class="meta">IEEE Internet of Things Magazine · 2025</p>
+      <p class="authors">Xiaopei Chen; Wen Wu; Liang Li; Fei Ji</p>
+      <p class="focus"><b>研究重点：</b>LLM for IoT、LLM on IoT、边缘微调、边缘推理、拆分联邦学习</p>
+      <p>用“LLM for 6G IoT / LLM on 6G IoT”两条主线解释应用层智能与边缘部署，适合写研究背景和架构章节。</p>
+      <div class="links">
+        <a href="https://doi.org/10.1109/miot.2025.3582641">DOI / 正式版</a>
+        <span class="muted">开放版本未找到</span>
+        <span class="muted">本地 PDF 暂无</span>
+      </div>
+    </article>
+    
+
+    <article class="paper-card" id="low-carbon">
+      <div class="paper-top">
+        <span class="tier">IEEE 专题论文</span>
+        <span class="citations">29 次引用</span>
+      </div>
+      <h3>Generative AI for Low-Carbon Artificial Intelligence of Things with Large Language Models</h3>
+      <p class="meta">IEEE Internet of Things Magazine · 2025</p>
+      <p class="authors">Jinbo Wen; Ruichen Zhang; Dusit Niyato; Jiawen Kang; Hongyang Du; Yang Zhang; Zhu Han</p>
+      <p class="focus"><b>研究重点：</b>低碳 AIoT、RAG、生成式扩散模型、带宽与功率优化</p>
+      <p>把 LLM 的推理与生成能力用于低碳 AIoT 的资源优化，适合可持续物联网、绿色边缘计算和生成式优化方向。</p>
+      <div class="links">
+        <a href="https://doi.org/10.1109/iotm.001.2400074">DOI / 正式版</a>
+        <a href="https://arxiv.org/abs/2404.18077">开放版本</a>
+        <a href="ieee_iotm_low_carbon_aiot.pdf">本地 PDF</a>
+      </div>
+    </article>
+    </div>
+    </div>
+  </section>
+
+  <section class="section white">
+    <div class="section-inner">
+      <h2>关键图表</h2>
+      <p class="lede">图片取自作者开放版本或可公开访问版本，用来快速理解论文架构。正式排版与最终文字请以 DOI 页面为准。</p>
+      <div class="figures">
+    <figure class="figure-card">
+      <img src="comst-edge-llm-architecture.png" alt="Mobile Edge Intelligence for Large Language Models 插图">
+      <figcaption>
+        <span class="figure-source">IEEE Communications Surveys &amp; Tutorials</span>
+        <strong>Mobile Edge Intelligence for Large Language Models</strong>
+        <span>云中心、6G 边缘云和终端三层协同；关键组成包括 AI 原生网络、参数共享的 LLM 缓存与传输、分布式微调及分布式推理。</span>
+      </figcaption>
+    </figure>
+    
+
+    <figure class="figure-card">
+      <img src="jiot-giot-architecture.png" alt="Efficient Prompting for LLM-Based Generative Internet of Things 插图">
+      <figcaption>
+        <span class="figure-source">IEEE Internet of Things Journal</span>
+        <strong>Efficient Prompting for LLM-Based Generative Internet of Things</strong>
+        <span>GIoT 系统把设备请求送入边缘服务器：提示词管理模块选择或生成模板，本地开源 LLM 执行任务，后处理模块整理输出。</span>
+      </figcaption>
+    </figure>
+    
+
+    <figure class="figure-card">
+      <img src="mnet-network-intelligence.png" alt="6G Comprehensive Intelligence: Network Operations and Optimization 插图">
+      <figcaption>
+        <span class="figure-source">IEEE Network</span>
+        <strong>6G Comprehensive Intelligence: Network Operations and Optimization</strong>
+        <span>面向网络健康评估和性能优化的分层架构：场景与任务、ReAct 逻辑、函数池、小模型与知识库、LLM 推理以及底层数据。</span>
+      </figcaption>
+    </figure>
+    
+
+    <figure class="figure-card">
+      <img src="iotm-low-carbon-aiot.png" alt="Generative AI for Low-Carbon Artificial Intelligence of Things 插图">
+      <figcaption>
+        <span class="figure-source">IEEE Internet of Things Magazine</span>
+        <strong>Generative AI for Low-Carbon Artificial Intelligence of Things</strong>
+        <span>LLM 与 RAG 把低碳约束和网络知识转换为优化问题，再由生成式扩散模型生成策略；图中同时展示交互过程、数值结果与策略生成流程。</span>
+      </figcaption>
+    </figure>
+    
+
+    <figure class="figure-card">
+      <img src="inffus-roadmap.png" alt="Transformers and Large Language Models for Efficient Intrusion Detection Systems 插图">
+      <figcaption>
+        <span class="figure-source">Information Fusion</span>
+        <strong>Transformers and Large Language Models for Efficient Intrusion Detection Systems</strong>
+        <span>综述路线图从 Transformer/LLM 基础、攻击与数据准备，延伸到计算机网、物联网、云边环境、关键基础设施与自动驾驶等应用，最后落到挑战与未来方向。</span>
+      </figcaption>
+    </figure>
+    </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>推荐阅读顺序</h2>
+      <div class="reading-path">
+        <div class="step"><b>先建立全景：</b>Discover Internet of Things 的三个应用案例<span>先理解 DDoS 检测、物联网宏编程和传感器数据处理分别怎样用到 LLM。</span></div>
+        <div class="step"><b>再理解边缘架构：</b>IEEE COMST 的 Mobile Edge Intelligence 综述<span>重点看模型压缩、缓存与传输、边缘训练、边缘推理四条主线。</span></div>
+        <div class="step"><b>抓一个可做系统的方案：</b>IEEE IoT Journal 的 Efficient Prompting for GIoT<span>适合拆成设备端、边缘服务端、提示词库、后处理模块进行系统设计。</span></div>
+        <div class="step"><b>进入工业场景：</b>IEEE TMC 与 Journal of Manufacturing Systems<span>分别覆盖推理任务卸载/资源调度，以及 IIoT+数字孪生+多智能体 LLM。</span></div>
+        <div class="step"><b>按方向扩展：</b>IEEE Network 看网络自优化，Information Fusion 看安全与入侵检测<span>最后把论文中的方法映射到你的专业方向、实验平台和数据集。</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section white">
+    <div class="section-inner">
+      <h2>检索说明</h2>
+      <p class="search-note">主题词包括 “large language models”“LLM”“Internet of Things”“Industrial IoT”“edge intelligence”“6G”“digital twin”“intrusion detection”。先在 OpenAlex 中按标题/摘要检索并限定期刊来源，再按引用量排序；随后用 Crossref 核验作者、期刊和 DOI，用 arXiv 核验开放版本及录用说明。检索日期：2026-10-22。</p>
+      <p class="search-note">限制：部分正式期刊版本需要学校或机构订阅，本报告仅提供开放作者版或可公开访问版本；期刊图表可能因版权或版面差异与正式出版版本略有不同。</p>
+    </div>
+  </section>
+
+  <footer><div>报告生成日期：2026-10-22 · 本地论文副本仅包含开放版本或作者版本。</div></footer>
+</body>
+</html>
