@@ -1,6 +1,7 @@
 (() => {
   const papers = window.PDF_LIBRARY;
   if (!papers) return;
+  const translations = window.CHINESE_TRANSLATIONS ?? {};
 
   const categoryDefs = {
     review: { label: "综述与工艺路线", color: "#40587e" },
@@ -183,6 +184,7 @@
       color: "#43627a",
     };
     const profile = journalProfile(paper.journal);
+    const translation = translations[String(paper.id)];
     return `
       <article class="paper-card" style="--category-color: ${category.color}">
         <a class="paper-thumb" href="${escapeHtml(paper.file)}" target="_blank" rel="noopener" aria-label="打开 PDF：${escapeHtml(paper.title)}">
@@ -205,9 +207,17 @@
             <span>${escapeHtml(licenseLabel(paper.license))} · DOI: ${escapeHtml(paper.doi)}</span>
           </div>
           <div class="paper-actions">
-            <a class="button button-primary" href="${escapeHtml(paper.file)}" target="_blank" rel="noopener">
+            ${
+              translation
+                ? `<a class="button button-primary" href="${escapeHtml(translation.file)}" target="_blank" rel="noopener">
+                    <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 3h9l3 3v15H6zM14 3v4h4M9 12h6M9 16h6"></path></svg>
+                    简体中文全译
+                  </a>`
+                : ""
+            }
+            <a class="button ${translation ? "button-outline" : "button-primary"}" href="${escapeHtml(paper.file)}" target="_blank" rel="noopener">
               <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 3h9l3 3v15H6zM14 3v4h4M9 12h6M9 16h6"></path></svg>
-              在线阅读 PDF
+              英文原文
             </a>
             <button class="button button-outline" type="button" data-copy="${paper.id}">
               <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M8 8h11v12H8zM5 16H4V4h11v1"></path></svg>

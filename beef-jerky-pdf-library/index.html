@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="牛肉风干制品加工技术开放全文精选，15 篇通过验证的开放获取论文可直接在线阅读。"
+      content="牛肉风干制品加工技术离线全文精选，15 篇完整英文原文及简体中文全译。"
     />
-    <title>牛肉风干制品 · 开放全文精选</title>
+    <title>牛肉风干制品 · 原文与简体中文全译</title>
     <link rel="stylesheet" href="styles.css?v=20261023-2" />
   </head>
   <body>
@@ -16,26 +16,26 @@
         <div class="brand">
           <span class="brand-mark">牛</span>
           <span>
-            <strong>BEEF DRYING · OPEN FULL TEXT</strong>
-            <small>15 篇开放获取论文 · 在线阅读</small>
+            <strong>BEEF DRYING · OFFLINE READER</strong>
+            <small>仅收录已获取完整 PDF 的文献</small>
           </span>
         </div>
         <span class="offline-badge">
           <span class="offline-dot"></span>
-          开放获取 · 在线阅读
+          无需联网 · 本机阅读
         </span>
       </div>
 
       <div class="hero">
-        <p class="eyebrow">15 VERIFIED PAPERS · OPEN-ACCESS LIBRARY</p>
-        <h1>牛肉风干制品<br />开放全文精选</h1>
+        <p class="eyebrow">15 VERIFIED PAPERS · LOCAL PDF LIBRARY</p>
+        <h1>牛肉风干制品<br />原文与简体中文全译</h1>
         <p class="hero-copy">
-          只收录已取得完整 PDF 且允许公开阅读的论文。点击即可在线阅读或下载，不需要额外登录。
+          已删除无法合法获取全文的条目。这里的每篇论文都保存为本地 PDF，能够直接打开、检索与引用。
         </p>
         <div class="hero-stats">
           <div><strong id="paperCount">15</strong><span>篇完整论文</span></div>
           <div><strong id="journalCount">9</strong><span>种期刊</span></div>
-          <div><strong id="pageCount">—</strong><span>页开放全文</span></div>
+          <div><strong id="pageCount">—</strong><span>页本地全文</span></div>
           <div><strong id="yearRange">2016–2025</strong><span>出版年份</span></div>
         </div>
       </div>
@@ -51,6 +51,8 @@
           <div class="export-links">
             <a href="full-text-catalog.csv" download>CSV 目录</a>
             <a href="full-text-library.bib" download>BibTeX</a>
+            <a href="all-15-papers-zh-CN.pdf" download>中文合集 PDF</a>
+            <a href="chinese-translations.zip" download>中文译本 ZIP</a>
           </div>
         </div>
 
@@ -76,7 +78,7 @@
 
         <div id="categoryFilters" class="category-filters"></div>
         <div class="result-line">
-          <p id="resultSummary" aria-live="polite">正在载入开放全文目录…</p>
+          <p id="resultSummary" aria-live="polite">正在载入本地目录…</p>
           <span>所有文件均通过 PDF 文件头和页数验证</span>
         </div>
 
@@ -103,8 +105,8 @@
         </div>
         <div class="notes-grid">
           <article>
-            <h3>直接在线阅读</h3>
-            <p>点击论文卡片中的“在线阅读 PDF”，即可在新页面查看或下载完整论文。</p>
+            <h3>双击索引文件</h3>
+            <p>打开本文件夹中的 <code>index.html</code>，可分别选择“简体中文全译”或“英文原文”。</p>
           </article>
           <article>
             <h3>全文已经过验证</h3>
@@ -112,7 +114,7 @@
           </article>
           <article>
             <h3>合法来源</h3>
-            <p>文件来自出版社开放获取页面，采用 CC BY 或 CC BY-NC 等明确许可，不包含绕过付费墙获取的论文。</p>
+            <p>文件来自出版社开放获取页面或明确可免费下载的期刊页面，不包含绕过付费墙获取的论文。</p>
           </article>
           <article>
             <h3>引用时回到 DOI</h3>
@@ -124,18 +126,19 @@
       <section class="scope">
         <h2>收录范围</h2>
         <p>
-          当前只保留 15 篇实际取得完整 PDF 的论文，主题集中在 Biltong、Pastirma、牛肉干热风与热泵干燥、红外干燥、腌制与质构、脂质与风味、致病菌消减与货架稳定性。无法确认合法全文获取条件的论文已剔除。
+          当前保留 15 篇完整英文原文及对应简体中文全译，主题集中在 Biltong、Pastirma、牛肉干热风与热泵干燥、红外干燥、腌制与质构、脂质与风味、致病菌消减与货架稳定性。
         </p>
       </section>
     </main>
 
     <footer>
-      <p>牛肉风干制品开放全文精选 · 生成日期 2026-10-23</p>
-      <p>按各篇 CC BY 或 CC BY-NC 许可使用，完整署名与许可信息见 NOTICE.md。</p>
+      <p>牛肉风干制品原文与简体中文全译 · 生成日期 2026-10-23</p>
+      <p>仅供个人学习，版权和再利用条件以各论文许可及出版社条款为准。</p>
     </footer>
 
     <div id="toast" class="toast" role="status" aria-live="polite"></div>
     <script src="catalog.js"></script>
-    <script src="app.js?v=20261023-2"></script>
+    <script src="translation_catalog.js"></script>
+    <script src="app.js?v=20261023-3"></script>
   </body>
 </html>

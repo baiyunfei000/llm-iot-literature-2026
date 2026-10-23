@@ -1,0 +1,107 @@
+window.CHINESE_TRANSLATIONS = {
+  "1": {
+    "id": 1,
+    "doi": "10.4314/sajas.v47i6.2",
+    "titleZh": "南非比尔通的加工--回顾",
+    "file": "translations/01_2017_Biltong_Review_zh-CN.pdf",
+    "pdfId": 11
+  },
+  "2": {
+    "id": 2,
+    "doi": "10.1016/j.meatsci.2021.108525",
+    "titleZh": "干燥温度和盐预处理对牛肉片干燥过程中干燥行为和仪器颜色的影响及光谱产品监测研究",
+    "file": "translations/02_2021_MeatScience_Color_Monitoring_zh-CN.pdf",
+    "pdfId": 9
+  },
+  "3": {
+    "id": 3,
+    "doi": "10.3390/en14164927",
+    "titleZh": "热泵室式干燥机中牛肉干燥工艺的优化",
+    "file": "translations/03_2021_Energies_HeatPump_zh-CN.pdf",
+    "pdfId": 8
+  },
+  "4": {
+    "id": 4,
+    "doi": "10.3390/foods10112802",
+    "titleZh": "滚揉工艺对生牛肉片韧性和结构的影响",
+    "file": "translations/04_2021_Foods_Tumbling_zh-CN.pdf",
+    "pdfId": 9
+  },
+  "5": {
+    "id": 5,
+    "doi": "10.3390/microorganisms8050791",
+    "titleZh": "加工 比尔通(Biltong)(干牛肉)以实现 USDA-FSIS 沙门氏菌 5 对数消减,无需热致死步骤",
+    "file": "translations/05_2020_Microorganisms_Biltong_NoHeat_zh-CN.pdf",
+    "pdfId": 11
+  },
+  "6": {
+    "id": 6,
+    "doi": "10.3390/microorganisms10071308",
+    "titleZh": "干牛肉干加工对单增李斯特菌、大肠杆菌 O157:H7 和金黄色葡萄球菌的减少效果以及主要腌料成分的贡献",
+    "file": "translations/06_2022_Microorganisms_Biltong_Pathogens_zh-CN.pdf",
+    "pdfId": 9
+  },
+  "7": {
+    "id": 7,
+    "doi": "10.3390/foods9111570",
+    "titleZh": "干肉酱腌料中钠替代过程中沙门氏菌和盐浓度的过程致死率(5 个对数消减)的量化",
+    "file": "translations/07_2020_Foods_Biltong_5Log_zh-CN.pdf",
+    "pdfId": 8
+  },
+  "8": {
+    "id": 8,
+    "doi": "10.3390/foods9040478",
+    "titleZh": "静电场对干腌牛肉冷藏品质属性及挥发性风味物质的影响",
+    "file": "translations/08_2020_Foods_Electrostatic_zh-CN.pdf",
+    "pdfId": 9
+  },
+  "9": {
+    "id": 9,
+    "doi": "10.5851/kosfa.2016.36.5.617",
+    "titleZh": "不同亚硝酸钠腌制帕斯特尔马生产过程中理化及微生物质量的变化",
+    "file": "translations/09_2016_KOSFA_Pastirma_Nitrite_zh-CN.pdf",
+    "pdfId": 7
+  },
+  "10": {
+    "id": 10,
+    "doi": "10.5851/kosfa.2017.37.1.18",
+    "titleZh": "干腌肉制品 帕斯特尔马(Pastirma) 加工过程中总脂质、中性脂质、磷脂和磷脂组分脂肪酸组成的变化",
+    "file": "translations/10_2017_KOSFA_Pastirma_Lipids_zh-CN.pdf",
+    "pdfId": 8
+  },
+  "11": {
+    "id": 11,
+    "doi": "10.5713/ajas.16.0512",
+    "titleZh": "不同硝酸盐水平生产的帕斯特尔马的挥发性化合物和一些理化特性",
+    "file": "translations/11_2016_AJAS_Pastirma_Nitrate_zh-CN.pdf",
+    "pdfId": 7
+  },
+  "12": {
+    "id": 12,
+    "doi": "10.3390/foods11172659",
+    "titleZh": "微生物群落对内蒙古牛肉干挥发性成分和生物胺的影响",
+    "file": "translations/12_2022_Foods_Moldy_Microbiota_zh-CN.pdf",
+    "pdfId": 8
+  },
+  "13": {
+    "id": 13,
+    "doi": "10.3390/foods14020300",
+    "titleZh": "延边肉牛发酵肉干理化特性及风味品质分析",
+    "file": "translations/13_2025_Foods_Yanbian_Jerky_zh-CN.pdf",
+    "pdfId": 7
+  },
+  "14": {
+    "id": 14,
+    "doi": "10.3390/molecules23061267",
+    "titleZh": "鸵鸟牛肉鸡肉干休闲零食的营养成分",
+    "file": "translations/14_2018_Molecules_Dried_Meat_Nutrients_zh-CN.pdf",
+    "pdfId": 9
+  },
+  "15": {
+    "id": 15,
+    "doi": "10.4081/ijfs.2016.5625",
+    "titleZh": "红外干燥作为比尔通生产对流干燥的潜在替代方案",
+    "file": "translations/15_2016_IJFS_Infrared_Biltong_zh-CN.pdf",
+    "pdfId": 7
+  }
+};
