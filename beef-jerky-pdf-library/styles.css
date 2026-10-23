@@ -528,6 +528,101 @@ kbd {
   font-size: 0.8rem;
 }
 
+.journal-ranking {
+  padding-top: 2.4rem;
+  margin-top: 2.4rem;
+  border-top: 1px solid var(--line);
+}
+
+.journal-ranking-head {
+  display: grid;
+  grid-template-columns: 230px minmax(0, 1fr);
+  gap: 2rem;
+  align-items: end;
+  padding-bottom: 1rem;
+}
+
+.journal-ranking-head h3 {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: 1.65rem;
+}
+
+.journal-ranking-head > p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.72rem;
+}
+
+.journal-standings {
+  border-top: 1px solid var(--line-strong);
+  border-left: 1px solid var(--line);
+}
+
+.journal-standing-row {
+  display: grid;
+  grid-template-columns: 120px minmax(180px, 0.8fr) minmax(0, 1.5fr) 58px;
+  align-items: stretch;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.journal-standing-row > div {
+  padding: 0.72rem 0.8rem;
+}
+
+.journal-tier {
+  display: flex;
+  align-items: center;
+  color: var(--tier-color);
+  background: color-mix(in srgb, var(--tier-color) 8%, transparent);
+  font-size: 0.72rem;
+  font-weight: 750;
+}
+
+.journal-identity strong {
+  display: block;
+  font-family: Georgia, var(--font-serif);
+  font-size: 0.82rem;
+  line-height: 1.4;
+}
+
+.journal-identity span {
+  display: block;
+  margin-top: 0.2rem;
+  color: var(--muted);
+  font-size: 0.66rem;
+}
+
+.journal-standing-note {
+  color: #52605c;
+  font-size: 0.7rem;
+  line-height: 1.6;
+}
+
+.journal-count {
+  display: grid;
+  place-items: center;
+  color: var(--muted);
+  border-left: 1px solid var(--line);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+}
+
+.journal-badge {
+  display: inline-block;
+  padding: 0.08rem 0.32rem;
+  margin-left: 0.3rem;
+  color: var(--badge-color);
+  background: color-mix(in srgb, var(--badge-color) 8%, transparent);
+  border: 1px solid color-mix(in srgb, var(--badge-color) 24%, transparent);
+  border-radius: 2px;
+  font-family: var(--font-sans);
+  font-size: 0.58rem;
+  font-weight: 700;
+  vertical-align: 1px;
+}
+
 .notes {
   display: grid;
   grid-template-columns: 260px minmax(0, 1fr);
@@ -691,6 +786,20 @@ code {
   .scope {
     grid-template-columns: 1fr;
     gap: 1.4rem;
+  }
+
+  .journal-ranking-head {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .journal-standing-row {
+    grid-template-columns: 90px minmax(0, 1fr) 48px;
+  }
+
+  .journal-standing-note {
+    grid-column: 1 / -1;
+    padding-top: 0;
   }
 
   .notes-grid {
