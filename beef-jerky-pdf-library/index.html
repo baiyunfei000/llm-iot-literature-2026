@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="牛肉风干制品加工技术开放全文精选，15 篇通过验证的开放获取论文可直接在线阅读。"
+    />
+    <title>牛肉风干制品 · 开放全文精选</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <div class="brand">
+          <span class="brand-mark">牛</span>
+          <span>
+            <strong>BEEF DRYING · OPEN FULL TEXT</strong>
+            <small>15 篇开放获取论文 · 在线阅读</small>
+          </span>
+        </div>
+        <span class="offline-badge">
+          <span class="offline-dot"></span>
+          开放获取 · 在线阅读
+        </span>
+      </div>
+
+      <div class="hero">
+        <p class="eyebrow">15 VERIFIED PAPERS · OPEN-ACCESS LIBRARY</p>
+        <h1>牛肉风干制品<br />开放全文精选</h1>
+        <p class="hero-copy">
+          只收录已取得完整 PDF 且允许公开阅读的论文。点击即可在线阅读或下载，不需要额外登录。
+        </p>
+        <div class="hero-stats">
+          <div><strong id="paperCount">15</strong><span>篇完整论文</span></div>
+          <div><strong id="journalCount">9</strong><span>种期刊</span></div>
+          <div><strong id="pageCount">—</strong><span>页开放全文</span></div>
+          <div><strong id="yearRange">2016–2025</strong><span>出版年份</span></div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="library" aria-labelledby="libraryTitle">
+        <div class="library-head">
+          <div>
+            <p class="section-label">FULL-TEXT LIBRARY</p>
+            <h2 id="libraryTitle">完整 PDF 目录</h2>
+          </div>
+          <div class="export-links">
+            <a href="full-text-catalog.csv" download>CSV 目录</a>
+            <a href="full-text-library.bib" download>BibTeX</a>
+          </div>
+        </div>
+
+        <div class="toolbar">
+          <label class="search-box">
+            <svg aria-hidden="true" viewBox="0 0 24 24">
+              <circle cx="11" cy="11" r="7"></circle>
+              <path d="m20 20-4-4"></path>
+            </svg>
+            <span class="sr-only">搜索标题、作者、期刊或 DOI</span>
+            <input id="searchInput" type="search" placeholder="搜索标题、作者、期刊或 DOI" />
+            <kbd>/</kbd>
+          </label>
+          <label class="sort-control">
+            <span>排序</span>
+            <select id="sortSelect">
+              <option value="curated">推荐顺序</option>
+              <option value="newest">年份：新到旧</option>
+              <option value="pages">页数：多到少</option>
+            </select>
+          </label>
+        </div>
+
+        <div id="categoryFilters" class="category-filters"></div>
+        <div class="result-line">
+          <p id="resultSummary" aria-live="polite">正在载入开放全文目录…</p>
+          <span>所有文件均通过 PDF 文件头和页数验证</span>
+        </div>
+
+        <div id="paperList" class="paper-list"></div>
+      </section>
+
+      <section class="notes">
+        <div class="notes-title">
+          <p class="section-label">READING NOTES</p>
+          <h2>使用说明</h2>
+        </div>
+        <div class="notes-grid">
+          <article>
+            <h3>直接在线阅读</h3>
+            <p>点击论文卡片中的“在线阅读 PDF”，即可在新页面查看或下载完整论文。</p>
+          </article>
+          <article>
+            <h3>全文已经过验证</h3>
+            <p>每篇 PDF 都检查了文件签名、大小与页数，无法下载或损坏的文件没有列入。</p>
+          </article>
+          <article>
+            <h3>合法来源</h3>
+            <p>文件来自出版社开放获取页面，采用 CC BY 或 CC BY-NC 等明确许可，不包含绕过付费墙获取的论文。</p>
+          </article>
+          <article>
+            <h3>引用时回到 DOI</h3>
+            <p>本地目录用于阅读；正式引用请保留 DOI，并以出版社页面记录的作者、卷期页码为准。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="scope">
+        <h2>收录范围</h2>
+        <p>
+          当前只保留 15 篇实际取得完整 PDF 的论文，主题集中在 Biltong、Pastirma、牛肉干热风与热泵干燥、红外干燥、腌制与质构、脂质与风味、致病菌消减与货架稳定性。无法确认合法全文获取条件的论文已剔除。
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>牛肉风干制品开放全文精选 · 生成日期 2026-10-23</p>
+      <p>按各篇 CC BY 或 CC BY-NC 许可使用，完整署名与许可信息见 NOTICE.md。</p>
+    </footer>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script src="catalog.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
