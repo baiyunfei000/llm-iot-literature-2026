@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="8" fill="#173b37"/>
+  <path d="M11 45h42" stroke="#d99a5f" stroke-width="3"/>
+  <text x="32" y="40" fill="#f5f1e7" font-family="serif" font-size="34" text-anchor="middle">牛</text>
+</svg>

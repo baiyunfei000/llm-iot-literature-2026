@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="面向牛肉干、牛肉片与风干牛肉研究的同行评审文献库，覆盖干燥机理、新型组合干燥、发酵风味与安全控制。"
+    />
+    <meta name="color-scheme" content="light" />
+    <title>牛肉风干制品加工技术文献库</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#collection">跳到文献库</a>
+
+    <header class="site-header">
+      <nav class="topbar" aria-label="主导航">
+        <a class="brand" href="#top" aria-label="返回页面顶部">
+          <span class="brand-mark" aria-hidden="true">牛</span>
+          <span class="brand-copy">
+            <strong>MEAT DRYING INDEX</strong>
+            <small>牛肉风干制品加工技术</small>
+          </span>
+        </a>
+        <div class="nav-links">
+          <a href="#collection">文献库</a>
+          <a href="#method">收录说明</a>
+          <a href="#about">使用说明</a>
+          <a class="nav-download" href="beef-jerky-literature.bib" download>
+            <svg aria-hidden="true" viewBox="0 0 24 24">
+              <path d="M12 3v12m0 0 4-4m-4 4-4-4M5 21h14" />
+            </svg>
+            BibTeX
+          </a>
+        </div>
+      </nav>
+
+      <div class="hero" id="top">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <span class="eyebrow-rule" aria-hidden="true"></span>
+            PEER-REVIEWED EVIDENCE · 2026 SNAPSHOT
+          </p>
+          <h1>牛肉风干制品<br />加工技术文献库</h1>
+          <p class="hero-summary">
+            聚焦牛肉干、风干牛肉、Biltong 与 Pastirma 的工程化加工证据，按干燥机理、组合技术、前处理、风味与安全控制整理。
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#collection">
+              开始检索
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M5 12h14m-5-5 5 5-5 5" />
+              </svg>
+            </a>
+            <button class="button button-quiet" id="downloadBib" type="button">
+              下载全部引文
+            </button>
+          </div>
+        </div>
+
+        <aside class="process-map" aria-label="牛肉干加工技术路线">
+          <div class="process-map-head">
+            <span>PROCESS MAP</span>
+            <span class="process-map-line" aria-hidden="true"></span>
+            <span>01—05</span>
+          </div>
+          <ol>
+            <li>
+              <span class="step-no">01</span>
+              <span class="step-name">原料与分割</span>
+              <span class="step-note">肌群 · 冻结 · 厚度</span>
+            </li>
+            <li>
+              <span class="step-no">02</span>
+              <span class="step-name">腌制与预处理</span>
+              <span class="step-note">盐 · 超声 · 高压</span>
+            </li>
+            <li>
+              <span class="step-no">03</span>
+              <span class="step-name">干燥与组合工艺</span>
+              <span class="step-note">热风 · 真空 · 微波 · 红外</span>
+            </li>
+            <li>
+              <span class="step-no">04</span>
+              <span class="step-name">发酵、熟成与风味</span>
+              <span class="step-note">菌群 · 蛋白 · 脂质</span>
+            </li>
+            <li>
+              <span class="step-no">05</span>
+              <span class="step-name">安全与货架期</span>
+              <span class="step-note">水分活度 · 致病菌 · 包装</span>
+            </li>
+          </ol>
+        </aside>
+      </div>
+
+      <div class="metric-band" aria-label="文献库统计">
+        <div>
+          <strong id="metricPapers">72</strong>
+          <span>核心文献</span>
+        </div>
+        <div>
+          <strong id="metricJournals">24</strong>
+          <span>同行评审期刊</span>
+        </div>
+        <div>
+          <strong id="metricYears">1998–2026</strong>
+          <span>时间跨度</span>
+        </div>
+        <div>
+          <strong id="metricCategories">6</strong>
+          <span>研究主题</span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="workspace" id="collection" aria-labelledby="collectionTitle">
+        <aside class="filters" aria-label="文献筛选">
+          <div class="filter-heading">
+            <h2 id="collectionTitle">筛选文献</h2>
+            <div class="filter-heading-actions">
+              <button class="filter-toggle" id="filterToggle" type="button" aria-expanded="false">
+                展开筛选
+                <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"></path></svg>
+              </button>
+              <button class="text-button" id="resetFilters" type="button">重置</button>
+            </div>
+          </div>
+
+          <div class="filter-body" id="filterBody">
+            <fieldset class="filter-group">
+              <legend>研究主题</legend>
+              <div id="categoryFilters" class="category-filters"></div>
+            </fieldset>
+
+            <fieldset class="filter-group">
+              <legend>发表时段</legend>
+              <div class="period-options">
+                <label>
+                  <input type="radio" name="period" value="all" checked />
+                  <span>全部年份</span>
+                </label>
+                <label>
+                  <input type="radio" name="period" value="recent" />
+                  <span>2022–2026</span>
+                </label>
+                <label>
+                  <input type="radio" name="period" value="established" />
+                  <span>2015–2021</span>
+                </label>
+                <label>
+                  <input type="radio" name="period" value="foundational" />
+                  <span>1998–2014</span>
+                </label>
+              </div>
+            </fieldset>
+
+            <div class="filter-group">
+              <p class="filter-label">常用技术标签</p>
+              <div id="tagFilters" class="tag-cloud"></div>
+            </div>
+
+            <button class="saved-filter" id="savedOnly" type="button" aria-pressed="false">
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="m12 3 2.78 5.63 6.22.9-4.5 4.39 1.06 6.2L12 17.2l-5.56 2.92 1.06-6.2L3 9.53l6.22-.9L12 3Z" />
+              </svg>
+              <span>只看我的收藏</span>
+              <span class="saved-count" id="savedCount">0</span>
+            </button>
+
+            <div class="filter-downloads">
+              <a href="beef-jerky-literature.csv" download>
+                <svg aria-hidden="true" viewBox="0 0 24 24">
+                  <path d="M8 3h8l4 4v14H4V3h4Zm8 0v5h5M8 13h8M8 17h6" />
+                </svg>
+                CSV 全表
+              </a>
+              <a href="beef-jerky-literature.bib" download>
+                <svg aria-hidden="true" viewBox="0 0 24 24">
+                  <path d="M7 3h10v18H7zM4 6v15h10M10 8h4" />
+                </svg>
+                BibTeX
+              </a>
+            </div>
+          </div>
+        </aside>
+
+        <div class="collection-panel">
+          <div class="search-row">
+            <label class="search-box">
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <circle cx="11" cy="11" r="7" />
+                <path d="m20 20-4-4" />
+              </svg>
+              <span class="sr-only">搜索标题、作者、期刊、DOI 或关键词</span>
+              <input
+                id="searchInput"
+                type="search"
+                autocomplete="off"
+                placeholder="搜索标题、作者、期刊、DOI 或关键词"
+              />
+              <kbd>/</kbd>
+            </label>
+            <label class="sort-control">
+              <span>排序</span>
+              <select id="sortSelect">
+                <option value="curated">主题推荐顺序</option>
+                <option value="newest">年份：新到旧</option>
+                <option value="oldest">年份：旧到新</option>
+                <option value="cited">被引：高到低</option>
+                <option value="title">标题：A–Z</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="active-filter-row">
+            <p id="resultSummary" aria-live="polite">正在载入文献库…</p>
+            <button id="exportFiltered" class="text-button" type="button">
+              导出当前结果
+            </button>
+          </div>
+
+          <div id="activeFilters" class="active-filters" aria-label="已启用筛选"></div>
+          <div id="paperList" class="paper-list"></div>
+          <div class="load-more-wrap">
+            <button id="loadMore" class="button button-outline" type="button">
+              显示更多文献
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="method-band" id="method" aria-labelledby="methodTitle">
+        <div class="method-intro">
+          <p class="eyebrow eyebrow-dark">SELECTION METHOD</p>
+          <h2 id="methodTitle">从 245 条候选到 72 篇核心文献</h2>
+          <p>
+            先用牛肉干、风干牛肉、Biltong、Pastirma、牛肉干燥及相关技术词进行宽口径检索，再按主题相关性、期刊来源和证据用途进行人工筛选。
+          </p>
+        </div>
+        <ol class="method-steps">
+          <li>
+            <span>01</span>
+            <strong>去重与主题归并</strong>
+            <p>合并标题、DOI 与近义产品词，剔除仅涉及肉制品品质或非牛肉干燥的记录。</p>
+          </li>
+          <li>
+            <span>02</span>
+            <strong>期刊层级筛选</strong>
+            <p>优先保留肉品科学、食品化学、食品工程与干燥技术领域的国际同行评审期刊。</p>
+          </li>
+          <li>
+            <span>03</span>
+            <strong>工艺问题覆盖</strong>
+            <p>确保传质建模、组合技术、前处理、风味形成与微生物安全均有代表证据。</p>
+          </li>
+          <li>
+            <span>04</span>
+            <strong>逐条核验 DOI</strong>
+            <p>整理出版年份、作者、卷期页码与 DOI，并以 OpenAlex 补充引文与摘要节选。</p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="research-notes" id="about">
+        <div class="notes-heading">
+          <p class="eyebrow eyebrow-dark">READING NOTES</p>
+          <h2>怎样使用这份文献库</h2>
+        </div>
+        <div class="notes-grid">
+          <article>
+            <h3>先按问题，不按数量</h3>
+            <p>
+              如果研究目标是降低能耗，优先看“干燥机理与模型”和“新型与组合干燥”；如果处理产品稳定性，则从“安全与货架期”切入。
+            </p>
+          </article>
+          <article>
+            <h3>把导读当作检索线索</h3>
+            <p>
+              中文导读根据题名、元数据和可获得摘要整理，用于定位论文，不替代原文的方法、结果与讨论。
+            </p>
+          </article>
+          <article>
+            <h3>通过 DOI 回到原文</h3>
+            <p>
+              每篇文献都保留 DOI。下载全文时请使用所在学校的数据库订阅或出版社开放获取版本。
+            </p>
+          </article>
+          <article>
+            <h3>引文快照不是质量分</h3>
+            <p>
+              Crossref / OpenAlex 被引次数仅反映某一时点的数据，新近论文通常被低估，不能单独作为质量判断。
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="scope-note" aria-labelledby="scopeTitle">
+        <div>
+          <h2 id="scopeTitle">收录边界与说明</h2>
+          <p>
+            本库是面向加工技术选题的专家筛选清单，不是 PRISMA 系统综述。候选池并非穷尽全部数据库；未收录不代表研究价值较低。页面仅提供书目信息、短导读和摘要节选，不托管论文全文。
+          </p>
+        </div>
+        <dl>
+          <div>
+            <dt>检索快照</dt>
+            <dd>2026-10-23</dd>
+          </div>
+          <div>
+            <dt>书目来源</dt>
+            <dd>Crossref；OpenAlex 补充</dd>
+          </div>
+          <div>
+            <dt>语言范围</dt>
+            <dd>英文同行评审论文</dd>
+          </div>
+          <div>
+            <dt>更新方式</dt>
+            <dd>修订 curation.json 后重新构建</dd>
+          </div>
+        </dl>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <span class="brand-mark" aria-hidden="true">牛</span>
+        <p>
+          <strong>牛肉风干制品加工技术文献库</strong>
+          <span>为研究与课程作业整理的开放书目索引</span>
+        </p>
+      </div>
+      <p class="footer-links">
+        <a href="papers.json" download>JSON 数据</a>
+        <a href="beef-jerky-literature.csv" download>CSV</a>
+        <a href="beef-jerky-literature.bib" download>BibTeX</a>
+      </p>
+    </footer>
+
+    <dialog id="paperDialog" class="paper-dialog">
+      <div class="dialog-shell">
+        <button class="dialog-close" id="closeDialog" type="button" aria-label="关闭详情">
+          <svg aria-hidden="true" viewBox="0 0 24 24">
+            <path d="M18 6 6 18M6 6l12 12" />
+          </svg>
+        </button>
+        <div id="dialogContent"></div>
+      </div>
+    </dialog>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
