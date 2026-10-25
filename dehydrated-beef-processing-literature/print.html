@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>脱水牛肉加工技术 · 十篇论文完整中文译集</title>
+    <style>
+      @page {
+        size: A4;
+        margin: 18mm 17mm 18mm;
+      }
+
+      :root {
+        --ink: #182823;
+        --muted: #5c6d66;
+        --pine: #173f38;
+        --rust: #a95436;
+        --line: #d8d3c7;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        color: var(--ink);
+        background: #fff;
+        font-family: "Noto Sans SC", "Microsoft YaHei", sans-serif;
+        font-size: 10.2pt;
+        line-height: 1.75;
+      }
+
+      .cover {
+        display: grid;
+        min-height: 245mm;
+        align-content: space-between;
+        page-break-after: always;
+      }
+
+      .cover-mark {
+        display: grid;
+        width: 58px;
+        height: 58px;
+        place-items: center;
+        color: #fff;
+        background: var(--pine);
+        border: 2px solid var(--rust);
+        font: 700 13pt monospace;
+      }
+
+      h1 {
+        max-width: 150mm;
+        margin: 24mm 0 7mm;
+        font-family: "Noto Serif SC", STSong, serif;
+        font-size: 31pt;
+        line-height: 1.18;
+      }
+
+      h2 {
+        margin: 0;
+        font-family: "Noto Serif SC", STSong, serif;
+      }
+
+      .cover p {
+        max-width: 150mm;
+        color: var(--muted);
+        font-size: 11pt;
+      }
+
+      .cover-meta {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 4mm;
+        padding-top: 5mm;
+        border-top: 2px solid var(--rust);
+      }
+
+      .cover-meta strong,
+      .cover-meta span {
+        display: block;
+      }
+
+      .cover-meta strong {
+        font: 700 15pt "Noto Serif SC", serif;
+      }
+
+      .cover-meta span {
+        color: var(--muted);
+        font-size: 8pt;
+      }
+
+      .edition-note {
+        padding: 5mm;
+        margin-top: 7mm;
+        border: 1px solid var(--line);
+        background: #f7f5ef;
+      }
+
+      .paper {
+        page-break-before: always;
+      }
+
+      .paper-head {
+        padding-bottom: 5mm;
+        margin-bottom: 5mm;
+        border-bottom: 2px solid var(--rust);
+      }
+
+      .paper-number {
+        margin: 0 0 2mm;
+        color: var(--rust);
+        font: 700 8pt monospace;
+        letter-spacing: 0.08em;
+      }
+
+      .paper h1 {
+        max-width: none;
+        margin: 0;
+        font-size: 20pt;
+      }
+
+      .paper-en {
+        color: var(--muted);
+        font: 8.5pt Georgia, serif;
+      }
+
+      .meta {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1mm 5mm;
+        padding: 3mm;
+        margin: 4mm 0;
+        border: 1px solid var(--line);
+        font-size: 7.8pt;
+      }
+
+      .meta span {
+        color: var(--muted);
+      }
+
+      .abstract,
+      .full-text {
+        margin-top: 5mm;
+      }
+
+      .section-title {
+        padding-bottom: 1.5mm;
+        margin: 7mm 0 3mm;
+        color: var(--pine);
+        border-bottom: 1px solid var(--line);
+        font-family: "Noto Serif SC", STSong, serif;
+        font-size: 14pt;
+        page-break-after: avoid;
+      }
+
+      .abstract p,
+      .full-text p {
+        margin: 0 0 2.4mm;
+        text-align: justify;
+        text-justify: inter-ideograph;
+      }
+
+      .full-text h3 {
+        margin: 5mm 0 2mm;
+        color: var(--pine);
+        font-size: 11.5pt;
+        page-break-after: avoid;
+      }
+
+      .caption {
+        padding: 2.5mm;
+        margin: 3mm 0;
+        border: 1px solid var(--line);
+        background: #faf9f4;
+        font-size: 8.2pt;
+      }
+
+      pre {
+        padding: 2.5mm;
+        overflow-wrap: anywhere;
+        color: #31443e;
+        background: #f2efe7;
+        border: 1px solid var(--line);
+        font: 6.8pt/1.55 Consolas, monospace;
+        white-space: pre-wrap;
+      }
+
+      .paper-footer {
+        display: none;
+      }
+
+      .loading {
+        padding: 25mm;
+        text-align: center;
+      }
+
+      @media screen {
+        body {
+          max-width: 860px;
+          margin: 0 auto;
+          padding: 28px;
+          background: #eceae3;
+        }
+
+        .page-sheet {
+          padding: 32px;
+          background: #fff;
+          box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main id="document" class="page-sheet">
+      <div class="loading">正在生成完整译集…</div>
+    </main>
+    <script>
+      (() => {
+        const root = document.querySelector("#document");
+        const escapeHtml = (value) =>
+          String(value ?? "")
+            .replaceAll("&", "&amp;")
+            .replaceAll("<", "&lt;")
+            .replaceAll(">", "&gt;")
+            .replaceAll('"', "&quot;")
+            .replaceAll("'", "&#039;");
+
+        const renderBlocks = (blocks) =>
+          (blocks ?? [])
+            .map((block) => {
+              if (block.type === "h3") {
+                return `<h3>${escapeHtml(block.text)}</h3>`;
+              }
+              if (block.type === "caption") {
+                return `<div class="caption">${escapeHtml(block.text)}</div>`;
+              }
+              if (block.type === "data") {
+                return `<pre>${escapeHtml(block.text)}</pre>`;
+              }
+              return `<p>${escapeHtml(block.text)}</p>`;
+            })
+            .join("");
+
+        fetch("translations.json")
+          .then((response) => {
+            if (!response.ok) throw new Error(`HTTP ${response.status}`);
+            return response.json();
+          })
+          .then((papers) => {
+            const totalCharacters = papers.reduce(
+              (sum, paper) => sum + (paper.full_text_meta?.characters ?? 0),
+              0
+            );
+            const paperMarkup = papers
+              .map(
+                (paper) => `
+                  <article class="paper">
+                    <header class="paper-head">
+                      <p class="paper-number">文献 ${String(paper.id).padStart(2, "0")} · PMID ${escapeHtml(paper.pmid)}</p>
+                      <h1>${escapeHtml(paper.title_zh)}</h1>
+                      <p class="paper-en">${escapeHtml(paper.title_en)}</p>
+                    </header>
+                    <div class="meta">
+                      <div><span>作者：</span>${escapeHtml(paper.authors)}</div>
+                      <div><span>期刊与年卷：</span>${escapeHtml(paper.journal)}，${escapeHtml(paper.citation)}</div>
+                      <div><span>DOI：</span>${escapeHtml(paper.doi)}</div>
+                      <div><span>开放许可：</span>${escapeHtml(paper.license)}</div>
+                    </div>
+                    <section class="abstract">
+                      <h2 class="section-title">摘要</h2>
+                      <p>${escapeHtml(paper.abstract_zh)}</p>
+                    </section>
+                    <section class="full-text">
+                      <h2 class="section-title">完整译文</h2>
+                      ${renderBlocks(paper.full_text)}
+                    </section>
+                    <footer class="paper-footer">
+                      正文依据 ${escapeHtml(paper.source)} 开放全文翻译；参考文献题录不另译。正式引用请以 DOI 对应英文原文为准。
+                    </footer>
+                  </article>`
+              )
+              .join("");
+
+            root.innerHTML = `
+              <section class="cover">
+                <div>
+                  <div class="cover-mark">DB</div>
+                  <h1>脱水牛肉加工技术<br />十篇论文完整中文译集</h1>
+                  <p>Dehydrated Beef Processing Technology · Complete Simplified Chinese Translation</p>
+                  <div class="edition-note">
+                    本译集覆盖十篇开放全文的正文、图表题注与数据表；公式、变量名、仪器型号和文献引用保留原始标记。参考文献题录不另译，正式引用请以 DOI 对应英文原文为准。
+                  </div>
+                </div>
+                <div class="cover-meta">
+                  <div><strong>10</strong><span>篇完整译文</span></div>
+                  <div><strong>${totalCharacters.toLocaleString("zh-CN")}</strong><span>正文字符</span></div>
+                  <div><strong>2026.10</strong><span>译集版本</span></div>
+                </div>
+              </section>
+              ${paperMarkup}
+            `;
+
+            document.title = "脱水牛肉加工技术 · 十篇论文完整中文译集";
+            window.__PRINT_READY__ = true;
+          })
+          .catch((error) => {
+            root.innerHTML = `<p class="loading">译集加载失败：${escapeHtml(error.message)}</p>`;
+          });
+      })();
+    </script>
+  </body>
+</html>

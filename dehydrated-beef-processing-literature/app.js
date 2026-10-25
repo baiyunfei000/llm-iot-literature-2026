@@ -140,7 +140,7 @@
         <a
           class="paper-cover"
           href="${translationUrl}"
-          aria-label="阅读中文译文：${escapeHtml(paper.title)}"
+          aria-label="阅读完整中文译文：${escapeHtml(paper.title)}"
         >
           <span class="cover-top">
             <span>${String(paper.id).padStart(2, "0")}</span>
@@ -170,7 +170,7 @@
               class="button button-primary"
               href="${translationUrl}"
             >
-              中文译文
+              完整译文
             </a>
             <a
               class="button button-outline"

@@ -39,8 +39,60 @@
         <div><dt>作者</dt><dd>${escapeHtml(paper.authors)}</dd></div>
         <div><dt>DOI</dt><dd>${escapeHtml(paper.doi)}</dd></div>
         <div><dt>免费来源</dt><dd>${escapeHtml(paper.source)}</dd></div>
-        <div><dt>译文范围</dt><dd>公开摘要与核心内容</dd></div>
+        <div><dt>译文范围</dt><dd>正文、图表题注与数据表</dd></div>
       </dl>`;
+  }
+
+  function renderFullText(paper) {
+    const blocks = paper.full_text ?? [];
+    const headings = blocks
+      .map((block, index) => ({ ...block, index }))
+      .filter((block) => block.type === "h3");
+    const toc = headings.length
+      ? `
+        <details class="full-text-toc">
+          <summary>本文目录 · ${headings.length} 节</summary>
+          <ol>
+            ${headings
+              .map(
+                (block) =>
+                  `<li><a href="#section-${block.index}">${escapeHtml(block.text)}</a></li>`
+              )
+              .join("")}
+          </ol>
+        </details>`
+      : "";
+
+    const content = blocks
+      .map((block, index) => {
+        if (block.type === "h3") {
+          return `<h3 id="section-${index}">${escapeHtml(block.text)}</h3>`;
+        }
+        if (block.type === "caption") {
+          return `<figure class="translation-caption"><figcaption>${escapeHtml(block.text)}</figcaption></figure>`;
+        }
+        if (block.type === "data") {
+          return `<pre class="translation-data">${escapeHtml(block.text)}</pre>`;
+        }
+        return `<p>${escapeHtml(block.text)}</p>`;
+      })
+      .join("");
+
+    return `
+      <section class="translation-section full-text-section" id="full-text">
+        <div class="full-text-heading">
+          <div>
+            <p class="section-label">COMPLETE TRANSLATION</p>
+            <h3>全文译文</h3>
+          </div>
+          <span>${Number(paper.full_text_meta?.characters ?? 0).toLocaleString("zh-CN")} 字</span>
+        </div>
+        <p class="translation-scope">
+          依据开放获取原文逐段翻译，覆盖正文、图表题注和数据表；公式、变量名、仪器型号与文献引用保留原始标记，参考文献题录不另译。
+        </p>
+        ${toc}
+        <div class="full-text-body">${content}</div>
+      </section>`;
   }
 
   function pager(paper) {
@@ -89,6 +141,8 @@
         <p>${escapeHtml(paper.application)}</p>
       </section>
 
+      ${renderFullText(paper)}
+
       <section class="translation-section">
         <h3>原文入口</h3>
         <div class="translation-link-list">
@@ -128,6 +182,7 @@
     document.title = `${paper.title_zh} · 中文译文`;
     document.documentElement.lang = "zh-CN";
     window.scrollTo({ top: 0, behavior: "instant" });
+    requestAnimationFrame(() => window.dispatchEvent(new Event("resize")));
   }
 
   fetch("translations.json")
@@ -145,4 +200,16 @@
     });
 
   window.addEventListener("popstate", render);
+
+  const progress = document.querySelector("#readingProgress");
+  function updateProgress() {
+    if (!progress) return;
+    const total = document.documentElement.scrollHeight - window.innerHeight;
+    const ratio = total > 0 ? Math.min(1, Math.max(0, window.scrollY / total)) : 0;
+    progress.style.transform = `scaleX(${ratio})`;
+  }
+
+  window.addEventListener("scroll", updateProgress, { passive: true });
+  window.addEventListener("resize", updateProgress);
+  updateProgress();
 })();
