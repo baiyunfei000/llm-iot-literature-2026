@@ -1,0 +1,212 @@
+[
+  {
+    "id": 1,
+    "pmid": "38719799",
+    "doi": "10.1038/s41467-024-47967-1",
+    "title_zh": "闪热处理实现高效肉类保鲜",
+    "title_en": "Flash heating process for efficient meat preservation",
+    "authors": "Mao Y, Ma P, Li T, Liu H, Zhao X, Liu S, Jia X, Rahaman SO, Wang X, Zhao M, Chen G, Xie H, Brozena AH, Zhou B, Luo Y, Tarté R, Wei CI, Wang Q, Briber RM, Hu L",
+    "journal": "Nature Communications",
+    "citation": "2024; 15(1): 3893",
+    "license": "CC BY 4.0",
+    "source": "PubMed Central",
+    "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11079066/",
+    "pdf_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11079066/pdf/main.pdf",
+    "abstract_zh": "维持食品安全与品质对公共卫生和粮食安全至关重要。传统巴氏杀菌、脱水等食品保鲜方法常会改变食品的整体感官品质。本文以牛肉为模型，提出一种仅作用于食品薄表层的方法：在不足 1 秒内向碳基底施加高功率电能以产生焦耳热，使基底温度瞬时升至约 2000 K 以上。与加热基底直接接触的牛肉表面受到超高温闪热处理，形成约 100 微米厚、微生物已灭活且脱水的表层。处理后，牛肉表面的需氧中温菌、肠杆菌科、酵母和霉菌均降至检测限以下，并在 5 天室温储存期间保持低水平；与此同时，产品的外观、质构和营养水平基本保持不变。相比之下，未处理对照样中的微生物快速生长，肉品品质迅速恶化。该方法有望成为兼顾食品安全与品质的肉类保鲜技术。",
+    "key_results": [
+      "碳基底在不足 1 秒内被加热至约 2000 K 以上，牛肉表面形成约 100 微米厚的脱水层。",
+      "目标微生物降至检测限以下，并在 5 天室温储存中保持低水平。",
+      "处理后的牛肉在视觉外观、质构和营养水平上基本保持不变。"
+    ],
+    "application": "该研究说明，通过极短时的高温作用把杀菌和脱水限制在表面薄层，可以减少对肉品内部品质的影响。对鲜牛肉、肉制品表面保鲜和高能效预处理具有直接参考价值；工程化应用仍需进一步验证厚肉块、不同初始污染水平和设备温控一致性。"
+  },
+  {
+    "id": 2,
+    "pmid": "35158274",
+    "doi": "10.1016/j.foodchem.2022.132346",
+    "title_zh": "利用高光谱成像监测微波真空与热风脱水牛肉片和牛肉条的水分含量及复水速率",
+    "title_en": "Monitoring of moisture contents and rehydration rates of microwave vacuum and hot air dehydrated beef slices and splits using hyperspectral imaging",
+    "authors": "Ren Y, Sun DW",
+    "journal": "Food Chemistry",
+    "citation": "2022; 382: 132346",
+    "license": "CC BY",
+    "source": "Elsevier ScienceDirect",
+    "article_url": "https://linkinghub.elsevier.com/retrieve/pii/S0308-8146(22)00308-9",
+    "pdf_url": "https://www.sciencedirect.com/science/article/pii/S0308814622003089/pdf",
+    "abstract_zh": "食品微结构和加工方式对加工过程中的水分迁移具有重要影响，而理解这些影响有助于提高产品质量。本研究采用近红外高光谱成像，评价纤维方向和脱水方法对牛肉脱水及复水行为的影响。牛肉片采用横切，牛肉条采用纵切，并分别通过热风干燥和微波真空干燥处理。结果表明，在热风干燥过程中，牛肉片中的水分蒸发快于牛肉条；微波真空干燥样品的复水速率高于热风干燥样品。主成分分析能够有效区分不同纤维方向、加工方式和处理时间的样品。所建立的简化 RC-SG-PLSR 和 RC-2nd Der-PLSR 模型对水分含量和复水速率具有较好的预测精度，交叉验证决定系数分别达到 R²p = 0.994 和 R²p = 0.889。化学分布图进一步确认了纤维方向和脱水方法对样品水分迁移的影响。",
+    "key_results": [
+      "热风干燥时，横切牛肉片的水分蒸发快于纵向牛肉条。",
+      "微波真空干燥样品的复水速率高于热风干燥样品。",
+      "高光谱模型可高精度预测水分含量和复水速率，为过程监测提供依据。"
+    ],
+    "application": "研究显示，切分方向会显著改变干燥过程中的水分迁移，而高光谱成像可用于无损、快速判断水分和复水品质。对连续化牛肉干燥生产而言，该思路可用于建立在线终点判定和批次一致性控制模型。"
+  },
+  {
+    "id": 3,
+    "pmid": "37429244",
+    "doi": "10.1016/j.foodchem.2023.136753",
+    "title_zh": "利用太赫兹时域光谱和近红外高光谱成像分析非热预处理对微波真空脱水牛肉品质的影响",
+    "title_en": "Analyzing the effects of nonthermal pretreatments on the quality of microwave vacuum dehydrated beef using terahertz time-domain spectroscopy and near-infrared hyperspectral imaging",
+    "authors": "Ren Y, Fu Y, Sun DW",
+    "journal": "Food Chemistry",
+    "citation": "2023; 428: 136753",
+    "license": "CC BY",
+    "source": "Elsevier ScienceDirect",
+    "article_url": "https://linkinghub.elsevier.com/retrieve/pii/S0308-8146(23)01371-7",
+    "pdf_url": "https://www.sciencedirect.com/science/article/pii/S0308814623013717/pdf",
+    "abstract_zh": "非热预处理和快速无损检测都是改善干燥过程的有效技术。本研究评价不同预处理方法对微波真空干燥牛肉品质的影响，并利用太赫兹时域光谱和近红外高光谱成像比较该过程在实时水分含量、水分损失、色泽和收缩率方面的监测表现。结果表明，渗透预处理改善了微波真空干燥牛肉的干燥速率，并降低色泽变化和收缩率。基于太赫兹时域光谱和近红外高光谱的现场直接扫描与原位间接传感均能获得准确预测：水分含量的最佳 R²p 分别为 0.9646 和 0.9463，水分损失的最佳 R²p 分别为 0.9817 和 0.9563。近红外高光谱对水分含量的可视化结果表明，超声预处理抑制了微波真空干燥过程中的水分分布不均，而渗透预处理则促进了这种不均匀性。该研究可为工业微波真空干燥工艺优化提供依据。",
+    "key_results": [
+      "渗透预处理提高微波真空干燥速率，并减小色泽变化和收缩。",
+      "太赫兹与近红外高光谱均可准确预测水分含量和水分损失。",
+      "超声预处理有助于抑制干燥过程中的水分分布不均。"
+    ],
+    "application": "研究把非热预处理、微波真空干燥和多模态无损监测放在同一工艺框架中。对于需要兼顾速度、色泽和收缩控制的脱水牛肉生产，可优先评估渗透预处理的配方与固形物负担，并结合光谱模型建立批次质量控制。"
+  },
+  {
+    "id": 4,
+    "pmid": "40807663",
+    "doi": "10.3390/foods14152726",
+    "title_zh": "纳米美拉德反应产物调控干鲍品质的机理研究",
+    "title_en": "Mechanistic Insights into Nano-Maillard Reaction Products Regulating the Quality of Dried Abalones",
+    "authors": "Shi J, Ling H, Wu Y, Li D, Wang S",
+    "journal": "Foods",
+    "citation": "2025; 14(15): 2726",
+    "license": "CC BY 4.0",
+    "source": "PubMed Central",
+    "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12346132/",
+    "pdf_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12346132/pdf/main.pdf",
+    "abstract_zh": "高汤熬煮是提高高附加值脱水海产品品质的传统预处理和成熟策略，可改善其质构和复水性能。本研究表征了由牛肉碎高汤制备的美拉德反应产物的结构，并研究其对干鲍质构和复水性能的影响。通过 X 射线光电子能谱、X 射线衍射、透射电子显微镜和荧光光谱分析其光学与结构性质。结果表明，这些美拉德反应产物在干鲍的预处理和干燥过程中表现出渗透作用。低场核磁共振显示，美拉德反应产物预处理改善了干鲍的水分迁移和理化性质。研究认为，由于具有较高的渗透效率和纳米尺度，美拉德反应产物有望作为食品添加剂，并成为传统渗透剂的潜在替代物，从而改善干制海产品的复水性能并减少品质劣化。",
+    "key_results": [
+      "以牛肉碎高汤制备的纳米级美拉德反应产物具有渗透活性和特定结构特征。",
+      "预处理改善了干鲍的水分迁移、质构和复水性能。",
+      "该产物具备替代传统渗透剂、减少干制品品质劣化的潜力。"
+    ],
+    "application": "虽然研究对象是干鲍，但其利用肉品副产物制备渗透活性纳米组分的方法，对牛肉碎、骨汤和副产物高值化具有借鉴意义。可进一步考察其对牛肉干腌制渗透、风味形成和复水品质的影响。"
+  },
+  {
+    "id": 5,
+    "pmid": "39889359",
+    "doi": "10.1016/j.meatsci.2025.109762",
+    "title_zh": "克斯科波列地方猪与杂交猪干腌火腿的品质：修皮方式的影响",
+    "title_en": "Quality of Slovenian dry-cured ham from Krškopolje and hybrid pigs: Influence of skin trimming methods",
+    "authors": "Savić B, Škrlep M, Marušić Radovčić N, Petričević S, Čandek-Potokar M",
+    "journal": "Meat Science",
+    "citation": "2025; 222: 109762",
+    "license": "CC BY-NC-ND",
+    "source": "Elsevier ScienceDirect",
+    "article_url": "https://linkinghub.elsevier.com/retrieve/pii/S0309-1740(25)00023-3",
+    "pdf_url": "https://www.sciencedirect.com/science/article/pii/S0309174025000233/pdf",
+    "abstract_zh": "本研究比较克斯科波列地方猪与现代杂交猪所制干腌火腿的品质，并分析两种修皮方式的影响。研究选用体重相近的地方品种 Krškopolje 猪和常规杂交猪，共 24 条火腿。地方猪左右腿分别按 Kraški pršut 与 Istrski pršut 方式修整，杂交猪则按 Kraški pršut 方式修整，每个处理 8 条火腿。加工结束后，取含股二头肌、半膜肌和半腱肌的部位，分析化学成分、质构、感官特性和挥发性风味。与杂交猪火腿相比，地方猪 Kraški 火腿因脂肪覆盖更厚而具有较低的脱水损失、水分含量和水分活度，质构更柔软、更具塑性，并表现出更多大理石纹、更柔软和更糊状的口感、更明显的草本香气和甜味。修皮方式方面，Istrski 方式因去除猪皮而带来更高的脱水损失、更低的水分含量和水分活度、更高的盐含量和更硬的质构，同时表现出不同的表面水分、草本气味、苦味和甜味。挥发性成分分析能够清晰区分不同火腿类型，并显示各处理具有独特风味轮廓。总体而言，该研究揭示了地方猪种和修皮方式对干腌火腿品质的影响。",
+    "key_results": [
+      "地方猪火腿因脂肪覆盖更厚而脱水损失更低，质构更柔软，感官风味更丰富。",
+      "去除猪皮的修整方式会增加脱水损失、盐含量和硬度。",
+      "挥发性风味指纹能够区分猪种和修皮方式带来的品质差异。"
+    ],
+    "application": "研究说明脂肪覆盖和修皮程度会直接改变脱水速度、盐分积累、质构和风味。对干腌肉制品工艺设计而言，应根据目标水分活度和口感平衡调整修皮范围，而不是只追求更快的脱水。"
+  },
+  {
+    "id": 6,
+    "pmid": "35080161",
+    "doi": "10.3724/SP.J.1123.2021.04005",
+    "title_zh": "超高效液相色谱-串联质谱法测定猪肉、鸡蛋和牛奶中九种食源性兴奋剂残留",
+    "title_en": "[Determination of nine food-borne stimulant drug residues in pork, egg, and milk by ultra-performance liquid chromatography-tandem mass spectrometry]",
+    "authors": "Liu X, Zhao Y, Ma Y, Dong S, Wang B, Zhang Y",
+    "journal": "Chinese Journal of Chromatography",
+    "citation": "2022; 40(2): 148-155",
+    "license": "CC BY",
+    "source": "PubMed Central",
+    "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9404034/",
+    "pdf_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9404034/pdf/main.pdf",
+    "abstract_zh": "β-受体激动剂、β-受体阻滞剂和蛋白同化剂属于兴奋剂类药物，其非法用于动物饲养和屠宰会造成食源性残留并危害人体健康。目前 β-受体激动剂和蛋白同化剂的检测方法较多，但 β-受体阻滞剂方法较少，动物源性食品中尚无相应的国家标准。本研究建立超高效液相色谱-串联质谱方法，用于同时测定猪肉、鸡蛋和牛奶中九种食源性兴奋剂残留。样品经 β-葡萄糖醛酸酶/芳基硫酸酯酶在 pH 5.2 乙酸铵缓冲液中于 37 ℃水浴振荡酶解 16 小时，随后用氢氧化钠调至 pH 9.5 的乙腈提取，以盐包盐析分层。上清液经预活化增强型脂质去除管净化，加入无水硫酸镁除水，氮吹近干后用 1 mL 乙腈-0.1% 甲酸水溶液复溶，并在 ACQUITY UPLC HSS T3 色谱柱上梯度分离，以甲醇-0.1% 甲酸水溶液为流动相。目标物经电喷雾正离子化后采用多反应监测模式检测，以内标法和基质匹配校准曲线定量。优化条件下，方法在 0.5 至 20 μg/L 范围内线性良好，r² 大于 0.99；检出限和定量限分别为 0.3 至 0.6 μg/kg 和 1.0 至 2.0 μg/kg。在 1 倍、2 倍和 5 倍定量限加标水平下，平均回收率为 65.2% 至 117.0%，相对标准偏差为 1.3% 至 14.4%。采用该方法检测市售猪肉、鸡蛋和牛奶，未检出九种目标残留。该方法快速、灵敏、准确且稳定，适用于动物源性食品中九种食源性兴奋剂的残留检测。",
+    "key_results": [
+      "建立可同时检测猪肉、鸡蛋和牛奶中九种兴奋剂残留的 UPLC-MS/MS 方法。",
+      "方法定量限为 1.0 至 2.0 μg/kg，回收率和精密度满足复杂食品基质分析需求。",
+      "对市售样品的检测未发现目标物残留。"
+    ],
+    "application": "该文可用于肉品加工中的原料安全筛查和检测方法比对。对于脱水牛肉产品，原文并未直接验证其基质，因此实际应用时需要重新评估脱水、腌制和浓缩对回收率及基质效应的影响。"
+  },
+  {
+    "id": 7,
+    "pmid": "42235338",
+    "doi": "10.1016/j.meatsci.2026.110136",
+    "title_zh": "定制干式熟成与烹饪方式提升牛肉西冷的技术品质和挥发性指纹",
+    "title_en": "Tailoring dry-ageing and cooking to enhance technological quality and volatile fingerprints in beef striploin",
+    "authors": "Zhang R, Deb-Choudhury S, Jacob N, Subbaraj AK, Hefer CA, Ellies-Oury MP, Astruc T, Realini CE",
+    "journal": "Meat Science",
+    "citation": "2026; 239: 110136",
+    "license": "CC BY-NC",
+    "source": "HAL Open Science",
+    "article_url": "https://hal.inrae.fr/hal-05646300v1",
+    "pdf_url": "https://hal.inrae.fr/hal-05646300v1/document",
+    "abstract_zh": "本研究旨在通过调整熟成与烹饪处理的组合，提高干式熟成牛肉的生产效率并降低成本。选用母牛和公牛各 4 头的牛肉西冷，分别进行 28 天袋内干式熟成，或先湿式熟成 14 天再进行 14 天袋内干式熟成的分阶段熟成。样品采用 49 ℃真空低温烹饪 1 小时，或 49 ℃烤箱预烹饪 24 小时，再煎至中心温度 59 ℃。研究评价熟成与烹饪损失、近似组成、脂肪酸谱、脂质氧化和剪切力，并利用实时直接分析质谱表征挥发性指纹；未熟成牛肉作为对照。与对照相比，袋内干式熟成和分阶段熟成都增加了熟成损失、肌内脂肪含量和脂质氧化，同时降低剪切力（P < 0.05），除熟成损失外，两种熟成方式的差异不显著。熟成样品通常具有较低的烹饪损失，但总损失更高（P < 0.01）。烤箱预烹饪可将未熟成牛肉的剪切力降至与充分熟成样品相近的水平（P < 0.01）。挥发性指纹显示性别、熟成与烹饪之间存在不同交互作用，分阶段熟成的挥发性特征与袋内干式熟成不同，尤其在真空低温烹饪后更为明显。烤箱预烹饪的未熟成对照样呈现出与 28 天袋内干式熟成牛肉相似的挥发性指纹。研究认为，将分阶段熟成与定制烹饪策略结合，有望以更高效率、更低成本生产具有干式熟成风格的牛肉。",
+    "key_results": [
+      "两种干式熟成方式均提高嫩度，但也增加熟成损失、肌内脂肪和脂质氧化。",
+      "熟成样品烹饪损失较低，但熟成与烹饪造成的总损失更高。",
+      "分阶段熟成结合特定烹饪方式可形成不同于全程袋内干式熟成的挥发性指纹。"
+    ],
+    "application": "该研究为缩短干式熟成周期、降低库存和损耗提供了工艺思路。实际生产应同时控制失重、氧化和风味目标，并通过烹饪方式补偿嫩度，而不能只用熟成天数衡量产品价值。"
+  },
+  {
+    "id": 8,
+    "pmid": "35483166",
+    "doi": "10.1016/j.ultsonch.2022.106011",
+    "title_zh": "气载超声在猪肝热风干燥中的应用：强化水分传递及其对蛋白质溶解度的影响",
+    "title_en": "Airborne ultrasonic application on hot air-drying of pork liver. Intensification of moisture transport and impact on protein solubility",
+    "authors": "Sánchez-Torres EA, Abril B, Benedito J, Bon J, Toldrà M, Parés D, García-Pérez JV",
+    "journal": "Ultrasonics Sonochemistry",
+    "citation": "2022; 86: 106011",
+    "license": "CC BY-NC-ND",
+    "source": "PubMed Central",
+    "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9171244/",
+    "pdf_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9171244/pdf/main.pdf",
+    "abstract_zh": "利用猪肝等动物副产物开发高效、可持续利用策略正受到越来越多的关注。由于猪肝易腐败，稳定化处理前可能需要进行脱水。水分去除过程能耗高、耗时长，因此有必要采用新技术强化干燥。本研究评估气载功率超声对猪肝热风干燥的影响。实验在 30、40、50、60 和 70 ℃下进行，猪肝圆柱样品表面风速为 2 m/s，分别施加或不施加超声，并通过扩散理论建立干燥模型。干燥后分析蛋白质溶解度，以判断干燥对蛋白质品质的影响。结果表明，超声处理提高了干燥速率，在 30 ℃时可将干燥时间最多缩短 40%；在 60 和 70 ℃高温下，超声的强化作用较小。70 ℃干燥会明显降低干猪肝的蛋白质溶解度，而超声处理对蛋白质溶解度无显著影响（p > 0.05）。",
+    "key_results": [
+      "气载超声可提高猪肝热风干燥速率，30 ℃时干燥时间最多缩短约 40%。",
+      "温度较高时，超声对干燥速率的提升作用减弱。",
+      "70 ℃会降低蛋白质溶解度，但超声处理本身未造成显著额外损失。"
+    ],
+    "application": "对于热敏性动物副产物，气载超声可在较低温度下缩短干燥时间，同时避免进一步损害蛋白质功能。该思路可迁移到肉品副产物的低温干燥和品质保持，但需要结合声强、风速和料层厚度优化。"
+  },
+  {
+    "id": 9,
+    "pmid": "41897710",
+    "doi": "10.3390/foods15060989",
+    "title_zh": "冷冻干燥时长对重组蒸煮鸡肉、猪肉和牛肉体系品质属性的比较分析",
+    "title_en": "Comparative Analysis of Quality Attributes in Restructured Steam-Cooked Chicken, Pork, and Beef System as Affected by Freeze-Drying Duration",
+    "authors": "Yu H, Chen L, Jin Z",
+    "journal": "Foods",
+    "citation": "2026; 15(6): 989",
+    "license": "CC BY 4.0",
+    "source": "PubMed Central",
+    "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13025857/",
+    "pdf_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13025857/pdf/main.pdf",
+    "abstract_zh": "本研究系统考察冷冻干燥对鸡肉、猪肉和牛肉的影响，在 2、4、6、8 和 11 小时比较 pH、水分含量、复水能力、水分分布、色泽和质构剖面。三种肉类的 pH 在整个干燥过程中较稳定，维持在 5.6 至 6.2。水分含量呈现“快速脱水、较慢干燥、趋于稳定”的变化模式；猪肉在干燥中期保留较高水分，而鸡肉和牛肉失水更快。随着干燥时间延长，复水能力提高，鸡肉表现出最高的复水效率。色泽变化具有物种依赖性：鸡肉先变亮后轻微变暗，牛肉亮度下降并短暂增加红度，猪肉逐渐变黄。质构剖面也随物种变化，鸡肉在整个过程中相对稳定，牛肉在干燥中期出现暂时性硬度增加，猪肉的弹性和黏聚性快速下降且硬度波动。研究结果为优化冻干方案、保持不同肉类的品质、功能性能和感官特性提供了依据。",
+    "key_results": [
+      "三种肉类的 pH 基本稳定，但水分下降速率和复水效率不同。",
+      "猪肉在干燥中期保水较多，鸡肉复水效率最高。",
+      "色泽和质构变化具有明显物种差异，不能用同一冻干终点覆盖所有肉类。"
+    ],
+    "application": "该研究提示冻干肉制品应按原料种类分别设定时间曲线和品质终点。对于混合肉体系或重组肉制品，需要同时关注不同肉类的失水速率、色泽变化和复水差异，以减少局部过干和质构失衡。"
+  },
+  {
+    "id": 10,
+    "pmid": "41380651",
+    "doi": "10.1016/j.meatsci.2025.110011",
+    "title_zh": "超声参数对猪里脊渗透脱水的影响：结构、组成与传质",
+    "title_en": "Influence of ultrasonic parameters on osmotic dehydration of pork loin: Effects on structure, composition, and mass transfer",
+    "authors": "Meléndez-Pérez R, Coria-Hernández J",
+    "journal": "Meat Science",
+    "citation": "2026; 233: 110011",
+    "license": "CC BY",
+    "source": "Elsevier ScienceDirect",
+    "article_url": "https://linkinghub.elsevier.com/retrieve/pii/S0309-1740(25)00272-4",
+    "pdf_url": "https://www.sciencedirect.com/science/article/pii/S0309174025002724/pdf",
+    "abstract_zh": "高强度超声在食品加工中的工业应用日益受到关注，因为它能够在不损害产品品质的情况下提高过程效率。本研究考察特定高强度超声参数对猪里脊渗透脱水的影响，并评价其对传质、理化性质、结构和热行为的作用。实验比较传统浸泡渗透脱水与超声辅助渗透脱水，并改变超声振幅和占空比：UA1 为 50% 振幅、0.5 占空比；UA2 为 50% 振幅、0.8 占空比；UA3 为 90% 振幅、0.5 占空比；UA4 为 90% 振幅、0.8 占空比。结果显示，UA3 条件显著改善水分损失、溶质渗入以及水分和固体的扩散系数，分别为 0.33 ± 0.06 × 10^-10 m²/s 和 2.36 ± 0.01 × 10^-10 m²/s，从而提高过程效率。在组成方面，UA3 实现 73.4 ± 1.0% 的更高脱水程度，同时未损害蛋白质含量和持水能力。水分活度从 0.98 ± 0.03 显著降至 0.91 ± 0.00，这是渗透脱水中的关键变化。扫描电子显微镜显示，处理后形成更多孔隙和明确通道，这与传质改善有关。热分析证实自由水减少、渗入溶质增加，表现为焓值和熔融温度降低。在品质方面，多数处理中色泽保持稳定，UA2 和 UA4 后剪切力下降，提示嫩度可能改善。总体而言，这些结果说明高强度超声有望提高肉品保鲜效率并实现更快、更高效的加工。",
+    "key_results": [
+      "UA3 条件显著提高水分损失、溶质渗入和扩散系数。",
+      "脱水程度达到约 73.4%，同时保持蛋白质含量和持水能力。",
+      "超声处理后微观结构更疏松，水分活度下降，部分条件还可降低剪切力。"
+    ],
+    "application": "该研究给出了振幅与占空比的组合优化思路，而不是简单增加超声功率。对肉品渗透脱水而言，结构疏松和水分活度下降有利于后续干燥与贮藏，但需要同步监控盐分或其他溶质渗入过多带来的风味和营养问题。"
+  }
+]

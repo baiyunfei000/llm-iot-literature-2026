@@ -134,20 +134,19 @@
 
   function paperCard(paper) {
     const category = categories[paper.category];
+    const translationUrl = `translations.html?id=${paper.id}`;
     return `
       <article class="paper-card" style="--category-color: ${category.color}">
         <a
           class="paper-cover"
-          href="${escapeHtml(paper.pdfUrl)}"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="在线阅读：${escapeHtml(paper.title)}"
+          href="${translationUrl}"
+          aria-label="阅读中文译文：${escapeHtml(paper.title)}"
         >
           <span class="cover-top">
             <span>${String(paper.id).padStart(2, "0")}</span>
             <span>${paper.year}</span>
           </span>
-          <span class="cover-pdf">PDF</span>
+          <span class="cover-pdf">译</span>
           <span class="cover-bottom">
             <span>${escapeHtml(paper.sourceType.toUpperCase())}</span>
             <span>${escapeHtml(paper.license)}</span>
@@ -169,11 +168,17 @@
           <div class="paper-actions">
             <a
               class="button button-primary"
+              href="${translationUrl}"
+            >
+              中文译文
+            </a>
+            <a
+              class="button button-outline"
               href="${escapeHtml(paper.pdfUrl)}"
               target="_blank"
               rel="noopener noreferrer"
             >
-              在线阅读
+              原文 PDF
             </a>
             <a
               class="button button-outline"

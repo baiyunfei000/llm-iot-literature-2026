@@ -17,17 +17,20 @@
 
     <header class="site-header">
       <div class="header-inner">
-        <a class="brand" href="#" aria-label="返回页面顶部">
+        <a class="brand" href="index.html" aria-label="返回文献库首页">
           <span class="brand-mark" aria-hidden="true">DB</span>
           <span>
             <strong>MEAT DRYING · OPEN FULL TEXT</strong>
-            <small>PubMed 免费全文索引</small>
+            <small>PubMed 免费全文与中文译文</small>
           </span>
         </a>
-        <span class="status-badge">
-          <span class="status-dot"></span>
-          PubMed Live Index
-        </span>
+        <nav class="header-nav" aria-label="主导航">
+          <a class="is-current" href="index.html">文献库</a>
+          <a href="translations.html?id=1">中文译文</a>
+          <a href="assets/dehydrated-beef-10-papers-zh-CN.pdf" target="_blank" rel="noopener noreferrer">
+            合集 PDF
+          </a>
+        </nav>
       </div>
 
       <div class="hero">
@@ -35,8 +38,19 @@
           <p class="eyebrow">DEHYDRATED BEEF PROCESSING TECHNOLOGY</p>
           <h1>脱水牛肉<br />加工技术</h1>
           <p class="hero-copy">
-            汇总 PubMed 检索结果中可免费查看的 10 篇论文，覆盖热加工、干燥工艺、品质监测、肉品安全与超声辅助。
+            汇总 PubMed 检索结果中可免费查看的 10 篇论文，并提供逐篇中文摘要与核心内容译文。
           </p>
+          <div class="hero-actions">
+            <a class="button button-light" href="translations.html?id=1">阅读中文译文</a>
+            <a
+              class="button button-hero-outline"
+              href="assets/dehydrated-beef-10-papers-zh-CN.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              打开合集 PDF
+            </a>
+          </div>
         </div>
 
         <div class="scope-panel" aria-label="检索概况">
@@ -70,10 +84,10 @@
       </div>
 
       <div class="hero-stats" aria-label="文献库统计">
-        <div><strong id="paperCount">10</strong><span>篇免费全文</span></div>
+        <div><strong id="paperCount">10</strong><span>篇中文译文</span></div>
         <div><strong id="journalCount">6</strong><span>种期刊</span></div>
         <div><strong>2022–2026</strong><span>出版年份</span></div>
-        <div><strong id="viewableCount">10</strong><span>个 PDF 入口</span></div>
+        <div><strong id="viewableCount">10</strong><span>个原文 PDF 入口</span></div>
       </div>
     </header>
 
@@ -84,9 +98,12 @@
             <p class="section-label">FREE FULL-TEXT LIBRARY</p>
             <h2 id="libraryTitle">免费全文目录</h2>
           </div>
-          <p class="library-note">
-            仅收录 PubMed 标注为 <strong>Free PMC article</strong> 或 <strong>Free article</strong> 的结果。
-          </p>
+          <div class="library-head-actions">
+            <p class="library-note">
+              仅收录 PubMed 标注为 <strong>Free PMC article</strong> 或 <strong>Free article</strong> 的结果。
+            </p>
+            <a class="text-action" href="translations.html?id=1">查看全部中文译文</a>
+          </div>
         </div>
 
         <div class="toolbar">
@@ -132,6 +149,9 @@
           </p>
           <p>
             PDF 入口优先使用 PubMed Central、Europe PMC、出版社开放页面或机构库。出版社站点可能要求完成浏览器安全检查。
+          </p>
+          <p>
+            中文页提供论文公开摘要译文、核心结果和加工应用启示；正式引用以英文原文为准。
           </p>
           <p>
             文献免费状态与出版方许可可能调整，正式引用请以 DOI、PMID 和出版方页面为准。
