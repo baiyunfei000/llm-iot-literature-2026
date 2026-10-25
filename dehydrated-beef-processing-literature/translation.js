@@ -39,7 +39,7 @@
         <div><dt>作者</dt><dd>${escapeHtml(paper.authors)}</dd></div>
         <div><dt>DOI</dt><dd>${escapeHtml(paper.doi)}</dd></div>
         <div><dt>免费来源</dt><dd>${escapeHtml(paper.source)}</dd></div>
-        <div><dt>译文范围</dt><dd>正文、图表题注与数据表</dd></div>
+        <div><dt>译文范围</dt><dd>中文正文 · 原始英文图表</dd></div>
       </dl>`;
   }
 
@@ -88,10 +88,70 @@
           <span>${Number(paper.full_text_meta?.characters ?? 0).toLocaleString("zh-CN")} 字</span>
         </div>
         <p class="translation-scope">
-          依据开放获取原文逐段翻译，覆盖正文、图表题注和数据表；公式、变量名、仪器型号与文献引用保留原始标记，参考文献题录不另译。
+          正文依据开放获取原文逐段翻译；原始图片、图中标签和表格数据保持英文原貌。公式、变量名、仪器型号与文献引用保留原始标记，参考文献题录不另译。
         </p>
         ${toc}
         <div class="full-text-body">${content}</div>
+      </section>`;
+  }
+
+  function renderOriginalMedia(paper) {
+    const figures = paper.figures ?? [];
+    const tables = paper.tables_en ?? [];
+    if (!figures.length && !tables.length) return "";
+
+    const figureMarkup = figures
+      .map(
+        (figure) => `
+          <figure class="original-figure" id="original-fig-${figure.number}">
+            <a
+              class="original-figure-link"
+              href="${escapeHtml(figure.path)}"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="打开原始图 ${figure.number}"
+            >
+              <img
+                src="${escapeHtml(figure.path)}"
+                alt="原始图 ${figure.number}：${escapeHtml(figure.caption_en)}"
+                loading="lazy"
+              />
+            </a>
+            <figcaption>
+              <strong>Fig. ${figure.number}</strong>
+              <span>${escapeHtml(figure.caption_en)}</span>
+            </figcaption>
+          </figure>`
+      )
+      .join("");
+
+    const tableMarkup = tables
+      .map(
+        (table) => `
+          <details class="original-table" id="original-table-${table.number}">
+            <summary>
+              <strong>Table ${table.number}</strong>
+              <span>${escapeHtml(table.caption_en)}</span>
+            </summary>
+            <pre>${escapeHtml(table.content_en)}</pre>
+          </details>`
+      )
+      .join("");
+
+    return `
+      <section class="translation-section original-media-section" id="original-media">
+        <div class="full-text-heading">
+          <div>
+            <p class="section-label">ORIGINAL FIGURES &amp; TABLES</p>
+            <h3>原始图表与数据</h3>
+          </div>
+          <span>${figures.length} 图 · ${tables.length} 表</span>
+        </div>
+        <p class="translation-scope">
+          图片和原始表格保持论文原貌，不翻译图中标签、坐标轴或数据内容。点击图片可查看原分辨率文件；表格按原表号对应展开。
+        </p>
+        ${figures.length ? `<div class="original-figure-grid">${figureMarkup}</div>` : ""}
+        ${tables.length ? `<div class="original-table-list">${tableMarkup}</div>` : ""}
       </section>`;
   }
 
@@ -141,6 +201,7 @@
         <p>${escapeHtml(paper.application)}</p>
       </section>
 
+      ${renderOriginalMedia(paper)}
       ${renderFullText(paper)}
 
       <section class="translation-section">

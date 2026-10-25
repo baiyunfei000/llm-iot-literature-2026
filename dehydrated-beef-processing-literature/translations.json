@@ -338,11 +338,42 @@
       }
     ],
     "full_text_meta": {
-      "scope": "正文、图表题注与数据表",
+      "scope": "简体中文正文，原始英文图片与表格数据",
       "characters": 10040,
       "blocks": 79,
       "references": "参考文献题录保留英文原文，不纳入中文正文"
-    }
+    },
+    "figures": [
+      {
+        "number": 1,
+        "label": "Fig. 1",
+        "caption_en": "Schematic of the UFH process for meat preservation.a Demonstration of the heating process. Carbon felt is used as the heating element, due to its high electrical resistance. The arrow marks the electric current direction. b Comparison of operating temperature and time of conventional food heating methods with the UFH method (error bar symbols represent value ranges in the reported data). c–e Schematic appearance of a beef cube before (c) and after heating treatment (d, e). After the UFH is applied to the entire surface of the meat, producing a pale appearance (d), while the interior meat remains fresh, as revealed in the cross-sectional view of (e). The thickness of the outer layer with respect to the bulk sample is not to scale.",
+        "source_file": "41467_2024_47967_Fig1_HTML.jpg",
+        "path": "assets/figures/p1/fig1.png"
+      },
+      {
+        "number": 2,
+        "label": "Fig. 2",
+        "caption_en": "Analysis of the UFH treatment of meat.a Photograph of a beef cube of 1 cm3 sandwiched between two pieces of carbon felt that serve as the heating element. b The UFH treatment in operation. The light emitted by the carbon felts is due to the high temperature. c Temperature profile of the carbon felt during the UFH treatment. d, e Thermal analysis results of the evolution of the beef temperature (d) and water content (mass fraction) (e) over 10 s of the UFH treatment; the simulation sensors are along the central line normal to the carbon felt, from the heated beef surface across the entire sample. f, g Photographs showing a fresh (f) and UFH-treated (6 surfaces) beef cube (g). h Optical micrograph of the cross-section of a UFH-treated beef. i Histological micrograph of the surface of a UFH-treated beef (red line indicates the contour of the carbonized layer). j, k Scanning electron microscopy (SEM) image of the UFH-treated beef surface (j) and the corresponding energy dispersive spectroscopy (EDS) analysis (k). l Raman spectra of the surface and central part of the UFH-treated beef.",
+        "source_file": "41467_2024_47967_Fig2_HTML.jpg",
+        "path": "assets/figures/p1/fig2.png"
+      },
+      {
+        "number": 3,
+        "label": "Fig. 3",
+        "caption_en": "Safety assessment of the untreated and UFH-treated beef.a Photographs of the UFH-treated (top row) and untreated beef (bottom row) during storage. b, c Short-term (24 h) microbiological test for b APC and c EB. d–f Long-term (100 h) microbiological tests for d APC, e EB, and f YM. Solid lines are fits using the Baranyi–Roberts model. g Cell viability of 3T3-L1 (mouse embryonic fibroblast cell) and CCD18co (human colon tissue cell) at different concentrations of meat sampled from the surface of the UFH-treated beef. Current microbiological tests do not involve bacterial spores. Error bars indicate one standard deviation of uncertainty.",
+        "source_file": "41467_2024_47967_Fig3_HTML.jpg",
+        "path": "assets/figures/p1/fig3.png"
+      },
+      {
+        "number": 4,
+        "label": "Fig. 4",
+        "caption_en": "Quality assessment of the untreated and UFH-treated beef.a Rheological characterization based on the storage modulus G’ and loss modulus G” as a function of oscillatory strain for the untreated and UFH-treated beef after 100 h of storage. b The texture change during storage. c Quantification of the beef color change during storage using the Euclidean distance. d–f Measurement of the d non-protein nitrogen concentration, e pH value, and f TVB-N concentration of the untreated and UFH-treated beef during storage. Error bars indicate one standard deviation of uncertainty.",
+        "source_file": "41467_2024_47967_Fig4_HTML.jpg",
+        "path": "assets/figures/p1/fig4.png"
+      }
+    ],
+    "tables_en": []
   },
   {
     "id": 2,
@@ -594,176 +625,16 @@
         "text": "表 1. 基于全波长和选定特征波长的预测模型性能比较。"
       },
       {
-        "type": "data",
-        "text": "模型\t预处理\tRMSEC (%)\tRMSECV (%)\tRMSEP (%)\tR2c\tR2cv\tR2p"
-      },
-      {
         "type": "p",
         "text": "空单元格基于全波长的 MC 预测模型"
-      },
-      {
-        "type": "data",
-        "text": "PLSR\t无\t0.749\t1.324\t1.121\t0.998\t0.995\t0.996"
-      },
-      {
-        "type": "data",
-        "text": "平滑\t0.825\t1.207\t0.848\t0.998\t0.996\t0.998"
-      },
-      {
-        "type": "data",
-        "text": "一阶导数\t0.803\t1.481\t0.813\t0.998\t0.994\t0.998"
-      },
-      {
-        "type": "data",
-        "text": "二阶导数\t0.754\t1.250\t0.920\t0.998\t0.996\t0.998"
-      },
-      {
-        "type": "data",
-        "text": "SNV\t0.846\t1.401\t1.082\t0.998\t0.994\t0.996"
-      },
-      {
-        "type": "data",
-        "text": "MSC\t0.845\t1.343\t1.700\t0.998\t0.995\t0.991"
-      },
-      {
-        "type": "data",
-        "text": "SVR\t无\t2.930\t3.182\t3.327\t0.975\t0.970\t0.969"
-      },
-      {
-        "type": "data",
-        "text": "平滑\t2.728\t3.009\t3.314\t0.979\t0.974\t0.966"
-      },
-      {
-        "type": "data",
-        "text": "一阶导数\t16.601\t17.626\t17.156\t0.183\t0.101\t0.205"
-      },
-      {
-        "type": "data",
-        "text": "二阶导数\t18.621\t19.231\t17.952\t0.005\t−0.062\t0.003"
-      },
-      {
-        "type": "data",
-        "text": "SNV\t1.546\t1.706\t1.647\t0.993\t0.992\t0.992"
-      },
-      {
-        "type": "data",
-        "text": "MSC\t3.452\t3.873\t3.739\t0.966\t0.957\t0.957"
-      },
-      {
-        "type": "data",
-        "text": "SCWR\t无\t1.320\t1.643\t1.590\t0.995\t0.992\t0.992"
-      },
-      {
-        "type": "data",
-        "text": "平滑\t1.337\t1.700\t1.619\t0.995\t0.992\t0.992"
-      },
-      {
-        "type": "data",
-        "text": "1阶导数\t2.579\t3.021\t3.388\t0.981\t0.974\t0.965"
-      },
-      {
-        "type": "data",
-        "text": "2阶导数\t4.162\t4.592\t3.542\t0.950\t0.939\t0.961"
-      },
-      {
-        "type": "data",
-        "text": "SNV\t0.837\t1.363\t0.828\t0.998\t0.995\t0.998"
-      },
-      {
-        "type": "data",
-        "text": "MSC\t1.394\t1.699\t1.615\t0.994\t0.992\t0.992"
       },
       {
         "type": "p",
         "text": "基于全波长的RR预测模型"
       },
       {
-        "type": "data",
-        "text": "PLSR\t无\t2.937\t4.099\t3.377\t0.927\t0.858\t0.888"
-      },
-      {
-        "type": "data",
-        "text": "平滑\t2.883\t3.816\t3.269\t0.930\t0.877\t0.895"
-      },
-      {
-        "type": "data",
-        "text": "1阶导数\t3.043\t3.824\t3.198\t0.922\t0.877\t0.899"
-      },
-      {
-        "type": "data",
-        "text": "2阶导数\t2.864\t3.670\t3.315\t0.925\t0.877\t0.919"
-      },
-      {
-        "type": "data",
-        "text": "SNV\t2.980\t3.856\t3.120\t0.925\t0.875\t0.904"
-      },
-      {
-        "type": "data",
-        "text": "MSC\t2.908\t4.204\t3.353\t0.929\t0.851\t0.889"
-      },
-      {
-        "type": "data",
-        "text": "SVR\t无\t6.216\t7.046\t6.356\t0.692\t0.604\t0.438"
-      },
-      {
-        "type": "data",
-        "text": "平滑\t6.080\t6.297\t7.714\t0.659\t0.635\t0.563"
-      },
-      {
-        "type": "data",
-        "text": "1阶导数\t10.254\t10.372\t12.208\t0.031\t0.009\t−0.096"
-      },
-      {
-        "type": "data",
-        "text": "2阶导数\t10.445\t10.587\t12.324\t−0.005\t−0.033\t−0.117"
-      },
-      {
-        "type": "data",
-        "text": "SNV\t4.806\t5.615\t5.090\t0.787\t0.710\t0.809"
-      },
-      {
-        "type": "data",
-        "text": "MSC\t6.437\t6.799\t8.845\t0.618\t0.574\t0.425"
-      },
-      {
-        "type": "data",
-        "text": "SCWR\t无\t3.460\t4.345\t4.445\t0.889\t0.825\t0.859"
-      },
-      {
-        "type": "data",
-        "text": "平滑\t3.265\t4.147\t3.959\t0.901\t0.841\t0.888"
-      },
-      {
-        "type": "data",
-        "text": "1阶导\t4.722\t5.185\t5.463\t0.794\t0.751\t0.787"
-      },
-      {
-        "type": "data",
-        "text": "2阶导\t6.237\t6.547\t8.009\t0.640\t0.603\t0.542"
-      },
-      {
-        "type": "data",
-        "text": "SNV\t2.287\t3.689\t3.439\t0.952\t0.874\t0.916"
-      },
-      {
-        "type": "data",
-        "text": "MSC\t3.403\t4.303\t4.461\t0.893\t0.829\t0.858"
-      },
-      {
-        "type": "data",
-        "text": "属性\t简化模型\t波长数量\tRMSEC (%)\tRMSECV (%)\tRMSEP (%)\tR2c\tR2cv\tR2p"
-      },
-      {
         "type": "p",
         "text": "基于所选特征波长的MC和RR简化预测模型"
-      },
-      {
-        "type": "data",
-        "text": "MC\tRC-SG-PLSR\t13\t1.351\t1.809\t1.484\t0.995\t0.991\t0.994"
-      },
-      {
-        "type": "data",
-        "text": "RR\tRC-2阶导-PLSR\t27\t2.801\t3.993\t3.876\t0.929\t0.855\t0.889"
       },
       {
         "type": "p",
@@ -835,11 +706,51 @@
       }
     ],
     "full_text_meta": {
-      "scope": "正文、图表题注与数据表",
+      "scope": "简体中文正文，原始英文图片与表格数据",
       "characters": 13791,
       "blocks": 117,
       "references": "参考文献题录保留英文原文，不纳入中文正文"
-    }
+    },
+    "figures": [
+      {
+        "number": 1,
+        "label": "Fig. 1",
+        "caption_en": "Fig. 1. Moisture contents (MC, % w.b.) of beef slices and splits during (a) hot air drying (HAD) and microwave vacuum drying (MVD) and (b) rehydration rate (RR) of beef samples during rehydration, and (c) shrinkage rate and (d) expansion ratios of the beef samples (n = 3).",
+        "path": "assets/figures/p2/fig1.jpg"
+      },
+      {
+        "number": 2,
+        "label": "Fig. 2",
+        "caption_en": "Fig. 2. Mean absorption spectra for (a) samples at different microwave vacuum drying (MVD) time, and (b) MVD slices and splits before and after rehydration.",
+        "path": "assets/figures/p2/fig2.jpg"
+      },
+      {
+        "number": 3,
+        "label": "Fig. 3",
+        "caption_en": "Fig. 3. Principal component analysis scores plot for (a) slices and splits during hot air drying (HAD), (b) samples during HAD and microwave vacuum drying (MVD), (c) samples during rehydration, and linear fittings between measured and predicted (d) moisture contents (MC, % w.b.) and (e) rehydration rates (RR) based on the optimal full wavelength models.",
+        "path": "assets/figures/p2/fig3.jpg"
+      },
+      {
+        "number": 4,
+        "label": "Fig. 4",
+        "caption_en": "Fig. 4. Feature wavelengths selection based on regression coefficients of the optimal (a) moisture content (MC, % w.b.) and (b) rehydration rate (RR) prediction PLSR models.",
+        "path": "assets/figures/p2/fig4.jpg"
+      },
+      {
+        "number": 5,
+        "label": "Fig. 5",
+        "caption_en": "Fig. 5. Time-series distribution maps of beef for (a) moisture contents (MC, % w.b.) and (b) rehydration rates (RR).",
+        "path": "assets/figures/p2/fig5.jpg"
+      }
+    ],
+    "tables_en": [
+      {
+        "number": 1,
+        "label": "Table 1",
+        "caption_en": "Table 1. Comparison of the performance of prediction models based on full wavelengths and selected feature wavelengths.",
+        "content_en": "Model\tPreprocessing\tRMSEC (%)\tRMSECV (%)\tRMSEP (%)\tR2c\tR2cv\tR2p\nEmpty Cell\nMC prediction models based on full wavelengths\nPLSR\tNone\t0.749\t1.324\t1.121\t0.998\t0.995\t0.996\n\tSmoothing\t0.825\t1.207\t0.848\t0.998\t0.996\t0.998\n\t1st Der\t0.803\t1.481\t0.813\t0.998\t0.994\t0.998\n\t2nd Der\t0.754\t1.250\t0.920\t0.998\t0.996\t0.998\n\tSNV\t0.846\t1.401\t1.082\t0.998\t0.994\t0.996\n\tMSC\t0.845\t1.343\t1.700\t0.998\t0.995\t0.991\nSVR\tNone\t2.930\t3.182\t3.327\t0.975\t0.970\t0.969\n\tSmoothing\t2.728\t3.009\t3.314\t0.979\t0.974\t0.966\n\t1st Der\t16.601\t17.626\t17.156\t0.183\t0.101\t0.205\n\t2nd Der\t18.621\t19.231\t17.952\t0.005\t−0.062\t0.003\n\tSNV\t1.546\t1.706\t1.647\t0.993\t0.992\t0.992\n\tMSC\t3.452\t3.873\t3.739\t0.966\t0.957\t0.957\nSCWR\tNone\t1.320\t1.643\t1.590\t0.995\t0.992\t0.992\n\tSmoothing\t1.337\t1.700\t1.619\t0.995\t0.992\t0.992\n\t1st Der\t2.579\t3.021\t3.388\t0.981\t0.974\t0.965\n\t2nd Der\t4.162\t4.592\t3.542\t0.950\t0.939\t0.961\n\tSNV\t0.837\t1.363\t0.828\t0.998\t0.995\t0.998\n\tMSC\t1.394\t1.699\t1.615\t0.994\t0.992\t0.992\nRR prediction models based on full wavelengths\nPLSR\tNone\t2.937\t4.099\t3.377\t0.927\t0.858\t0.888\n\tSmoothing\t2.883\t3.816\t3.269\t0.930\t0.877\t0.895\n\t1st Der\t3.043\t3.824\t3.198\t0.922\t0.877\t0.899\n\t2nd Der\t2.864\t3.670\t3.315\t0.925\t0.877\t0.919\n\tSNV\t2.980\t3.856\t3.120\t0.925\t0.875\t0.904\n\tMSC\t2.908\t4.204\t3.353\t0.929\t0.851\t0.889\nSVR\tNone\t6.216\t7.046\t6.356\t0.692\t0.604\t0.438\n\tSmoothing\t6.080\t6.297\t7.714\t0.659\t0.635\t0.563\n\t1st Der\t10.254\t10.372\t12.208\t0.031\t0.009\t−0.096\n\t2nd Der\t10.445\t10.587\t12.324\t−0.005\t−0.033\t−0.117\n\tSNV\t4.806\t5.615\t5.090\t0.787\t0.710\t0.809\n\tMSC\t6.437\t6.799\t8.845\t0.618\t0.574\t0.425\nSCWR\tNone\t3.460\t4.345\t4.445\t0.889\t0.825\t0.859\n\tSmoothing\t3.265\t4.147\t3.959\t0.901\t0.841\t0.888\n\t1st Der\t4.722\t5.185\t5.463\t0.794\t0.751\t0.787\n\t2nd Der\t6.237\t6.547\t8.009\t0.640\t0.603\t0.542\n\tSNV\t2.287\t3.689\t3.439\t0.952\t0.874\t0.916\n\tMSC\t3.403\t4.303\t4.461\t0.893\t0.829\t0.858\nAttributes\tSimplified Models\tNumbers of Wavelength\tRMSEC (%)\tRMSECV (%)\tRMSEP (%)\tR2c\tR2cv\tR2p\nMC and RR simplified prediction models based on selected feature wavelengths\nMC\tRC-SG-PLSR\t13\t1.351\t1.809\t1.484\t0.995\t0.991\t0.994\nRR\tRC-2nd Der-PLSR\t27\t2.801\t3.993\t3.876\t0.929\t0.855\t0.889\nAbbreviation: MC = moisture content, MSC = multiplicative scatter correction, PLSR = partial least squares regression, RC = regression coefficient, RMSEC = root mean square error of calibration, RMSECV = root mean square error of cross-validation, RMSEP = root mean square error of prediction, RR = rehydration rate, R2c = coefficient of determination in calibration, R2cv = coefficient of determination in cross-validation, R2p = coefficient of determination in prediction, SCWR = sparse coefficients wavelength selection and regression, SG = SG-smoothing, SNV = standard normal variate, 1st Der = first derivative, 2nd Der = second derivative.\nThe performance of the full-wavelength RR prediction models was not as good as MC models in general, although most of the prediction results were still good (Table 1). This might be due to that part of the moisture migrated inside the sample during rehydration and the limited penetration depth of near-infrared waves restricted the prediction accuracy of the internal moisture. Additionally, the relatively small change of RR during rehydration made the RR measurement vulnerable to experiment errors, which could reduce the RR prediction accuracy. PLSR models showed better performance compared with the other calibration methods. Besides, similar to MC prediction models, the first and second derivative pre-processing degraded the prediction accuracy of SVR and SCWR models, while SNV and MSC pre-processing generally improved the model performance. SG-smoothing boosted the performance of the prediction models compared with raw spectral data, although such effect was limited. The PLSR model combined with the second derivative pre-processing could be considered the best model, with R2c, R2cv, and R2p of 0.925, 0.877 and 0.919, respectively. Fig. 3 (d-e) illustrates the prediction accuracy for the optimal models by linear fittings between the measured and predicted MC (d) and RR (e). The data points of the optimal RR prediction model were more scattered than that of the optimal MC model, indicating more deviation and lower accuracy for RR prediction results. The results correspond to their prediction performance, possibly due to that the limited penetration of NIR waves reduced the predictive performance of HSI for the internal moisture migration during rehydration, and the change range of RR smaller than MC during the processes led to the prediction being vulnerable to experiment errors (Rojas and Augusto, 2018, Sakare et al., 2020)."
+      }
+    ]
   },
   {
     "id": 3,
@@ -1091,26 +1002,6 @@
         "text": "表1. 基于太赫兹时域光谱（THz-TDS）和近红外高光谱成像（NIR-HSI）光谱数据集的模型水分含量（MC）和水分损失预测性能。"
       },
       {
-        "type": "data",
-        "text": "数据集\t指标\t校准集均方根误差(RMSEC)\t校准集决定系数(R2C)\t预测集均方根误差(RMSEP)\t预测集决定系数(R2P)\t标准误差比(RPD)\t范围误差比(RER)"
-      },
-      {
-        "type": "data",
-        "text": "THz-TDS\t水分损失\t0.0039\t0.9995\t0.0112\t0.9817\t21.230\t85.658"
-      },
-      {
-        "type": "data",
-        "text": "NIR-HSI\t水分损失\t0.0467\t0.9554\t0.0457\t0.9563\t5.291\t16.632"
-      },
-      {
-        "type": "data",
-        "text": "THz-TDS\t水分含量\t0.0102\t0.9967\t0.0147\t0.9646\t15.914\t65.263"
-      },
-      {
-        "type": "data",
-        "text": "NIR-HSI\t水分含量\t0.0421\t0.9632\t0.0537\t0.9463\t4.506\t14.154"
-      },
-      {
         "type": "p",
         "text": "缩写: THz-TDS = 太赫兹时域光谱, NIR-HSI = 近红外高光谱成像, 水分损失(MC loss) = moisture content loss, 水分含量(MC) = moisture content, RMSEC = 校准集均方根误差, R2C = 校准集决定系数, RMSEP = 预测集均方根误差, R2P = 预测集决定系数, RPD = 标准误差比, RER = 范围误差比."
       },
@@ -1180,11 +1071,51 @@
       }
     ],
     "full_text_meta": {
-      "scope": "正文、图表题注与数据表",
+      "scope": "简体中文正文，原始英文图片与表格数据",
       "characters": 15568,
       "blocks": 79,
       "references": "参考文献题录保留英文原文，不纳入中文正文"
-    }
+    },
+    "figures": [
+      {
+        "number": 1,
+        "label": "Fig. 1",
+        "caption_en": "Fig. 1. (a) Moisture content, (b) moisture loss rate and (c) shrinkage rate for the control, ultrasound process (UL), osmotic drying (OD) and ultrasound assist osmotic drying (UAOD) group (n = 10) during microwave vacuum drying.",
+        "path": "assets/figures/p3/fig1.jpg"
+      },
+      {
+        "number": 2,
+        "label": "Fig. 2",
+        "caption_en": "Fig. 2. The (a) CIE luminance change (Δ L*) and (b) total colour change (Δ⁢𝐸) measurement results for ultrasound (UL) and osmotic drying (OD) samples (n = 10) during microwave vacuum drying processes (MVD) using chroma meter (CM) and computer vision (CV), and (c)the CIE luminance change (Δ L*) and (d) total colour change (Δ⁢𝐸) for different pre-treated samples (n = 10) during MVD using CV monitoring.",
+        "path": "assets/figures/p3/fig2.jpg"
+      },
+      {
+        "number": 3,
+        "label": "Fig. 3",
+        "caption_en": "Fig. 3. The mean reflectance spectra of hyperspectral images (HSI) for (a) control, (b) ultrasound (UL), (c) osmotic drying (OD), and (d) ultrasound assist osmotic drying (UAOD) pre-treated samples during microwave vacuum drying (MVD), and the numerical integration of absorption coefficient spectra (a(x)dx) for (f) control, (g) UL, (h) OD and (i) UAOD pre-treated samples during MVD processes. The linear fittings between measured and predicted moisture contents loss (MC Loss, % w.b.) using (e) near-infrared hyperspectral imaging (NIR-HSI) and (j) terahertz time-domain spectroscopy (THz-TDS).",
+        "path": "assets/figures/p3/fig3.jpg"
+      },
+      {
+        "number": 4,
+        "label": "Fig. 4",
+        "caption_en": "Fig. 4. The regression coefficients of (a) NIR-HIS MC loss prediction model (b) THz-TDS MC loss prediction model.",
+        "path": "assets/figures/p3/fig4.jpg"
+      },
+      {
+        "number": 5,
+        "label": "Fig. 5",
+        "caption_en": "Fig. 5. The visualisation results for moisture content (MC) prediction result for control, osmotic drying (OD), ultrasound (UL) and ultrasound assistant osmotic drying (UAOD) pre-treated samples.",
+        "path": "assets/figures/p3/fig5.jpg"
+      }
+    ],
+    "tables_en": [
+      {
+        "number": 1,
+        "label": "Table 1",
+        "caption_en": "Table 1. MC and MC loss prediction performance of models based on THz-TDS and NIR-HSI spectral datasets.",
+        "content_en": "Datasets\tIndicator\tRMSEC\tR2C\tRMSEP\tR2P\tRPD\tRER\nTHz-TDS\tMC Loss\t0.0039\t0.9995\t0.0112\t0.9817\t21.230\t85.658\nNIR-HSI\tMC Loss\t0.0467\t0.9554\t0.0457\t0.9563\t5.291\t16.632\nTHz-TDS\tMC\t0.0102\t0.9967\t0.0147\t0.9646\t15.914\t65.263\nNIR-HSI\tMC\t0.0421\t0.9632\t0.0537\t0.9463\t4.506\t14.154\nAbbreviation: THz-TDS = Terahertz time-domain spectroscopy, NIR-HSI = Near-infrared hyperspectral imaging, MC loss = moisture content loss, MC = moisture content, RMSEc = root mean square error of calibration set, R2c = coefficient of determination in the calibration set, RMSEp = root mean square error of prediction set, RPD = ratio of standard error, R2p = coefficient of determination in the prediction set, RER = range error ratio.\nSome feature wavelengths were identified based on the regression coefficient of the NIR-HSI MC loss prediction model and THz-TDS MC loss prediction model respectively, to understand how moisture content variation affected the spectra. The detail of regression coefficients on each spectrum was plotted in Fig. 4, and the corresponding feature wavelengths/frequency were selected and plotted on the corresponding figure. Since the different sensing strategies and calculation methods for real-time MC loss using NIR-HSI and THz-TDS, the regression coefficients of the corresponding PLSR model were different, and the feature wavelengths showed more uniform distribution in the infrared region from 990 to 1550 nm, while that in the THz region was mainly located between around 1.65 and 3.00 THz.\nDownload: Download high-res image (458KB)\nDownload: Download full-size image"
+      }
+    ]
   },
   {
     "id": 4,
@@ -1497,11 +1428,77 @@
       }
     ],
     "full_text_meta": {
-      "scope": "正文、图表题注与数据表",
+      "scope": "简体中文正文，原始英文图片与表格数据",
       "characters": 9886,
       "blocks": 72,
       "references": "参考文献题录保留英文原文，不纳入中文正文"
-    }
+    },
+    "figures": [
+      {
+        "number": 1,
+        "label": "Figure 1",
+        "caption_en": "(a) High-resolution TEM image and (b) particle size distribution of the MRPs extracted from beef scrap stock.",
+        "source_file": "foods-14-02726-g001.jpg",
+        "path": "assets/figures/p4/fig1.png"
+      },
+      {
+        "number": 2,
+        "label": "Figure 2",
+        "caption_en": "The surface elemental composition and chemical bonding states of the MRPs. (a) XPS survey spectrum, (b) C1s spectra, (c) N1s spectra, and (d) O1s spectra.",
+        "source_file": "foods-14-02726-g002.jpg",
+        "path": "assets/figures/p4/fig2.png"
+      },
+      {
+        "number": 3,
+        "label": "Figure 3",
+        "caption_en": "(a) Time-resolved fluorescence attenuation and fitted curve; (b) UV-vis absorption spectrum of the MRPs.",
+        "source_file": "foods-14-02726-g003.jpg",
+        "path": "assets/figures/p4/fig3.png"
+      },
+      {
+        "number": 4,
+        "label": "Figure 4",
+        "caption_en": "(a) The 3D fluorescence spectrum and (b) the emission wavelength and intensity of the MRPs under 280~370 nm excitation wavelengths.",
+        "source_file": "foods-14-02726-g004.jpg",
+        "path": "assets/figures/p4/fig4.png"
+      },
+      {
+        "number": 5,
+        "label": "Figure 5",
+        "caption_en": "The (a) moisture ratio of abalone during drying, (b) drying rate of abalone, and (c) rehydration rate of dried abalone. Dried abalones treated with different boiling liquids and solvents were named Dried and Dried-MRPs. Samples treated with water throughout both the boiling and rehydration stages were named “Rehydrated”. Samples treated with water during the boiling stage and MRPs during the rehydration stage were named “Rehydrated-MRPs”. Samples treated with MRPs throughout both the boiling and rehydration stages were named “Rehydrated with MRPs”.",
+        "source_file": "foods-14-02726-g005.jpg",
+        "path": "assets/figures/p4/fig5.png"
+      },
+      {
+        "number": 6,
+        "label": "Figure 6",
+        "caption_en": "Relaxation times and peak areas of dried and rehydrated abalone. (a) Relaxation times of dried abalone, (b) peak areas of dried abalone, (c) relaxation times of rehydrated abalone, and (d) peak areas of rehydrated abalonelone. Different lowercase letters indicate significant differences between groups (p < 0.05).",
+        "source_file": "foods-14-02726-g006.jpg",
+        "path": "assets/figures/p4/fig6.png"
+      },
+      {
+        "number": 7,
+        "label": "Figure 7",
+        "caption_en": "Hierarchical clustering performed with 25 abalone samples based on 5 standardized abalone.",
+        "source_file": "foods-14-02726-g007.jpg",
+        "path": "assets/figures/p4/fig7.png"
+      },
+      {
+        "number": 8,
+        "label": "Figure 8",
+        "caption_en": "Correlations between different processes and (a) hardness, (b) elasticity, (c) chewiness of abalone.",
+        "source_file": "foods-14-02726-g008.jpg",
+        "path": "assets/figures/p4/fig8.png"
+      }
+    ],
+    "tables_en": [
+      {
+        "number": 1,
+        "label": "Table 1",
+        "caption_en": "TPA evaluation of abalone under different treatments.",
+        "content_en": " | Characteristics | Con | Con-MRPs | MRPs\nBoiled | Elasticity | 0.85 ± 0.01 ab | - | 0.89 ± 0.05 a\n | Chewiness | 4849.73 ± 274.63 b | - | 5849.69 ± 961.05 a\n | Hardness | 8238.61 ± 391.13 ab | - | 8568.76 ± 271.55 a\nDried | Elasticity | 0.65 ± 0.02 a | - | 0.63 ± 0.02 a\n | Chewiness | 6274.03 ± 637.60 a | - | 5884.81 ± 1219.99 b\n | Hardness | 12,648.37 ± 513.86 b | - | 14,460.47 ± 500.98 a\nRehydration | Elasticity | 0.64 ± 0.03 b | 0.65 ± 0.02 ab | 0.67 ± 0.01 a\n | Chewiness | 6225.65 ± 529.51 ab | 5979.24 ± 915.55 b | 6582.27 ± 161.47 a\n | Hardness | 13,064.74 ± 932.46 a | 13,209.61 ± 1866.91 a | 10,640.57 ± 433.56 b\nDifferent lowercase letters indicate significant differences between groups (p < 0.05)."
+      }
+    ]
   },
   {
     "id": 5,
@@ -1561,40 +1558,8 @@
         "text": "表1. 生火腿特性、加工火腿重量损失和盐摄入量。"
       },
       {
-        "type": "data",
-        "text": "性状\tK-CON\tK-KKP\tI-KKP\t1K-KKP-"
-      },
-      {
-        "type": "data",
-        "text": "K-CON\t1K-KKP-"
-      },
-      {
         "type": "p",
         "text": "I-KKP"
-      },
-      {
-        "type": "data",
-        "text": "SM肌肉pHu\t5.61 ± 0.04\t5.56 ± 0.02\t5.60 ± 0.03\t-0.05\t-0.04"
-      },
-      {
-        "type": "data",
-        "text": "脂肪厚度, mm\t28.6 ± 1.2\t41.2 ± 3.3\t27.5 ± 4.5\t12.6**\t13.7*"
-      },
-      {
-        "type": "data",
-        "text": "修整火腿重量, kg\t15.9 ± 0.3\t15.9 ± 0.5\t14.0 ± 0.5\t0.0\t1.9*"
-      },
-      {
-        "type": "data",
-        "text": "腌制损失, %\t3.1 ± 0.1\t1.6 ± 0.1\t1.6 ± 0.1\t-1.5***\t0.0"
-      },
-      {
-        "type": "data",
-        "text": "加工损失, %\t36.7 ± 0.6\t29.6 ± 0.5\t34.2 ± 0.5\t-7.1***\t-4.6***"
-      },
-      {
-        "type": "data",
-        "text": "盐摄入量2, kg\t0.67 ± 0.02\t0.64 ± 0.03\t0.70 ± 0.02\t-0.03\t-0.06"
       },
       {
         "type": "p",
@@ -1705,80 +1670,16 @@
         "text": "表2. 干腌火腿的颜色测量。"
       },
       {
-        "type": "data",
-        "text": "性状\tK-CON\tK-KKP\tI-KKP\t1K-KKP-K-CON\t1K-KKP-I-KKP"
-      },
-      {
         "type": "p",
         "text": "SM"
-      },
-      {
-        "type": "data",
-        "text": "CIE L*\t34.4 ± 0.8\t34.0 ± 0.7\t32.9 ± 0.7\t−0.4\t1.1"
-      },
-      {
-        "type": "data",
-        "text": "CIE a*\t13.1 ± 0.2\t16.1 ± 0.6\t14.4 ± 0.4\t3.0 ***\t1.7 *"
-      },
-      {
-        "type": "data",
-        "text": "CIE b*\t10.2 ± 0.3\t9.2 ± 0.3\t9.8 ± 0.5\t−1.0 *\t−0.6"
-      },
-      {
-        "type": "data",
-        "text": "c*\t16.6 ± 0.3\t18.6 ± 0.6\t17.4 ± 0.5\t2.0 **\t1.2"
-      },
-      {
-        "type": "data",
-        "text": "H°\t37.9 ± 0.9\t29.9 ± 1.4\t34.3 ± 1.1\t−8.0 ***\t−4.4 *"
       },
       {
         "type": "p",
         "text": "ST"
       },
       {
-        "type": "data",
-        "text": "CIE L*\t40.2 ± 0.8\t41.3 ± 0.9\t39.5 ± 0.9\t1.1\t1.8"
-      },
-      {
-        "type": "data",
-        "text": "CIE a*\t12.6 ± 0.4\t16.3 ± 0.7\t15.7 ± 0.7\t3.7 ***\t0.6"
-      },
-      {
-        "type": "data",
-        "text": "CIE b*\t10.5 ± 0.6\t9.9 ± 0.5\t11.0 ± 0.2\t−0.6\t−1.1 *"
-      },
-      {
-        "type": "data",
-        "text": "c*\t16.4 ± 0.5\t19.1 ± 0.5\t19.2 ± 0.5\t2.7 **\t−0.1"
-      },
-      {
-        "type": "data",
-        "text": "H°\t39.7 ± 1.8\t31.5 ± 2.1\t35.3 ± 1.6\t−8.2 *\t−3.8"
-      },
-      {
         "type": "p",
         "text": "BF"
-      },
-      {
-        "type": "data",
-        "text": "CIE L*\t38.4 ± 0.3\t38.3 ± 0.4\t36.0 ± 1.0\t−0.1\t2.3"
-      },
-      {
-        "type": "data",
-        "text": "CIE a*\t16.9 ± 0.4\t19.2 ± 0.7\t17.8 ± 0.7\t2.3 **\t1.4"
-      },
-      {
-        "type": "data",
-        "text": "CIE b*\t7.6 ± 0.2\t7.1 ± 0.2\t8.3 ± 0.3\t−0.5\t−1.2 **"
-      },
-      {
-        "type": "data",
-        "text": "c*\t18.5 ± 0.3\t20.5 ± 0.6\t19.7 ± 0.7\t2.0 **\t0.8"
-      },
-      {
-        "type": "data",
-        "text": "H°\t24.2 ± 1.0\t20.5 ± 1.0\t25.2 ± 1.3\t−3.7 *\t−4.7 **"
       },
       {
         "type": "p",
@@ -1805,80 +1706,12 @@
         "text": "表 3. 干腌火腿的化学性质。"
       },
       {
-        "type": "data",
-        "text": "性状\tK-CON\tK-KKP\tI-KKP\t1K-KKP- K-CON\t1K-KKP- I-KKP"
-      },
-      {
         "type": "p",
         "text": "SM"
       },
       {
-        "type": "data",
-        "text": "水分，g/kg\t434.5 ± 3.7\t470.4 ± 6.7\t435.9 ± 8.5\t35.9 ***\t34.5 **"
-      },
-      {
-        "type": "data",
-        "text": "肌内脂肪，g/kg\t45.6 ± 2.0\t48.2 ± 2.1\t52.5 ± 2.7\t2.6\t−4.3"
-      },
-      {
-        "type": "data",
-        "text": "蛋白质，g/kg\t446.9 ± 2.9\t409.9 ± 6.1\t428.3 ± 7.5\t−37.0 ***\t−18.4"
-      },
-      {
-        "type": "data",
-        "text": "蛋白指数，%\t18.1 ± 0.3\t20.4 ± 1.2\t18.2 ± 0.5\t2.3\t2.2"
-      },
-      {
-        "type": "data",
-        "text": "盐，%\t5.5 ± 0.1\t5.7 ± 0.3\t7.6 ± 0.2\t0.2\t−1.9 ***"
-      },
-      {
-        "type": "data",
-        "text": "干物质中的盐，%\t9.8 ± 0.2\t10.8 ± 0.5\t13.5 ± 0.2\t1.0\t−2.7 ***"
-      },
-      {
-        "type": "data",
-        "text": "aW\t0.859 ± 0.005\t0.875 ± 0.005\t0.824 ± 0.012\t0.016 *\t0.051 **"
-      },
-      {
-        "type": "data",
-        "text": "TBARS，μg MDA/kg\t0.58 ± 0.02\t0.64 ± 0.03\t0.74 ± 0.03\t0.06\t−0.11 *"
-      },
-      {
         "type": "p",
         "text": "BF"
-      },
-      {
-        "type": "data",
-        "text": "水分，g/kg\t546.8 ± 5.1\t574.6 ± 5.0\t521.2 ± 8.5\t27.7 **\t53.4 ***"
-      },
-      {
-        "type": "data",
-        "text": "肌内脂肪，g/kg\t36.5 ± 1.6\t38.5 ± 2.6\t43.0 ± 3.0\t2.0\t−4.5"
-      },
-      {
-        "type": "data",
-        "text": "蛋白质，g/kg\t312.3 ± 2.4\t290.7 ± 2.4\t322.9 ± 5.6\t−21.6 ***\t−32.2 ***"
-      },
-      {
-        "type": "data",
-        "text": "蛋白指数，%\t28.6 ± 0.5\t27.0 ± 1.4\t25.3 ± 0.9\t−1.5\t1.8"
-      },
-      {
-        "type": "data",
-        "text": "盐，%\t6.2 ± 0.2\t6.4 ± 0.2\t8.4 ± 0.2\t0.2\t−2.0 ***"
-      },
-      {
-        "type": "data",
-        "text": "干物质中的盐分 (%)\t13.7 ± 0.5\t15.0 ± 0.6\t17.6 ± 0.2\t1.3\t−2.7 ***"
-      },
-      {
-        "type": "data",
-        "text": "aW\t0.870 ± 0.004\t0.884 ± 0.006\t0.838 ± 0.009\t0.014\t0.046 ***"
-      },
-      {
-        "type": "data",
-        "text": "TBARS, μg MDA/kg\t0.57 ± 0.02\t0.45 ± 0.03\t0.74 ± 0.02\t−0.11*\t−0.29***"
       },
       {
         "type": "p",
@@ -1897,100 +1730,16 @@
         "text": "表4. 干腌火腿的器械质地分析。"
       },
       {
-        "type": "data",
-        "text": "性状\tK-CON\tK-KKP\tI-KKP\t1K-KKP-K-CON\t1K-KKP-I-KKP"
-      },
-      {
         "type": "p",
         "text": "SM"
-      },
-      {
-        "type": "data",
-        "text": "硬度, N\t272.9 ± 8.5\t165.3 ± 20.7\t264.4 ± 22.5\t−107.6***\t−99.1**"
-      },
-      {
-        "type": "data",
-        "text": "内聚性\t0.506 ± 0.017\t0.589 ± 0.027\t0.509 ± 0.014\t0.083 *\t0.080*"
-      },
-      {
-        "type": "data",
-        "text": "粘性，N\t137.6 ± 5.4\t94.1 ± 9.3\t132.9 ± 10.2\t−43.5***\t−38.8*"
-      },
-      {
-        "type": "data",
-        "text": "弹性，mm\t5.3 ± 0.2\t5.3 ± 0.2\t5.1 ± 0.2\t0.0\t0.2"
-      },
-      {
-        "type": "data",
-        "text": "嚼劲，N\t728.0 ± 37.3\t499.4 ± 46.2\t689.2 ± 68.1\t−228.6**\t−189.8*"
-      },
-      {
-        "type": "data",
-        "text": "粘附力，N*mm\t−0.09 ± 0.03\t−0.53 ± 0.13\t−0.37 ± 0.15\t−0.44**\t−0.16"
       },
       {
         "type": "p",
         "text": "ST"
       },
       {
-        "type": "data",
-        "text": "硬度，N\t79.3 ± 5.0\t51.3 ± 3.1\t96.7 ± 6.8\t−28.0***\t−45.4***"
-      },
-      {
-        "type": "data",
-        "text": "内聚性\t0.636 ± 0.022\t0.471 ± 0.021\t0.531 ± 0.022\t−0.165***\t−0.060"
-      },
-      {
-        "type": "data",
-        "text": "粘性，N\t50.8 ± 4.4\t24.4 ± 2.3\t51.7 ± 4.5\t−26.4***\t−27.3***"
-      },
-      {
-        "type": "data",
-        "text": "弹性，mm\t5.3 ± 0.1\t4.3 ± 0.2\t5.0 ± 0.2\t−1.0***\t−0.7*"
-      },
-      {
-        "type": "data",
-        "text": "嚼劲，N\t274.1 ± 27.6\t107.7 ± 13.6\t261.8 ± 30.5\t−166.4***\t−154.1***"
-      },
-      {
-        "type": "data",
-        "text": "粘附力，N*mm\t−1.74 ± 0.13\t−1.53 ± 0.24\t−0.97 ± 0.30\t0.21\t−0.56"
-      },
-      {
-        "type": "data",
-        "text": "Y90\t0.609 ± 0.005\t0.633 ± 0.011\t0.586 ± 0.006\t0.024\t0.047**"
-      },
-      {
         "type": "p",
         "text": "BF"
-      },
-      {
-        "type": "data",
-        "text": "硬度，N\t95.3 ± 6.0\t72.9 ± 9.0\t108.2 ± 4.7\t−22.4\t−35.3**"
-      },
-      {
-        "type": "data",
-        "text": "内聚性\t0.806 ± 0.026\t0.719 ± 0.019\t0.726 ± 0.030\t−0.087*\t−0.007"
-      },
-      {
-        "type": "data",
-        "text": "黏性, N\t76.1 ± 5.6\t53.0 ± 7.3\t78.4 ± 5.5\t−23.1*\t−25.4*"
-      },
-      {
-        "type": "data",
-        "text": "弹性, mm\t5.3 ± 0.2\t5.0 ± 0.2\t5.4 ± 0.2\t−0.3\t−0.4"
-      },
-      {
-        "type": "data",
-        "text": "嚼劲, N\t402.3 ± 33.2\t264.6 ± 40.3\t425.3 ± 43.9\t−137.7*\t−160.7*"
-      },
-      {
-        "type": "data",
-        "text": "附着力, N*mm\t−1.07 ± 0.12\t−1.65 ± 0.13\t−0.56 ± 0.14\t−0.58**\t−1.09***"
-      },
-      {
-        "type": "data",
-        "text": "Y90\t0.618 ± 0.008\t0.645 ± 0.006\t0.586 ± 0.007\t0.027*\t0.059***"
       },
       {
         "type": "p",
@@ -2017,80 +1766,12 @@
         "text": "表5. 干腌火腿的感官分析。"
       },
       {
-        "type": "data",
-        "text": "整片火腿切片\tK-CON\tK-KKP\tI-KKP\t1K-KKP- K-CON\t1K-KKP-"
-      },
-      {
         "type": "p",
         "text": "I-KKP专家小组评分（1−10分）"
       },
       {
-        "type": "data",
-        "text": "新鲜肉味\t3.6 ± 0.2\t4.2 ± 0.3\t3.5 ± 0.2\t0.6\t0.7"
-      },
-      {
-        "type": "data",
-        "text": "辛辣味\t1.5 ± 0.3\t2.6 ± 0.7\t1.7 ± 0.3\t1.1\t0.9"
-      },
-      {
-        "type": "data",
-        "text": "草本味\t2.4 ± 0.4\t3.1 ± 0.3\t1.6 ± 0.3\t0.7\t1.5**"
-      },
-      {
-        "type": "data",
-        "text": "肌肉颜色强度\t5.0 ± 0.1\t6.0 ± 0.2\t5.9 ± 0.1\t1.0***\t0.1"
-      },
-      {
-        "type": "data",
-        "text": "火腿脂肪颜色强度\t6.1 ± 0.3\t5.7 ± 0.5\t6.3 ± 0.1\t−0.4\t−0.6"
-      },
-      {
-        "type": "data",
-        "text": "颜色均匀性\t4.1 ± 0.2\t4.4 ± 0.4\t4.1 ± 0.4\t0.3\t0.3"
-      },
-      {
-        "type": "data",
-        "text": "大理石花纹\t4.5 ± 0.2\t6.0 ± 0.3\t4.4 ± 0.3\t1.5***\t1.6***"
-      },
-      {
-        "type": "data",
-        "text": "表面湿度\t3.3 ± 0.2\t4.3 ± 0.2\t3.7 ± 0.2\t1.0***\t0.6*"
-      },
-      {
-        "type": "data",
-        "text": "咸味\t4.5 ± 0.1\t3.8 ± 0.4\t4.6 ± 0.3\t−0.7\t−0.8"
-      },
-      {
-        "type": "data",
-        "text": "甜味\t1.7 ± 0.2\t2.9 ± 0.2\t2.0 ± 0.2\t1.2***\t0.9*"
-      },
-      {
-        "type": "data",
-        "text": "酸味\t1.5 ± 0.2\t1.4 ± 0.2\t2.4 ± 0.5\t−0.1\t−1.0"
-      },
-      {
-        "type": "data",
-        "text": "苦味\t2.1 ± 0.3\t2.3 ± 0.3\t3.1 ± 0.2\t0.2\t−0.8*"
-      },
-      {
-        "type": "data",
-        "text": "硬度\t5.2 ± 0.2\t3.6 ± 0.4\t4.6 ± 0.2\t−1.6**\t−1.0*"
-      },
-      {
-        "type": "data",
-        "text": "溶解性\t4.7 ± 0.3\t5.5 ± 0.5\t4.6 ± 0.3\t0.8\t0.9"
-      },
-      {
-        "type": "data",
-        "text": "粉腻感\t2.4 ± 0.3\t3.3 ± 0.2\t2.4 ± 0.2\t0.9*\t0.9 **"
-      },
-      {
         "type": "p",
         "text": "消费者测试（1–5）"
-      },
-      {
-        "type": "data",
-        "text": "总体喜好\t4.2 ± 0.1\t4.4 ± 0.2\t4.1 ± 0.1\t0.2\t0.3"
       },
       {
         "type": "p",
@@ -2121,88 +1802,12 @@
         "text": "表6. 根据处理方式主要挥发性有机化合物（VOCs）群体的相对丰度。"
       },
       {
-        "type": "data",
-        "text": "挥发性化合物\tK-CON\tK-KKP\tI-KKP\t2K-KKP-K-CON\t2K-KKP-I-KKP"
-      },
-      {
         "type": "p",
         "text": "SM"
       },
       {
-        "type": "data",
-        "text": "醛类\t48.54 ± 0.75\t53.15 ± 0.81\t47.06 ± 1.32\t4.61 ***\t6.09 **"
-      },
-      {
-        "type": "data",
-        "text": "醇类\t24.05 ± 0.99\t21.44 ± 0.64\t20.27 ± 1.00\t-2.61 *\t1.17"
-      },
-      {
-        "type": "data",
-        "text": "酸类\t4.80 ± 0.32\t6.59 ± 0.29\t5.69 ± 0.25\t1.79 ***\t0.9 *"
-      },
-      {
-        "type": "data",
-        "text": "酮类\t7.21 ± 0.23\t8.27 ± 0.24\t9.36 ± 0.21\t1.06 **\t-1.09 **"
-      },
-      {
-        "type": "data",
-        "text": "酯类\t8.60 ± 0.26\t3.66 ± 0.12\t8.45 ± 0.79\t-4.94 ***\t-4.79 ***"
-      },
-      {
-        "type": "data",
-        "text": "脂肪烃类\t2.93 ± 0.12\t3.10 ± 0.12\t1.88 ± 0.29\t0.17\t1.22 **"
-      },
-      {
-        "type": "data",
-        "text": "芳香烃类\t0.53 ± 0.05\t0.52 ± 0.06\t1.50 ± 0.08\t-0.01\t-0.98 ***"
-      },
-      {
-        "type": "data",
-        "text": "呋喃\t2.48 ± 0.12\t2.31 ± 0.14\t4.94 ± 0.34\t-0.17\t-2.63 ***"
-      },
-      {
-        "type": "data",
-        "text": "萜烯类\t0.87 ± 0.06\t0.97 ± 0.10\t0.83 ± 0.06\t0.10\t0.14"
-      },
-      {
         "type": "p",
         "text": "BF"
-      },
-      {
-        "type": "data",
-        "text": "醛类\t52.14 ± 0.60\t54.94 ± 0.61\t50.12 ± 0.86\t2.8 **\t4.82 ***"
-      },
-      {
-        "type": "data",
-        "text": "醇类\t20.27 ± 0.30\t19.50 ± 0.63\t17.41 ± 0.51\t-0.77\t2.09 *"
-      },
-      {
-        "type": "data",
-        "text": "酸类\t5.01 ± 0.23\t7.73 ± 0.33\t9.54 ± 0.52\t2.72 ***\t−1.81 *"
-      },
-      {
-        "type": "data",
-        "text": "酮类\t7.90 ± 0.24\t6.89 ± 0.21\t8.68 ± 0.46\t−1.01 **\t−1.79 **"
-      },
-      {
-        "type": "data",
-        "text": "酯类\t4.59 ± 0.14\t3.69 ± 0.18\t5.20 ± 0.21\t−0.9 ***\t−1.51 ***"
-      },
-      {
-        "type": "data",
-        "text": "脂肪族烃\t6.78 ± 0.32\t4.17 ± 0.15\t1.68 ± 0.08\t−2.61 ***\t2.49 ***"
-      },
-      {
-        "type": "data",
-        "text": "芳香族烃\t1.03 ± 0.04\t0.92 ± 0.06\t1.64 ± 0.04\t−0.11\t−0.72 ***"
-      },
-      {
-        "type": "data",
-        "text": "呋喃类\t1.64 ± 0.09\t1.45 ± 0.08\t4.88 ± 0.24\t−0.19\t−3.43 ***"
-      },
-      {
-        "type": "data",
-        "text": "萜类\t0.64 ± 0.05\t0.71 ± 0.05\t0.84 ± 0.06\t0.07\t−0.13"
       },
       {
         "type": "p",
@@ -2286,11 +1891,93 @@
       }
     ],
     "full_text_meta": {
-      "scope": "正文、图表题注与数据表",
+      "scope": "简体中文正文，原始英文图片与表格数据",
       "characters": 19682,
       "blocks": 190,
       "references": "参考文献题录保留英文原文，不纳入中文正文"
-    }
+    },
+    "figures": [
+      {
+        "number": 1,
+        "label": "Fig. 1",
+        "caption_en": "Fig. 1. Presentation of the trimming in “Istrski” (left) and “Kraški” pršut (right). The medial axis of the ham, including the location of the ossis caput femoris, is indicated by the dotted circle/line.",
+        "path": "assets/figures/p5/fig1.jpg"
+      },
+      {
+        "number": 2,
+        "label": "Fig. 2",
+        "caption_en": "Fig. 2. Location on the green ham for fat thickness measurement (left) and sampling sites on dry-cured ham for instrumental (A), sensory (B), and physico-chemical (C) analyses (right). (For interpretation of the references to colour in this figure legend, the reader is referred to the web version of this article.)",
+        "path": "assets/figures/p5/fig2.jpg"
+      },
+      {
+        "number": 3,
+        "label": "Fig. 3",
+        "caption_en": "Fig. 3. A cross-section of dry-cured ham sample with designated muscles (BF-m.biceps femoris, SM-m.semimembranosus, ST-m.semitendinosus) and locations of instrumental texture measurements on parallelepiped subsamples (20 mm × 20 mm × 15 mm). Two 1.5 cm thick slices were used for TPA (texture profile analysis) and SR (stress-relaxation) test.",
+        "path": "assets/figures/p5/fig3.jpg"
+      },
+      {
+        "number": 4,
+        "label": "Fig. 4",
+        "caption_en": "Fig. 4. Colour differences (E*ab) of muscles and fat between treatment groups (K-CON = “Kraški pršut” from conventional pig hybrid; K-KKP = “Kraški pršut” from local pig breed; I-KKP = “Istrski pršut” from local pig breed).",
+        "path": "assets/figures/p5/fig4.jpg"
+      },
+      {
+        "number": 5,
+        "label": "Fig. 5",
+        "caption_en": "Fig. 5. CATA (Check-all-that-apply) analysis for comparisons K-KKP vs. K-CON and K-KKP vs. I-KKP.",
+        "path": "assets/figures/p5/fig5.jpg"
+      },
+      {
+        "number": 6,
+        "label": "Fig. 6",
+        "caption_en": "Fig. 6. PCA plot based on volatile organic compounds (loading values>0.5) illustrating the separation of K-KKP and K-CON dry-cured hams.",
+        "path": "assets/figures/p5/fig6.jpg"
+      },
+      {
+        "number": 7,
+        "label": "Fig. 7",
+        "caption_en": "Fig. 7. PCA plot based on volatile organic compounds (loading values>0.5) illustrating the separation of K-KKP and I-KKP dry-cured hams.",
+        "path": "assets/figures/p5/fig7.jpg"
+      }
+    ],
+    "tables_en": [
+      {
+        "number": 1,
+        "label": "Table 1",
+        "caption_en": "Table 1. Raw ham properties, processing ham weight loss and salt intake.",
+        "content_en": "Trait\tK-CON\tK-KKP\tI-KKP\t1K-KKP-\nK-CON\t1K-KKP-\nI-KKP\nSM muscle pHu\t5.61 ± 0.04\t5.56 ± 0.02\t5.60 ± 0.03\t−0.05\t−0.04\nFat thickness, mm\t28.6 ± 1.2\t41.2 ± 3.3\t27.5 ± 4.5\t12.6**\t13.7*\nTrimmed ham weight, kg\t15.9 ± 0.3\t15.9 ± 0.5\t14.0 ± 0.5\t0.0\t1.9*\nSalting loss, %\t3.1 ± 0.1\t1.6 ± 0.1\t1.6 ± 0.1\t−1.5***\t0.0\nProcessing loss, %\t36.7 ± 0.6\t29.6 ± 0.5\t34.2 ± 0.5\t−7.1***\t−4.6***\nSalt intake2, kg\t0.67 ± 0.02\t0.64 ± 0.03\t0.70 ± 0.02\t−0.03\t−0.06\nSM = semimembranosus muscle; SM pHu = ultimate pH of SM; K-CON = “Kraški pršut” from conventional pig hybrid; K-KKP = “Kraški pršut” from local pig breed; I-KKP = “Istrski pršut” from local pig breed.\n1\nSignificance of differences (t-test) NS > 0.05; * P < 0.05; ** P < 0.01; *** P < 0.001. All values are reported as the mean ± standard error (SE). N = 8 per treatment group.\n2\nSalt intake relative to the ham (4.2 %, 4.0 % and 5.0 % for K-CON, K-KKP, I-KKP, respectively).\nDownload: Download high-res image (204KB)\nDownload: Download full-size image"
+      },
+      {
+        "number": 2,
+        "label": "Table 2",
+        "caption_en": "Table 2. Colour measurements of dry-cured ham.",
+        "content_en": "Trait\tK-CON\tK-KKP\tI-KKP\t1K-KKP-\nK-CON\t1K-KKP-\nI-KKP\nSM\nCIE L*\t34.4 ± 0.8\t34.0 ± 0.7\t32.9 ± 0.7\t−0.4\t1.1\nCIE a*\t13.1 ± 0.2\t16.1 ± 0.6\t14.4 ± 0.4\t3.0 ***\t1.7 *\nCIE b*\t10.2 ± 0.3\t9.2 ± 0.3\t9.8 ± 0.5\t−1.0 *\t−0.6\nc*\t16.6 ± 0.3\t18.6 ± 0.6\t17.4 ± 0.5\t2.0 **\t1.2\nH°\t37.9 ± 0.9\t29.9 ± 1.4\t34.3 ± 1.1\t−8.0 ***\t−4.4 *\nST\nCIE L*\t40.2 ± 0.8\t41.3 ± 0.9\t39.5 ± 0.9\t1.1\t1.8\nCIE a*\t12.6 ± 0.4\t16.3 ± 0.7\t15.7 ± 0.7\t3.7 ***\t0.6\nCIE b*\t10.5 ± 0.6\t9.9 ± 0.5\t11.0 ± 0.2\t−0.6\t−1.1 *\nc*\t16.4 ± 0.5\t19.1 ± 0.5\t19.2 ± 0.5\t2.7 **\t−0.1\nH°\t39.7 ± 1.8\t31.5 ± 2.1\t35.3 ± 1.6\t−8.2 *\t−3.8\nBF\nCIE L*\t38.4 ± 0.3\t38.3 ± 0.4\t36.0 ± 1.0\t−0.1\t2.3\nCIE a*\t16.9 ± 0.4\t19.2 ± 0.7\t17.8 ± 0.7\t2.3 **\t1.4\nCIE b*\t7.6 ± 0.2\t7.1 ± 0.2\t8.3 ± 0.3\t−0.5\t−1.2 **\nc*\t18.5 ± 0.3\t20.5 ± 0.6\t19.7 ± 0.7\t2.0 **\t0.8\nH°\t24.2 ± 1.0\t20.5 ± 1.0\t25.2 ± 1.3\t−3.7 *\t−4.7 **\nFAT\nFAT L*\t76.2 ± 0.3\t76.8 ± 0.5\t72.5 ± 0.6\t0.6\t4.3 ***\nFAT a*\t2.9 ± 0.2\t1.9 ± 0.4\t3.2 ± 0.5\t−1.0 *\t−1.3 *\nFAT b*\t7.0 ± 0.3\t6.6 ± 0.2\t9.0 ± 0.5\t−0.4\t−2.4 ***\nc*\t7.5 ± 0.3\t6.9 ± 0.2\t9.7 ± 0.4\t−0.6\t−2.8 ***\nH°\t67.4 ± 1.8\t74.2 ± 2.6\t70.1 ± 3.5\t6.8 *\t4.1"
+      },
+      {
+        "number": 3,
+        "label": "Table 3",
+        "caption_en": "Table 3. Chemical properties of dry-cured hams.",
+        "content_en": "Trait\tK-CON\tK-KKP\tI-KKP\t1K-KKP- K-CON\t1K-KKP-\nI-KKP\nSM\nWater, g/kg\t434.5 ± 3.7\t470.4 ± 6.7\t435.9 ± 8.5\t35.9 ***\t34.5 **\nIMF, g/kg\t45.6 ± 2.0\t48.2 ± 2.1\t52.5 ± 2.7\t2.6\t−4.3\nProteins, g/kg\t446.9 ± 2.9\t409.9 ± 6.1\t428.3 ± 7.5\t−37.0 ***\t−18.4\nPI, %\t18.1 ± 0.3\t20.4 ± 1.2\t18.2 ± 0.5\t2.3\t2.2\nSalt, %\t5.5 ± 0.1\t5.7 ± 0.3\t7.6 ± 0.2\t0.2\t−1.9 ***\nSalt in dry matter (%)\t9.8 ± 0.2\t10.8 ± 0.5\t13.5 ± 0.2\t1.0\t−2.7 ***\naW\t0.859 ± 0.005\t0.875 ± 0.005\t0.824 ± 0.012\t0.016 *\t0.051 **\nTBARS, μg MDA/kg\t0.58 ± 0.02\t0.64 ± 0.03\t0.74 ± 0.03\t0.06\t−0.11 *\nBF\nWater, g/kg\t546.8 ± 5.1\t574.6 ± 5.0\t521.2 ± 8.5\t27.7 **\t53.4 ***\nIMF, g/kg\t36.5 ± 1.6\t38.5 ± 2.6\t43.0 ± 3.0\t2.0\t−4.5\nProteins, g/kg\t312.3 ± 2.4\t290.7 ± 2.4\t322.9 ± 5.6\t−21.6 ***\t−32.2 ***\nPI, %\t28.6 ± 0.5\t27.0 ± 1.4\t25.3 ± 0.9\t−1.5\t1.8\nSalt, %\t6.2 ± 0.2\t6.4 ± 0.2\t8.4 ± 0.2\t0.2\t−2.0 ***\nSalt in dry matter (%)\t13.7 ± 0.5\t15.0 ± 0.6\t17.6 ± 0.2\t1.3\t−2.7 ***\naW\t0.870 ± 0.004\t0.884 ± 0.006\t0.838 ± 0.009\t0.014\t0.046 ***\nTBARS, μg MDA/kg\t0.57 ± 0.02\t0.45 ± 0.03\t0.74 ± 0.02\t−0.11*\t−0.29***\nSM = semimembranosus muscle; BF = biceps femoris muscle; IMF = intramuscular fat; PI = index of proteolysis; aW = water activity; TBARS = thiobarbituric acid reactive substances; MDA = malondialdehyde.\nK-CON = “Kraški pršut” from conventional pig hybrid; K-KKP = “Kraški pršut” from local pig breed; I-KKP = “Istrski pršut” from local pig breed.\n1\nSignificance of differences (t-test) NS > 0.05; * P < 0.05; ** P < 0.01; *** P < 0.001. All values are reported as the mean ± standard error (SE). N = 8 per treatment group."
+      },
+      {
+        "number": 4,
+        "label": "Table 4",
+        "caption_en": "Table 4. Instrumental texture profile of dry-cured hams.",
+        "content_en": "Trait\tK-CON\tK-KKP\tI-KKP\t1K-KKP-\nK-CON\t1K-KKP-\nI-KKP\nSM\nHardness, N\t272.9 ± 8.5\t165.3 ± 20.7\t264.4 ± 22.5\t−107.6***\t−99.1**\nCohesiveness\t0.506 ± 0.017\t0.589 ± 0.027\t0.509 ± 0.014\t0.083 *\t0.080*\nGumminess, N\t137.6 ± 5.4\t94.1 ± 9.3\t132.9 ± 10.2\t−43.5***\t−38.8*\nSpringiness, mm\t5.3 ± 0.2\t5.3 ± 0.2\t5.1 ± 0.2\t0.0\t0.2\nChewiness, N\t728.0 ± 37.3\t499.4 ± 46.2\t689.2 ± 68.1\t−228.6**\t−189.8*\nAdhesiveness, N*mm\t−0.09 ± 0.03\t−0.53 ± 0.13\t−0.37 ± 0.15\t−0.44**\t−0.16\nST\nHardness, N\t79.3 ± 5.0\t51.3 ± 3.1\t96.7 ± 6.8\t−28.0***\t−45.4***\nCohesiveness\t0.636 ± 0.022\t0.471 ± 0.021\t0.531 ± 0.022\t−0.165***\t−0.060\nGumminess, N\t50.8 ± 4.4\t24.4 ± 2.3\t51.7 ± 4.5\t−26.4***\t−27.3***\nSpringiness, mm\t5.3 ± 0.1\t4.3 ± 0.2\t5.0 ± 0.2\t−1.0***\t−0.7*\nChewiness, N\t274.1 ± 27.6\t107.7 ± 13.6\t261.8 ± 30.5\t−166.4***\t−154.1***\nAdhesiveness, N*mm\t−1.74 ± 0.13\t−1.53 ± 0.24\t−0.97 ± 0.30\t0.21\t−0.56\nY90\t0.609 ± 0.005\t0.633 ± 0.011\t0.586 ± 0.006\t0.024\t0.047**\nBF\nHardness, N\t95.3 ± 6.0\t72.9 ± 9.0\t108.2 ± 4.7\t−22.4\t−35.3**\nCohesiveness\t0.806 ± 0.026\t0.719 ± 0.019\t0.726 ± 0.030\t−0.087*\t−0.007\nGumminess, N\t76.1 ± 5.6\t53.0 ± 7.3\t78.4 ± 5.5\t−23.1*\t−25.4*\nSpringiness, mm\t5.3 ± 0.2\t5.0 ± 0.2\t5.4 ± 0.2\t−0.3\t−0.4\nChewiness, N\t402.3 ± 33.2\t264.6 ± 40.3\t425.3 ± 43.9\t−137.7*\t−160.7*\nAdhesiveness, N*mm\t−1.07 ± 0.12\t−1.65 ± 0.13\t−0.56 ± 0.14\t−0.58**\t−1.09***\nY90\t0.618 ± 0.008\t0.645 ± 0.006\t0.586 ± 0.007\t0.027*\t0.059***\nSM = semimembranosus muscle; ST = semitendinosus muscle; BF = biceps femoris muscle; Y90 = stress relaxation test. K-CON = “Kraški pršut” from conventional pig hybrid; K-KKP = “Kraški pršut” from local pig breed; I-KKP = “Istrski pršut” from local pig breed.\n1\nSignificance of differences (t-test) NS > 0.05; * P < 0.05; ** P < 0.01; *** P < 0.001. All values are reported as the mean ± standard error (SE). N = 8 per treatment group."
+      },
+      {
+        "number": 5,
+        "label": "Table 5",
+        "caption_en": "Table 5. Sensory analysis of dry-cured ham.",
+        "content_en": "Whole ham slice\tK-CON\tK-KKP\tI-KKP\t1K-KKP- K-CON\t1K-KKP-\nI-KKP\nExpert panel (1−10)\nFresh meat odour\t3.6 ± 0.2\t4.2 ± 0.3\t3.5 ± 0.2\t0.6\t0.7\nSpicy\t1.5 ± 0.3\t2.6 ± 0.7\t1.7 ± 0.3\t1.1\t0.9\nHerbal\t2.4 ± 0.4\t3.1 ± 0.3\t1.6 ± 0.3\t0.7\t1.5**\nColour intensity of muscle\t5.0 ± 0.1\t6.0 ± 0.2\t5.9 ± 0.1\t1.0***\t0.1\nColour intensity of ham fat\t6.1 ± 0.3\t5.7 ± 0.5\t6.3 ± 0.1\t−0.4\t−0.6\nColour homogeneity\t4.1 ± 0.2\t4.4 ± 0.4\t4.1 ± 0.4\t0.3\t0.3\nMarbling\t4.5 ± 0.2\t6.0 ± 0.3\t4.4 ± 0.3\t1.5***\t1.6***\nSurface moisture\t3.3 ± 0.2\t4.3 ± 0.2\t3.7 ± 0.2\t1.0***\t0.6 *\nSaltiness\t4.5 ± 0.1\t3.8 ± 0.4\t4.6 ± 0.3\t−0.7\t−0.8\nSweetness\t1.7 ± 0.2\t2.9 ± 0.2\t2.0 ± 0.2\t1.2***\t0.9 *\nSourness\t1.5 ± 0.2\t1.4 ± 0.2\t2.4 ± 0.5\t−0.1\t−1.0\nBitterness\t2.1 ± 0.3\t2.3 ± 0.3\t3.1 ± 0.2\t0.2\t−0.8 *\nHardness\t5.2 ± 0.2\t3.6 ± 0.4\t4.6 ± 0.2\t−1.6**\t−1.0 *\nSolubility\t4.7 ± 0.3\t5.5 ± 0.5\t4.6 ± 0.3\t0.8\t0.9\nPastiness\t2.4 ± 0.3\t3.3 ± 0.2\t2.4 ± 0.2\t0.9*\t0.9 **\nConsumer test (1–5)\nOverall liking\t4.2 ± 0.1\t4.4 ± 0.2\t4.1 ± 0.1\t0.2\t0.3\nK-CON = “Kraški pršut” from conventional pig hybrid; K-KKP = “Kraški pršut” from local pig breed; I-KKP = “Istrski pršut” from local pig breed. Overall liking = Five-point Likert scale (1 “strongly dislike”, 2 “dislike”, 3 “neither like nor dislike”, 4 “like” to 5 “strongly like”).\n1\nSignificance of differences (t-test) NS > 0.05; * P < 0.05; ** P < 0.01; *** P < 0.001. All values are reported as the mean ± standard error (SE). N = 8 per treatment group.\nDownload: Download high-res image (250KB)\nDownload: Download full-size image"
+      },
+      {
+        "number": 6,
+        "label": "Table 6",
+        "caption_en": "Table 6. Relative abundance of main groups of VOCs1 according to treatment.",
+        "content_en": "Volatile compounds\tK-CON\tK-KKP\tI-KKP\t2K-KKP-\nK-CON\t2K-KKP-\nI-KKP\nSM\nAldehydes\t48.54 ± 0.75\t53.15 ± 0.81\t47.06 ± 1.32\t4.61 ***\t6.09 **\nAlcohols\t24.05 ± 0.99\t21.44 ± 0.64\t20.27 ± 1.00\t−2.61 *\t1.17\nAcids\t4.80 ± 0.32\t6.59 ± 0.29\t5.69 ± 0.25\t1.79 ***\t0.9 *\nKetones\t7.21 ± 0.23\t8.27 ± 0.24\t9.36 ± 0.21\t1.06 **\t−1.09 **\nEsters\t8.60 ± 0.26\t3.66 ± 0.12\t8.45 ± 0.79\t−4.94 ***\t−4.79 ***\nAliphatic hydrocarbons\t2.93 ± 0.12\t3.10 ± 0.12\t1.88 ± 0.29\t0.17\t1.22 **\nAromatic hydrocarbons\t0.53 ± 0.05\t0.52 ± 0.06\t1.50 ± 0.08\t−0.01\t−0.98 ***\nFurans\t2.48 ± 0.12\t2.31 ± 0.14\t4.94 ± 0.34\t−0.17\t−2.63 ***\nTerpenes\t0.87 ± 0.06\t0.97 ± 0.10\t0.83 ± 0.06\t0.10\t0.14\nBF\nAldehydes\t52.14 ± 0.60\t54.94 ± 0.61\t50.12 ± 0.86\t2.8 **\t4.82 ***\nAlcohols\t20.27 ± 0.30\t19.50 ± 0.63\t17.41 ± 0.51\t−0.77\t2.09 *\nAcids\t5.01 ± 0.23\t7.73 ± 0.33\t9.54 ± 0.52\t2.72 ***\t−1.81 *\nKetones\t7.90 ± 0.24\t6.89 ± 0.21\t8.68 ± 0.46\t−1.01 **\t−1.79 **\nEsters\t4.59 ± 0.14\t3.69 ± 0.18\t5.20 ± 0.21\t−0.9 ***\t−1.51 ***\nAliphatic hydrocarbons\t6.78 ± 0.32\t4.17 ± 0.15\t1.68 ± 0.08\t−2.61 ***\t2.49 ***\nAromatic hydrocarbons\t1.03 ± 0.04\t0.92 ± 0.06\t1.64 ± 0.04\t−0.11\t−0.72 ***\nFurans\t1.64 ± 0.09\t1.45 ± 0.08\t4.88 ± 0.24\t−0.19\t−3.43 ***\nTerpenes\t0.64 ± 0.05\t0.71 ± 0.05\t0.84 ± 0.06\t0.07\t−0.13\nVOCs = the volatile organic compounds; SM = semimembranosus muscle; BF = biceps femoris muscle.\nK-CON = “Kraški pršut” from conventional pig hybrid; K-KKP = “Kraški pršut” from local pig breed; I-KKP = “Istrski pršut” from local pig breed.\n1\nfor the individual compounds, see the supplementary Table S4 and S5.\n2\nSignificance of differences (t-test) NS > 0.05; * P < 0.05; ** P < 0.01; *** P < 0.001. All values are reported as the mean ± standard error (SE). N = 8 per treatment group.\nDownload: Download high-res image (128KB)\nDownload: Download full-size image"
+      }
+    ]
   },
   {
     "id": 6,
@@ -2479,11 +2166,54 @@
       }
     ],
     "full_text_meta": {
-      "scope": "正文、图表题注与数据表",
+      "scope": "简体中文正文，原始英文图片与表格数据",
       "characters": 5417,
       "blocks": 41,
       "references": "参考文献题录保留英文原文，不纳入中文正文"
-    }
+    },
+    "figures": [
+      {
+        "number": 1,
+        "label": "图1",
+        "caption_en": "9种兴奋剂及5种内标的MRM色谱图(2.0 μg/L)",
+        "source_file": "cjc-40-02-148-img_1.jpg",
+        "path": "assets/figures/p6/fig1.png"
+      },
+      {
+        "number": 2,
+        "label": "图2",
+        "caption_en": "pH条件对9种兴奋剂回收率的影响",
+        "source_file": "cjc-40-02-148-img_2.jpg",
+        "path": "assets/figures/p6/fig2.jpg"
+      },
+      {
+        "number": 3,
+        "label": "图 3",
+        "caption_en": "不同基质中9种兴奋剂的基质效应",
+        "source_file": "cjc-40-02-148-img_3.jpg",
+        "path": "assets/figures/p6/fig3.jpg"
+      }
+    ],
+    "tables_en": [
+      {
+        "number": 1,
+        "label": "表 1",
+        "caption_en": "9种兴奋剂的质谱参数",
+        "content_en": "Compound | t/min | Precursor (m/z) | Daughter (m/z) | Cone voltage/V | Collision energy/eV | Internal standard\n3-O-Methyldopamine | 2.35 | 168.1 | 119.1 | 30 | 16 | salbutamol-D3\n |  |  | 151.1* | 30 | 11 | \nZilpaterol | 2.90 | 262.1 | 185.2 | 30 | 22 | ractopamine-D3\n |  |  | 244.3* | 30 | 12 | \nAtenolol | 2.98 | 267.2 | 145.1* | 30 | 26 | ractopamine-D3\n |  |  | 190.1 | 30 | 17 | \nClenproperol | 4.05 | 263.2 | 203.1* | 30 | 16 | ractopamine-D3\n |  |  | 132.2 | 30 | 27 | \nMetoprolol | 4.55 | 268.3 | 74.1 | 30 | 20 | clenbuterol-D9\n |  |  | 116.1* | 30 | 17 | \nPropranolol | 5.30 | 260.2 | 116.2 | 30 | 18 | clenbuterol-D9\n |  |  | 183.2* | 30 | 16 | \nSalmeterolxinafoate | 6.19 | 416.4 | 380.3 | 30 | 15 | clenbuterol-D9\n |  |  | 398.4* | 30 | 12 | \nDehydroepiandrosterone | 7.06 | 271.2 | 213.1 | 25 | 20 | testosterone-D3\n |  |  | 253.1* | 30 | 15 | \nMetenolone | 7.19 | 303.3 | 83.1 | 30 | 20 | methyltestosterone-D3\n |  |  | 187.3* | 30 | 20 | \nSalbutamol-D3 | 2.90 | 243.2 | 151.1 | 24 | 18 | \nRactopamine-D3 | 4.15 | 305.2 | 167.0 | 30 | 18 | \nClenbuterol-D9 | 4.40 | 286.1 | 204.1 | 30 | 16 | \nTestosterone-D3 | 6.98 | 292.4 | 97.1 | 30 | 24 | \nMethyltestosterone-D3 | 7.15 | 306.4 | 97.1 | 30 | 24 | \n* Quantitative ion."
+      },
+      {
+        "number": 2,
+        "label": "表 2",
+        "caption_en": "9种食源性兴奋剂类药物的线性范围、线性方程、相关系数、检出限和定量限",
+        "content_en": "Compound | Linear range/(μg/L) | LOD/(μg/kg) | LOQ/(μg/kg) | Matrix | Linear equation | r2\n3-O-Methyldopamine | 0.5-20 | 0.3 | 1.0 | pork | y=0.0151109x+0.00214252 | 0.9972\n |  |  |  | egg | y=0.00603772x+0.00149372 | 0.9966\n |  |  |  | milk | y=0.012718x+0.00247736 | 0.9993\nZilpaterol | 0.5-20 | 0.3 | 1.0 | pork | y=0.206449x+0.0151934 | 0.9986\n |  |  |  | egg | y=0.138101x+0.00342916 | 0.9995\n |  |  |  | milk | y=0.211776x+0.0164704 | 0.9960\nPropranolol | 0.5-20 | 0.3 | 1.0 | pork | y=0.0730639x+0.0038951 | 0.9987\n |  |  |  | egg | y=0.180135x+0.00280754 | 0.9986\n |  |  |  | milk | y=0.0739471x+0.00527138 | 0.9982\nClenproperol | 0.5-20 | 0.3 | 1.0 | pork | y=0.0386475x+0.00076196 | 0.9989\n |  |  |  | egg | y=0.118687x+0.000713237 | 0.9970\n |  |  |  | milk | y=0.035279x+0.00118618 | 0.9990\nAtenolol | 0.5-20 | 0.3 | 1.0 | pork | y=0.0622948x+0.00392713 | 0.9986\n |  |  |  | egg | y=0.130383x-0.000330244 | 0.9994\n |  |  |  | milk | y=0.0616749x+0.00596514 | 0.9971\nMetoprolol | 0.5-20 | 0.3 | 1.0 | pork | y=0.172068x+0.0133167 | 0.9983\n |  |  |  | egg | y=0.542915x+0.00151761 | 0.9999\n |  |  |  | milk | y=0.174471x+0.0174125 | 0.9973\nMetenolone | 0.5-20 | 0.3 | 1.0 | pork | y=0.108278x+0.0205757 | 0.9999\n |  |  |  | egg | y=0.168793x-0.00348651 | 0.9992\n |  |  |  | milk | y=0.109783x-0.00169571 | 0.9996\nSalmeterolxinafoate | 0.5-20 | 0.3 | 1.0 | pork | y=0.183648x+0.0116977 | 0.9987\n |  |  |  | egg | y=0.521194x+0.020523 | 0.9993\n |  |  |  | milk | y=0.176511x+0.0131412 | 0.9982\nDehydroepiandrosterone | 1-40 | 0.6 | 2.0 | pork | y=0.0138347x+0.0166979 | 0.9975\n |  |  |  | egg | y=0.00661188x+0.0141375 | 0.9954\n |  |  |  | milk | y=0.0134266x+0.0211796 | 0.9941\ny: ratio of the peak areas of compound to internal standard; x: mass concentration, μg/L."
+      },
+      {
+        "number": 3,
+        "label": "表 3",
+        "caption_en": "猪肉、鸡蛋、牛奶样品中9种食源性兴奋剂类药物的回收率和精密度(n=6)",
+        "content_en": "Compound | Spiked level/(μg/kg) | Recoveries/% |  | RSDs/%\nPork | Egg | Milk | Pork | Egg | Milk\n3-O-Methyldopamine | 1 | 85.5 | 89.3 | 72.2 |  | 10.7 | 6.0 | 10.1\n | 2 | 79.3 | 84.8 | 69.2 |  | 10.8 | 4.4 | 4.4\n | 5 | 71.7 | 75.7 | 65.5 |  | 8.3 | 3.9 | 2.9\nZilpaterol | 1 | 89.0 | 83.8 | 76.7 |  | 9.7 | 5.1 | 5.1\n | 2 | 80.0 | 79.3 | 80.7 |  | 13.9 | 4.7 | 6.3\n | 5 | 76.0 | 71.8 | 68.7 |  | 14.3 | 5.9 | 2.9\nPropranolol | 1 | 117.0 | 111.0 | 113.0 |  | 1.6 | 3.4 | 4.7\n | 2 | 110.0 | 110.0 | 111.0 |  | 8.3 | 3.3 | 5.5\n | 5 | 108.0 | 110.0 | 113.0 |  | 3.5 | 3.2 | 7.8\nClenproperol | 1 | 113.0 | 111.0 | 116.0 |  | 3.7 | 1.7 | 3.9\n | 2 | 108.0 | 112.0 | 114.0 |  | 7.3 | 3.1 | 3.2\n | 5 | 101.0 | 107.0 | 115.0 |  | 1.3 | 2.0 | 1.7\nAtenolol | 1 | 82.0 | 78.7 | 69.2 |  | 14.0 | 4.2 | 10.7\n | 2 | 75.9 | 86.7 | 76.0 |  | 14.4 | 12.5 | 5.8\n | 5 | 72.7 | 89.6 | 69.2 |  | 13.9 | 5.0 | 1.3\nMetoprolol | 1 | 117.0 | 115.0 | 115.0 |  | 1.7 | 2.7 | 4.6\n | 2 | 116.0 | 112.0 | 113.0 |  | 2.1 | 4.1 | 4.4\n | 5 | 113.0 | 111.0 | 108.0 |  | 3.2 | 3.5 | 7.7\nMetenolone | 1 | 75.4 | 70.3 | 78.0 |  | 10.0 | 3.8 | 13.8\n | 2 | 72.7 | 92.4 | 71.6 |  | 11.5 | 8.4 | 4.0\n | 5 | 65.2 | 75.8 | 66.3 |  | 2.5 | 8.0 | 3.6\nSalmeterolxinafoate | 1 | 73.9 | 80.7 | 83.5 |  | 7.2 | 3.4 | 12.5\n | 2 | 72.0 | 65.4 | 80.4 |  | 6.7 | 5.1 | 6.2\n | 5 | 70.9 | 73.9 | 87.2 |  | 4.4 | 7.2 | 11.7\nDehydroepiandrosterone | 2 | 74.3 | 106.0 | 73.7 |  | 13.6 | 4.3 | 8.3\n | 4 | 81.0 | 103.0 | 83.1 |  | 13.8 | 5.0 | 8.3\n | 10 | 82.7 | 86.8 | 85.1 |  | 7.0 | 8.0 | 5.4"
+      }
+    ]
   },
   {
     "id": 7,
@@ -2992,11 +2722,87 @@
       }
     ],
     "full_text_meta": {
-      "scope": "正文、图表题注与数据表",
+      "scope": "简体中文正文，原始英文图片与表格数据",
       "characters": 25431,
       "blocks": 121,
       "references": "参考文献题录保留英文原文，不纳入中文正文"
-    }
+    },
+    "figures": [
+      {
+        "number": 1,
+        "label": "Fig. 1",
+        "caption_en": "Fig. 1. Illustration of sample preparation, ageing and cooking procedures of this study.",
+        "path": "assets/figures/p7/fig1.jpg"
+      },
+      {
+        "number": 2,
+        "label": "Fig. 2",
+        "caption_en": "Fig. 2. The percentage weight losses (mean ± standard error) on each time point as determined on day 2, 4, 6, 8, 10, 12, 14, 16, 19, 21, 23, 26, and 28 of in-bag dry- ageing and day 14, 16, 19, 21, 23, 26, and 28 of stepwise ageing. A polynomial trendline (degree 3) was fit with the intercept equals to zero for in-bag dry-ageing. A logarithmic trendline was fit to indicate the changes for stepwise ageing.",
+        "path": "assets/figures/p7/fig2.jpg"
+      },
+      {
+        "number": 3,
+        "label": "Fig. 3",
+        "caption_en": "Fig. 3. The percentage drying rates (% weight loss/day, mean ± standard error) of striploin sections as determined on day 2, 4, 6, 8, 10, 12, 14, 16, 19, 21, 23, 26, and 28 of in-bag dry-ageing and day 14, 16, 19, 21, 23, 26, and 28 of stepwise ageing. Polynomial trendlines (degree 3) were fit.",
+        "path": "assets/figures/p7/fig3.jpg"
+      },
+      {
+        "number": 4,
+        "label": "Fig. 4",
+        "caption_en": "Fig. 4. The percentage weight loss (mean ± standard error) of striploin sections during in-bag dry-ageing process for 14 days. Data for stepwise ageing was the absolute weight loss during in-bag dry-ageing stage (i.e., 14–28 days stepwise ageing). Polynomial trendlines (degree 3) were fit with the intercepts equalled to zero.",
+        "path": "assets/figures/p7/fig4.jpg"
+      },
+      {
+        "number": 5,
+        "label": "Fig. 5",
+        "caption_en": "Fig. 5. Cook loss and total loss (mean ± standard error based on n = 8 carcasses) of beef striploin sections following different ageing and cooking treatments. Steaks were analysed as subsamples nested within carcass × ageing treatment. No evidence of sex main effects or interactions with ageing or cooking was detected (P > 0.05). Control = beef loins without ageing treatment; SVP = sous-vide precooking + pan-fry; OP = oven precooking + pan-fry. Different letters “a-e” within the same figure indicate results significantly differed from each other (P < 0.01).",
+        "path": "assets/figures/p7/fig5.jpg"
+      },
+      {
+        "number": 6,
+        "label": "Fig. 6",
+        "caption_en": "Fig. 6. Partial Least Squares Discriminant Analysis (PLS-DA) score plots of volatile fingerprints produced from beef loin steaks (grouped by sex) after different ageing treatments and cooking methods. The plot displays sample separation along Component 1 and Component 2. BD-OP = In-bag dry-ageing - oven precooking + pan-fry; BD-SVP = In-bag dry-ageing - sous-vide precooking + pan-fry; SA-OP = Stepwise ageing - oven precooking + pan-fry; SA-SVP = Stepwise ageing - sous-vide precooking + pan-fry; U-OP = Unaged - oven precooking + pan-fry; U-SVP = Unaged - sous-vide precooking + pan-fry.",
+        "path": "assets/figures/p7/fig6.jpg"
+      }
+    ],
+    "tables_en": [
+      {
+        "number": 1,
+        "label": "Table 1",
+        "caption_en": "Ageing loss, moisture, intramuscular fat (IMF) percentages, and lipid oxidation levels (TBARS) of beef striploins following different ageing treatments.",
+        "content_en": "Control In-bag\ndry-\nageing\nStepwise\nageing\nP-ageing\ntreatment\nSED\nAgeing loss (%) 0c 22.66a 17.24b *** 1.01\nMoisture content (%) 72.43a 65.52c 67.40b *** 0.84\nIMF (%) 4.91b 8.18a 7.84a ** 0.79\nTBARS (mg\nmalondialdehyde/\nkg meat)\n0.34b 0.51a 0.48a *** 0.03\nNo evidence of sex main effects or interactions with ageing treatment were\nobserved (P > 0.05). Control = beef loins without ageing treatment. SED is the\nstandard error of the difference between means, based on comparisons among n\n= 8 carcasses. Different superscript letters “a-c” within the same row indicate\nresults significantly differed from each other. Levels of significance: ** <0.01;\n*** <0.001.\nR. Zhang et al.                                                                                                                                                                                                                                   Meat Science 239 (2026) 110136\n6\nthan SVP equivalents (P < 0.001), while total losses in BD samples\nremained higher than control and SA equivalents (P < 0.001). Specif-\nically, BD-OP had the highest total loss value (34.90%), followed by SA-\nOP (32.82%) and BD-SVP (28.72%) (Fig. 5b). OP of unaged control\nsamples resulted in similar total losses (P > 0.05) compared to stepwise\naged equivalents cooked by SVP for 1 h regardless of ageing treatments\n(25.08% vs. 25.47%, Fig. 5b). The lowest total loss was observed in SVP-\ncooked unaged control samples, however, they had the highest shear\nforce (P < 0.01), as shown in Table 4. Similar shear force values (P >\n0.05) were observed in OP-cooked control samples compared to those\nBD (both cooking methods) and SA (SVP only), indicating a tender-\nisation effect of OP. The combination of SA and OP resulted in the lowest\nshear force overall compared to the controls (SVP and OP). Shear force\nvalues were similar between BD and SA for both cooking methods (P >\n0.05)."
+      },
+      {
+        "number": 2,
+        "label": "Table 2",
+        "caption_en": "Major fatty acid (FA) contents (mg/100 g meat) in beef striploins and relative proportions (%) in total FA following different ageing treatments.",
+        "content_en": "Units Control In-bag dry-ageing Stepwise ageing P-ageing treatment SED\nStraight-chain saturated FAs (SC-SFAs) mg/100 g meat 2131.06b 3615.30a 3478.24a ** 356.01\n% of total FA 47.25 48.60 48.34 ns 0.75\nBranch-chain saturated FAs (BC-SFAs) mg/100 g meat 68.24b 127.82a 119.20a ** 13.77\n% of total FA 1.54b 1.73a 1.71a ** 0.04\nTotal saturated FAs (SFAs) mg/100 g meat 2199.30b 3743.12a 3597.44a ** 369.18\n% of total FA 48.80 50.33 50.05 ns 0.76\nMonounsaturated FA (MUFAs) mg/100 g meat 2075.62b 3443.31a 3298.02a ** 350.33\n% of total FA 46.45 45.99 45.93 ns 0.65\nPolyunsaturated FAs (PUFAs) mg/100 g meat 191.07b 267.76a 259.65a *** 16.18\n% of total FA 4.75a 3.68b 4.02ab * 0.31\nn-3 mg/100 g meat 77.26b 105.63a 102.30a *** 5.12\n% of total FA 1.93a 1.46b 1.61ab * 0.14\nn-6 mg/100 g meat 93.84b 125.58a 120.21a *** 5.73\n% of total FA 2.37a 1.73b 1.90b * 0.18\nTotal FAs mg/100 g meat 4465.99b 7454.19a 7155.11a ** 727.75\nn-6:n-3 ratios 1.23a 1.19b 1.19b ** 0.01\nPUFAs:SFAs ratios 0.10a 0.07b 0.08ab * 0.01\nNo evidence of sex main effects or interactions with ageing treatment were observed (P > 0.05). Control = beef loins without ageing treatment. SED is the standard\nerror of the difference between means, based on comparisons among n = 8 carcasses. SC-SFAs include C10:0, C12:0, C14:0, C15:0, C16:0, C17:0, C18:0, and C20:0. BC-\nSFAs include iso C15:0, anteiso C15:0, iso C16:0, iso C17:0, and anteiso C17:0. SFAs include all the SC-SFAs and BC-SFAs. MUFAs include C14:1, C16:1, C17:1, C18:1\ntrans-9, C18:1 trans-11, C18:1 cis-9, and C18:1 cis-11. n-3 = omega 3 FAs, including C18:3 n-3, C20:5 n-3, C22:5 n-3, and C22:6 n-3. n-6 = omega-6 FAs, including\nC18:2 n-6 and C20:4 n-6. PUFAs include n-3, n-6, and conjugated linoleic acid (CLA) cis-9,trans-11. Different superscript letters “a-c” within the same row indicate\nresults significantly differed from each other. Levels of significance: * <0.05; ** <0.01; *** <0.001. ns = not significant (P > 0.05).\nR. Zhang et al.                                                                                                                                                                                                                                   Meat Science 239 (2026) 110136\n7\nobjective of this study and univariate mixed-effects models provided no\nevidence of sex effects, exploratory multivariate analysis of volatile\nfingerprints indicated differences in pattern structure between sex\ngroups. Given the limited biological replication (n = 4 per sex), these\nobservations were treated as hypothesis-generating only. Accordingly,\nsubsequent multivariate analyses of ageing and cooking effects were\nperformed separately within each sex group to explore within-group\nresponse patterns (Fig. 6)."
+      },
+      {
+        "number": 3,
+        "label": "Table 3",
+        "caption_en": "Fatty acid (FA) content (mg/100 g meat) of beef striploins following different ageing treatments.",
+        "content_en": "Control In-bag dry-\nageing\nStepwise\nageing\nP-ageing\ntreatment\nSED\nStraight-chain saturated FAs (SC-SFAs)\nC10:0 1.66b 3.22a 2.80a ** 0.41\nC12:0 3.49 5.28 5.00 ns 0.93\nC14:0 106.53b 180.56a 183.69a ** 22.78\nC15:0 16.56b 33.11a 30.75a ** 3.66\nC16:0 1246.63b 2067.99a 2005.99a ** 209.62\nC17:0 40.57b 73.55a 69.87a ** 7.89\nC18:0 711.45b 1244.18a 1173.13a ** 115.65\nC20:0 4.17b 7.42a 7.01a ** 0.75\nBranch-chain saturated FAs (BC-SFAs)\niso C15:0 9.18b 17.77a 16.61a ** 2.06\nanteiso\nC15:0 8.85b 17.20a 15.88a ** 1.88\niso C16:0 7.26b 14.15a 13.48a ** 1.60\nanteiso\nC17:0 25.39b 46.16a 43.07a ** 5.06\niso C17:0 17.57b 32.54a 30.16a ** 3.27\nMonounsaturated FAs (MUFAs)\nC14:1 22.35b 36.77a 37.70a * 5.52\nC16:1 118.85b 192.26a 190.86a * 23.78\nC17:1 25.00b 42.00a 40.45a ** 4.81\nC18:1 cis-9 1766.33b 2916.03a 2785.17a ** 292.70\nC18:1\ntrans-9 7.25b 11.73a 11.14a ** 1.16\nC18:1\ntrans-1 75.45b 149.59a 142.65a ** 18.13\nC18:1 cis-\n11 60.39b 94.93a 90.03a ** 9.11\nPolyunsaturated FAs (PUFAs)\nC18:3 n-3 37.36b 55.54a 54.36a *** 3.83\nC20:5 n-3\n(EPA) 16.68b 20.00a 19.45a ** 0.80\nC22:5 n-3\n(DPA) 20.57b 26.75a 25.25a *** 0.85\nC22:6 n-3\n(DHA) 2.65b 3.36a 3.23a *** 0.14\nC18:2 n-6 64.00b 88.74a 85.05a *** 4.55\nC20:4 n-6 23.26b 28.43a 27.11a ** 1.09\nCLA cis-9,\ntrans-11 19.97b 36.54a 37.15a * 5.65\nNo evidence of sex main effects or interactions with ageing treatment were\nobserved (P > 0.05). Control = beef loins without ageing treatment. SED is the\nstandard error of the difference between means, based on comparisons among n\n= 8 carcasses. EPA = eicosapentaenoic acid; DPA = docosapentaenoic acid,\nDHA = docosahexaenoic acid. CLA cis-9,trans-11 = conjugated linoleic acid cis-\n9,trans-11. Different superscript letters “a-c” within the same row indicate re-\nsults significantly differed from each other. Levels of significance: * <0.05; **\n<0.01; *** <0.001. ns = not significant (P > 0.05).\nR. Zhang et al.                                                                                                                                                                                                                                   Meat Science 239 (2026) 110136\n8\nlosses significantly increase production costs and sale prices, limiting the\nwider adoption of the dry-ageing process by the meat industry and\nconsumer affordability (Kim et al., 2018; Zhang, Yoo, et al., 2022). To\ndate, reducing weight loss without compromising the distinctive eating\nquality and flavour of dry-aged meat remains a challenge, as a minimum\nof 3–4 weeks is typically required for a product to be perceived as “dry-\naged”. Extended ageing periods (e.g., 6–8 weeks) are often preferred to\nachieve the characteristic attributes of authentic dry-aged meat, while"
+      },
+      {
+        "number": 4,
+        "label": "Table 4",
+        "caption_en": "Shear force of beef striploins following different ageing and cooking treatments.",
+        "content_en": "Control In-bag dry-ageing Stepwise ageing P-ageing treatment P-cooking method P-ageing × cooking SED\nSVP OP SVP OP SVP OP\nShear force (N) 34.98a 25.70b 24.03bc 23.92bc 22.04bc 20.19c *** *** ** 2.01\nNo evidence of sex main effects or interactions with ageing treatment were observed (P > 0.05). Results were based on n = 8 carcasses, steaks were analysed as\nsubsamples nested within carcass × ageing treatment. SED is the standard error of difference between means. Control = beef loins without ageing treatment. SVP =\nsous-vide precooking + pan-fry, OP = oven precooking + pan-fry. Different superscript letters “a-c” within the same row indicate results significantly differed from each\nother. Levels of significance: ** <0.01; *** <0.001."
+      },
+      {
+        "number": 5,
+        "label": "Table 5",
+        "caption_en": "Top 20 volatile features (m/z) from beef loin steaks most strongly contributing to the separation of ageing and cooking treatment combinations of heifers along components 1 and 2 in PLS-DA model.",
+        "content_en": "Feature (m/z) # Coefficient * Associated groups\n286.2_286.3_286.4 0.402 SA-OP\n54.0_54.1_54.2 0.268 SA-OP\n122.5  0.203 U-OP\n114.5  0.199 BD-OP\n253.5_253.6_253.7  0.192 BD-SVP\n326.4 0.171 SA-OP\n307.3  0.168 U-OP\n103.5 0.165 SA-OP\n144.1 0.162 U-SVP\n324.4 0.161 SA-OP\n292.3  0.152 U-OP\n230.0_230.1_230.2  0.151 U-SVP\n267.7 0.148 U-SVP\n318.3 0.144 U-SVP\n256.1_256.2_256.3 0.136 SA-SVP\n89.5  0.135 BD-SVP\n219.6 0.132 SA-SVP\n232.0 0.128 SA-SVP\n155.5  0.128 BD-OP\n139.5  0.123 U-OP\n# Features with multiple mass-to-charge (m/z) values linked with underscores\nwere processed by merging the shifted masses as described in section 2.8.2.\nFeatures in bold indicate those that were also ranked among the top 20\ndiscriminative features in the PLS-DA model for steers. *Positive and negative\ncoefficients indicate direction of association, with the corresponding group\nenriched for each feature. U = unaged; BD = in-bag dry-ageing; SA = stepwise\nageing; SVP = sous-vide precooking + pan-fry; OP = oven precooking + pan-fry."
+      },
+      {
+        "number": 6,
+        "label": "Table 6",
+        "caption_en": "Top 20 volatile features (m/z) from beef loin steaks most strongly contributing to the separation of ageing and cooking treatment combinations of steers along components 1 and 2 in PLS-DA model.",
+        "content_en": "Feature (m/z) # Coefficient * Associated groups\n286.2_286.3_286.4 0.414 BD-OP\n256.1_256.2_256.3 0.256 BD-OP\n230_230.1_230.2 0.251 BD-OP\n144.1 0.236 BD-OP\n311.3 0.228 BD-OP\n307.3 0.195 BD-OP\n292.3 0.186 BD-OP\n276.1 0.173 BD-OP\n94.5  0.163 SA-SVP\n185.5_185.6_185.7 0.149 BD-OP\n211.6 0.143 BD-OP\n66.1 0.142 BD-SVP\n324.2 0.142 BD-OP\n106.4 0.140 BD-OP\n155.5  0.133 SA-SVP\n332.1 0.132 BD-OP\n195.6 0.130 U-OP\n157.5  0.130 SA-OP\n296.1 0.130 BD-OP\n366.2 0.125 SA-OP\n# Features with multiple mass-to-charge (m/z) values linked with underscores\nwere processed by merging the shifted masses as described in section 2.8.2.\nFeatures in bold indicate those that were also ranked among the top 20\ndiscriminative features in the PLS-DA model for heifers. *Positive and negative\ncoefficients indicate direction of association, with the corresponding group\nenriched for each feature. U = unaged; BD = in-bag dry-ageing; SA = stepwise\nageing; SVP = sous-vide precooking + pan-fry; OP = oven precooking + pan-fry.\nR. Zhang et al.                                                                                                                                                                                                                                   Meat Science 239 (2026) 110136\n10\nSA process (7 days BD + 14 days wet-ageing). However, no changes after\nBD straight for 21 days were reported in their study. The differences in\nthe dry-ageing impacts on lipid oxidation level could be related to\nseveral factors including meat characteristics such as finishing diets\n(Correa et al., 2025), IMF contents, and fatty acids composition (levels of\nunsaturation) (Zhang et al., 2025; Zhang, Yoo, et al., 2022), as well as\nageing parameters, such as ageing methods (BD or SA with different\ncombinations of BD and wet-ageing), environmental conditions and\nprocessing duration (Di Paolo et al., 2023; Kang et al., 2022; Vossen\net al., 2022; Zhang, Yoo, & Farouk, 2021). In the current study, no\ndifference (P > 0.05) was observed between BD straight and SA, sug-\ngesting that BD process results in a similar impact on lipid oxidation as\nthe wet-ageing phase followed by the dry-ageing. Similar findings were\nreported by Correa et al. (2025) that no differences in TBARS values (P\n> 0.05) were observed among pasture-finished beef loins after BD\nstraight and wet-ageing straight for 40 days, as well as SA (20 days wet-\nageing +20 days BD or vice versa). Ha et al. (2019) also observed similar\nTBARS values (P > 0.05) in beef loins subjected to traditional dry-ageing\n(without packaging) for 56 days and SA (21 days wet-ageing +35 days\ntraditional dry-ageing), further supporting that the SA process could\nresult in similar oxidative outcomes.\nThe increased levels of lipid oxidation resulted in the loss of PUFAs,\nexcept for C18:3 n-3 and cis-9, trans-11 CLA, in both BD and SA\ncompared to the unaged control. PUFAs are more prone to oxidation\nduring ageing due to their high degree of unsaturation, which are more\nchemically reactive (Domínguez et al., 2019). In this study, the reduced\nlevels of PUFAs in both aged samples (BD and SA) suggest that oxidative\ndegradation occurred during the ageing process, likely contributing to\nthe formation of volatile compounds such as aldehydes, ketones, and\nalcohols, and many of which are key contributors to the characteristic\naroma and flavour of dry-aged meat (Liu et al., 2024; Zhang, Yoo, et al.,\n2022). Similar proportions (% of total FA) of these PUFAs observed\nbetween BD and SA groups also aligned with the TBARS results, indi-\ncating that substituting first two weeks of BD with wet-ageing did not\naffect lipid oxidation levels or overall FA compositions (P > 0.05). This\nobservation is consistent with previous findings where comparable\nPUFA profiles were also reported in beef striploins subjected to BD, wet-\nageing and SA (BD + wet-ageing or wet-ageing + BD) for 40 days\n(Correa et al., 2025), as well as in bull beef striploins following 21 days\nof BD and SA (7 days BD + 14 days wet-ageing) (Zhang, Yoo, & Farouk,\n2021)."
+      }
+    ]
   },
   {
     "id": 8,
@@ -3369,11 +3175,75 @@
       }
     ],
     "full_text_meta": {
-      "scope": "正文、图表题注与数据表",
+      "scope": "简体中文正文，原始英文图片与表格数据",
       "characters": 13091,
       "blocks": 87,
       "references": "参考文献题录保留英文原文，不纳入中文正文"
-    }
+    },
+    "figures": [
+      {
+        "number": 1,
+        "label": "Fig. 1",
+        "caption_en": "A. Experimental set-up for convective ultrasound-assisted drying: 1. Vibrating cylinder – Drying chamber, 2. Ultrasound transducer, 3. Impedance electronic controller, 4. Ultrasonic power generator. B. Detail of the sample holder inside the drying chamber and the arrangement of liver cylinders.",
+        "source_file": "gr1.jpg",
+        "path": "assets/figures/p8/fig1.jpg"
+      },
+      {
+        "number": 2,
+        "label": "Fig. 2",
+        "caption_en": "Experimental drying kinetics of pork liver without (AIR) and with ultrasound application (US) at 30, 40, 50, 60 and 70 °C.",
+        "source_file": "gr2.jpg",
+        "path": "assets/figures/p8/fig2.jpg"
+      },
+      {
+        "number": 3,
+        "label": "Fig. 3",
+        "caption_en": "Influence of air temperature on the average effective moisture diffusivities (De) identified by means of the NER (A) and ER (B) models.",
+        "source_file": "gr3.jpg",
+        "path": "assets/figures/p8/fig3.jpg"
+      },
+      {
+        "number": 4,
+        "label": "Fig. 4",
+        "caption_en": "Experimental drying kinetics and kinetics calculated using the NER and ER diffusion models for an AIR experiment at 70 °C.",
+        "source_file": "gr4.jpg",
+        "path": "assets/figures/p8/fig4.jpg"
+      },
+      {
+        "number": 5,
+        "label": "Fig. 5",
+        "caption_en": "Influence of air temperature on the average moisture transfer coefficients (k) identified by means of the ER model.",
+        "source_file": "gr5.jpg",
+        "path": "assets/figures/p8/fig5.jpg"
+      },
+      {
+        "number": 6,
+        "label": "Fig. 6",
+        "caption_en": "Influence of air temperature on the average mass transfer Biot number computed from the ER model parameters (De and k) and explained variance (VAR) of the NER model in the AIR set.",
+        "source_file": "gr6.jpg",
+        "path": "assets/figures/p8/fig6.jpg"
+      }
+    ],
+    "tables_en": [
+      {
+        "number": 1,
+        "label": "Table 1",
+        "caption_en": "Effective moisture diffusivity (De) identified from the model that neglects the external resistance (NER) for AIR and US experiments and statistical parameters: average explained variance (VAR) and mean relative error (MRE).",
+        "content_en": "T (°C) | AIR | US\nDe × 1011 (m2·s−1) | VAR (%) | MRE (%) | De × 1011 (m2·s−1) | VAR (%) | MRE (%)\n30 | 9.86 ± 0.80a | 98.70 | 5.25 | 13.23 ± 1.63ab | 96.73 | 8.52\n40 | 13.73 ± 0.55ab | 97.80 | 7.00 | 19.40 ± 1.60abc | 96.13 | 9.68\n50 | 18.53 ± 1.45abc | 96.30 | 9.11 | 22.73 ± 2.56bcd | 98.67 | 5.18\n60 | 27.30 ± 1.95 cd | 95.90 | 10.22 | 31.70 ± 10.31de | 96.83 | 8.11\n70 | 31.13 ± 1.90de | 93.20 | 12.87 | 37.70 ± 13.83e | 95.43 | 9.57\nAverage of De ± standard deviation (N = 3). Superscripts a, b, c, d and e show homogeneous groups established from LSD (least significant difference) intervals (p < 0.05)."
+      },
+      {
+        "number": 2,
+        "label": "Table 2",
+        "caption_en": "Effective moisture diffusivity (De) and moisture transfer coefficient (k) estimated using the model that considers the external resistance (ER) for AIR and US experiments and statistical parameters: average explained variance (VAR) and mean relative error (MRE).",
+        "content_en": "T (°C) | AIR | US\nDe × 1011 (m2·s−1) | k × 105 (kg·m−2·s−1) | VAR (%) | MRE (%) | De × 1011 (m2·s−1) | k × 105 (kg·m−2·s−1) | VAR(%) | MRE (%)\n30 | 12.50 ± 1.25a | 8.36 ± 0.83u | 98.19 | 6.08 | 19.12 ± 1.19ab | 10.83 ± 3.42uv | 97.77 | 6.45\n40 | 19.01 ± 1.54ab | 9.31 ± 0.82uv | 97.98 | 6.05 | 31.88 ± 5.10abc | 12.14 ± 0.78vw | 98.39 | 4.89\n50 | 29.05 ± 0.75abc | 10.85 ± 1.17uv | 98.64 | 4.91 | 32.43 ± 2.97abc | 16.35 ± 0.56xy | 97.86 | 6.65\n60 | 44.59 ± 1.45bcd | 14.75 ± 1.96wx | 98.24 | 5.66 | 50.81 ± 23.05 cd | 18.59 ± 1.90y | 98.51 | 5.56\n70 | 62.31 ± 1.07d | 16.50 ± 2.63xy | 99.01 | 3.64 | 67.22 ± 40.74d | 23.05 ± 2.39z | 98.33 | 5.21\nAverage of De and k ± standard deviation (N = 3). Superscripts a, b, c, d, and u, v, w, x, y, z, show homogeneous groups established from LSD (least significant difference) intervals (p < 0.05) for effective diffusivity and moisture transfer coefficient, respectively."
+      },
+      {
+        "number": 3,
+        "label": "Table 3",
+        "caption_en": "Protein solubility (PS) and total protein (TP) for pork liver dried without (AIR) and with (US) ultrasound application at 30, 40, 50, 60 and 70 °C.",
+        "content_en": "T (°C) | AIR | US\nPS (%) | TP (%, d.b.) | PS (%) | TP (%, d.b.)\n30 | 35.98 ± 4.43bc | 69.71 ± 3.54xy | 37.53 ± 2.54abc | 67.39 ± 1.80xyz\n40 | 46.93 ± 7.51a | 65.66 ± 5.35xyz | 40.45 ± 4.02ab | 67.03 ± 3.40xyz\n50 | 40.41 ± 4.94ab | 70.54 ± 3.11x | 37.38 ± 0.69abc | 63.51 ± 6.18yz\n60 | 41.88 ± 9.82ab | 64.73 ± 2.12yz | 29.66 ± 2.10 cd | 63.30 ± 3.36yz\n70 | 25.86 ± 1.97d | 69.81 ± 3.22xy | 25.20 ± 9.01d | 67.85 ± 3.63xyz\nAverage percentage of protein solubility (PS) and total protein (TP) for dried liver ± standard deviation (N = 3). Superscripts a, b, c, d, and x, y, z, show homogeneous groups established from LSD (least significant difference) intervals (p < 0.05) for the percentage of protein solubility (PS) and total protein (TP), respectively."
+      }
+    ]
   },
   {
     "id": 9,
@@ -3686,11 +3556,56 @@
       }
     ],
     "full_text_meta": {
-      "scope": "正文、图表题注与数据表",
+      "scope": "简体中文正文，原始英文图片与表格数据",
       "characters": 9534,
       "blocks": 72,
       "references": "参考文献题录保留英文原文，不纳入中文正文"
-    }
+    },
+    "figures": [
+      {
+        "number": 1,
+        "label": "Figure 1",
+        "caption_en": "Changes in pH values of chicken, pork, and beef as affected by freeze-drying duration. Different letters indicated significant differences among meat types within the same freeze-drying duration (p < 0.05).",
+        "source_file": "foods-15-00989-g001.jpg",
+        "path": "assets/figures/p9/fig1.png"
+      },
+      {
+        "number": 2,
+        "label": "Figure 2",
+        "caption_en": "Changes in moisture content of chicken, pork, and beef as affected by freeze-drying duration. Different letters indicated significant differences among meat types within the same freeze-drying duration (p < 0.05).",
+        "source_file": "foods-15-00989-g002.jpg",
+        "path": "assets/figures/p9/fig2.png"
+      },
+      {
+        "number": 3,
+        "label": "Figure 3",
+        "caption_en": "Changes in rehydration capacity of chicken, pork, and beef as affected by freeze-drying duration. Different letters indicated significant differences among meat types within the same freeze-drying duration (p < 0.05).",
+        "source_file": "foods-15-00989-g003.jpg",
+        "path": "assets/figures/p9/fig3.png"
+      },
+      {
+        "number": 4,
+        "label": "Figure 4",
+        "caption_en": "Changes in water distribution of chicken (a), pork (b), and beef (c) as affected by freeze-drying duration.",
+        "source_file": "foods-15-00989-g004.jpg",
+        "path": "assets/figures/p9/fig4.png"
+      },
+      {
+        "number": 5,
+        "label": "Figure 5",
+        "caption_en": "Changes in L* (Lightness, (a)), a* (Redness, (b)) and b* (Yellowness, (c)) of chicken, pork, and beef as affected by freeze-drying duration. Different letters indicated significant differences among meat types within the same freeze-drying duration (p < 0.05).",
+        "source_file": "foods-15-00989-g005.jpg",
+        "path": "assets/figures/p9/fig5.png"
+      },
+      {
+        "number": 6,
+        "label": "Figure 6",
+        "caption_en": "Changes in hardness (a), springiness (b), cohesiveness (c), gumminess (d), chewiness (e), and resilience (f) of chicken, pork, and beef as affected by freeze-drying duration. Different letters indicated significant differences among meat types within the same freeze-drying duration (p < 0.05).",
+        "source_file": "foods-15-00989-g006.jpg",
+        "path": "assets/figures/p9/fig6.png"
+      }
+    ],
+    "tables_en": []
   },
   {
     "id": 10,
@@ -3743,7 +3658,7 @@
       },
       {
         "type": "p",
-        "text": "在这种背景下，高强度超声（HIUS）已被研究并应用为一种工艺强化技术。其应用通过声空化产生机械效应。这些现象引发以下有益效果：（i）加速物质传递：部分破坏细胞结构，降低水分和溶质传输的内阻，从而显著提高水分流出和盐分流入肌肉组织的速度（Visy 等，2021）。 （ii）缩短加工时间：促进渗透流动，使脱水目标在更短时间内实现，提高操作效率并减少因长时间暴露于环境而导致的产品劣化（Guo 等，2024）。 （iii）改善最终产品的质量特性：有报道表明，受控使用高强度超声可以保持甚至改善产品的质地、lor，以及持水能力，同时不引起会破坏产品蛋白质或脂肪的热效应（Chen 等人，2022；Sergeev 等人，2020）。(iv) 更高的处理均匀性：促进盐分更均匀地渗透，减少过度或不足处理的区域。(v) 潜在降低最终钠含量的可能性：通过更高效地促进盐分进入，可以在较低浓度下达到类似的保存效果，这在营养学上具有重要意义（Chen 等人，2022；Minardi 等人，2026；Ribeiro & Colombo，2025）。"
+        "text": "在这种背景下，高强度超声（HIUS）已被研究并应用为一种工艺强化技术。其应用通过声空化产生机械效应。这些现象引发以下有益效果：（i）加速物质传递：部分破坏细胞结构，降低水分和溶质传输的内阻，从而显著提高水分流出和盐分流入肌肉组织的速度（Visy 等，2021）。 （ii）缩短加工时间：促进渗透流动，使脱水目标在更短时间内实现，提高操作效率并减少因长时间暴露于环境而导致的产品劣化（Guo 等，2024）。 （iii）改善最终产品的质量特性：有报道表明，受控使用高强度超声可以保持甚至改善产品的质地、颜色，以及持水能力，同时不引起会破坏产品蛋白质或脂肪的热效应（Chen 等人，2022；Sergeev 等人，2020）。(iv) 更高的处理均匀性：促进盐分更均匀地渗透，减少过度或不足处理的区域。(v) 潜在降低最终钠含量的可能性：通过更高效地促进盐分进入，可以在较低浓度下达到类似的保存效果，这在营养学上具有重要意义（Chen 等人，2022；Minardi 等人，2026；Ribeiro & Colombo，2025）。"
       },
       {
         "type": "p",
@@ -3890,18 +3805,6 @@
         "text": "空单元格样品空单元格"
       },
       {
-        "type": "data",
-        "text": "对照组\tUA1\tUA2\tUA3\tUA4"
-      },
-      {
-        "type": "data",
-        "text": "Dw (×10−10 m2/s)\t0.11 ± 0.01a\t0.13 ± 0.04a\t0.18 ± 0.02b\t0.33 ± 0.06d\t0.24 ± 0.01c"
-      },
-      {
-        "type": "data",
-        "text": "Ds (×10−10 m2/s)\t1.02 ± 0.02a\t1.07 ± 0.05a\t1.24 ± 0.07b\t2.36 ± 0.01d\t1.58 ± 0.10c"
-      },
-      {
         "type": "p",
         "text": "对照组：常规 OD；UA1：50% – 0.5；UA2：50% – 0.8；UA3：90% – 0.5；UA4：90% – 0.8。均值 ± 标准误。同行中不同字母的均值在统计上存在显著差异（P < 0.05）。"
       },
@@ -3934,38 +3837,6 @@
         "text": "空单元格样品"
       },
       {
-        "type": "data",
-        "text": "对照\tUA1\tUA2\tUA3\tUA4"
-      },
-      {
-        "type": "data",
-        "text": "水分 (%)\t75.3 ± 1.2b\t75.7 ± 2.0b,c\t75.4 ± 0.9b\t73.4 ± 1.0a\t75.5 ± 0.9b"
-      },
-      {
-        "type": "data",
-        "text": "蛋白质 (%)\t22.7 ± 1.1b\t21.9 ± 1.1a\t22.0 ± 1.0a\t22.6 ± 0.9b\t21.8 ± 1.1a"
-      },
-      {
-        "type": "data",
-        "text": "脂肪 (%)\t1.0 ± 0.0a\t1.0 ± 0.1a\t1.0 ± 0.1a\t1.0 ± 0.0a\t1.0 ± 0.1a"
-      },
-      {
-        "type": "data",
-        "text": "总灰分 (%)\t1.0 ± 0.0a\t1.4 ± 0.2b\t1.6 ± 0.1c\t3.0 ± 0.0d\t1.7 ± 0.1c"
-      },
-      {
-        "type": "data",
-        "text": "pH\t5.5 ± 0.2a\t5.4 ± 0.1a\t5.4 ± 0.1a\t5.4 ± 0.1a\t5.3 ± 0.1a"
-      },
-      {
-        "type": "data",
-        "text": "水分活度\t0.98 ± 0.03d\t0.97 ± 0.02d\t0.96 ± 0.05c\t0.91 ± 0.00a\t0.94 ± 0.00b"
-      },
-      {
-        "type": "data",
-        "text": "保水性 (%)\t90.1 ± 1.6d\t90.2 ± 1.2d\t88.6 ± 1.4b\t90.0 ± 0.5c\t81.3 ± 0.7a"
-      },
-      {
         "type": "p",
         "text": "L*  41.8 ± 1.0a,b  40.3 ± 1.5a  40.0 ± 1.2a  40.2 ± 0.8a  44.2 ± 1.2c a*  6.0 ± 0.6c  5.7 ± 0.9a  6.4 ± 0.8d  6.2 ± 0.1c  5.9 ± 0.0b b*  5.1 ± 0.2b  4.9 ± 0.7a  5.0 ± 0.5a,b  5.3 ± 0.1b  5.2 ± 0.0b∆E  –  1.6 ± 0.4a  1.9 ± 0.4c  1.6 ± 0.0b  2.3 ± 0.0d剪切力 (N)  83.94 ± 3.62c  82.86 ± 9.61b  79.72 ± 8.82a  83.35 ± 1.96c  77.37 ± 0.29a对照组：常规OD；UA1：50% – 0.5；UA2：50% – 0.8；UA3：90% – 0.5；UA4：90% – 0.8。均值 ± 标准误。同一行中带有不同字母的均值，在统计学上存在显著差异 (P < 0.05)。"
       },
@@ -3983,7 +3854,7 @@
       },
       {
         "type": "p",
-        "text": "最后，与对照组相比，所有使用超声处理的样品的灰分含量显著增加（P < 0.05），在UA3样品中达到最大值，这与SG和Ds的结果一致。这种逐步增加表明渗透溶液中的溶质更大量地被吸收到组织中，这一效应因高强度超声（HIUS）的作用而加强。如上所述，处理过程中产生的空化可能促进了细胞膜微通道的形成和局部微搅动，从而有助于矿物质化合物的渗透并加强分子反向扩散现象（Ahmad & Zaidi, 2023）。在这方面，HIUS已在涉及传质的各种过程中显示出改善效果，肉类的浸渗透脱水透（OD）也不例外，因为它可以使盐水更快且更均匀地扩散进肉组织。Cárcel 等（2007）和 Ozuna 等（2013）在他们的研究中报告称，在超声处理后，灰分含量增加的同时水分含量下降，从而证明了在不同处理过程中“海绵”现象的存在及其对理化性质以及结构和热变化的影响。"
+        "text": "最后，与对照组相比，所有使用超声处理的样品的灰分含量显著增加（P < 0.05），在UA3样品中达到最大值，这与SG和Ds的结果一致。这种逐步增加表明渗透溶液中的溶质更大量地被吸收到组织中，这一效应因高强度超声（HIUS）的作用而加强。如上所述，处理过程中产生的空化可能促进了细胞膜微通道的形成和局部微搅动，从而有助于矿物质化合物的渗透并加强分子反向扩散现象（Ahmad & Zaidi, 2023）。在这方面，HIUS已在涉及传质的各种过程中显示出改善效果，肉类的渗透脱水（OD）也不例外，因为它可以使盐水更快且更均匀地扩散进肉组织。Cárcel 等（2007）和 Ozuna 等（2013）在他们的研究中报告称，在超声处理后，灰分含量增加的同时水分含量下降，从而证明了在不同处理过程中“海绵”现象的存在及其对理化性质以及结构和热变化的影响。"
       },
       {
         "type": "h3",
@@ -4118,28 +3989,12 @@
         "text": "空白单元格样品"
       },
       {
-        "type": "data",
-        "text": "对照\tUA1\tUA2\tUA3\tUA4"
-      },
-      {
-        "type": "data",
-        "text": "Tonset (°C)\t−5.63 ± 0.01e\t−11.02 ± 0.02d\t−19.24 ± 0.01c\t−22.05 ± 0.00b\t−26.79 ± 0.02a"
-      },
-      {
-        "type": "data",
-        "text": "Tpeak (°C)\t−1.34 ± 0.00e\t−2.25 ± 0.01d\t−5.06 ± 0.01c\t−8.10 ± 0.02b\t−11.92 ± 0.02a"
-      },
-      {
-        "type": "data",
-        "text": "∆H (J/g)\t184.60 ± 0.50e\t121.02 ± 0.61d\t103.64 ± 0.37c\t86.13 ± 0.12b\t59.73 ± 0.28a"
-      },
-      {
         "type": "p",
         "text": "对照组：常规OD；UA1：50% – 0.5；UA2：50% – 0.8；UA3：90% – 0.5；UA4：90% – 0.8。平均值 ± 标准误。同行不同字母表示差异具有统计学意义（P < 0.05）。在对照样品中获得的结果反映了组织中高含量的自由水，其热行为接近纯水。随着超声处理的应用（UA1–UA4），观察到熔化温度逐渐降低和熔融焓显著下降，其中UA4为最强处理，其值最低。"
       },
       {
         "type": "p",
-        "text": "这些变化主要可以通过三种机制来解释：(1) NaCl 的胶体效应，在浸渗透脱水透（OD）过程中，溶质（在此情况下为氯化钠）可以渗入肉组织，增加内部溶质浓度。根据胶体性质，这种浓度增加会导致系统中水的冰点下降，这在冰熔化温度向低温移动中有所体现。超声波的振幅和占空比越大，溶质掺入效率越高，因此这种效应越明显（Ostojić 等，2025）；(2) 游离水含量的减少，游离水通常是可以由液态变为固态的水，其中 ΔH 的下降直接与可冻结水量较少有关，这是最重要的关键因素之一（Coria-Hernández 等，2022）。T高强度超声（HIUS）的应用促进了水的释放（尤其是来自细胞外区的水）及其被溶质替代。此外，一些残余水可能会紧密结合在大分子如蛋白质上，这也导致样品的熔融焓（ΔH）下降（Arjona-Román 等人, 2017）；以及；（3）热容（Cp）的变化，因为图 3b 显示了组织的 Cp 变化，这是衡量提高系统温度所需能量以及样品经历的结构变化的关键指标，正如扫描电子显微镜（SEM）微图所示。在这种情况下，自由水的减少和组织成分的改变（通过溶质掺入及蛋白质重构）倾向于降低组织的整体 Cp（Arjona-Román 等人, 2017）。这意味着渗透脱水和超声处理的样品样品可能需要更少的能量来加热，这在随后的工艺中如烹饪或冷冻时具有相关性，从而影响产品的热效率和稳定性。此外，更低的比热容可能与更致密、更紧凑的组织结构有关，这是由细胞塌陷和水分流失引起的，这直接影响肉类的最终质地（Coria-Hernández & Meléndez-Pérez, 2024b）。"
+        "text": "这些变化主要可以通过三种机制来解释：(1) NaCl 的胶体效应，在渗透脱水（OD）过程中，溶质（在此情况下为氯化钠）可以渗入肉组织，增加内部溶质浓度。根据胶体性质，这种浓度增加会导致系统中水的冰点下降，这在冰熔化温度向低温移动中有所体现。超声波的振幅和占空比越大，溶质掺入效率越高，因此这种效应越明显（Ostojić 等，2025）；(2) 游离水含量的减少，游离水通常是可以由液态变为固态的水，其中 ΔH 的下降直接与可冻结水量较少有关，这是最重要的关键因素之一（Coria-Hernández 等，2022）。T高强度超声（HIUS）的应用促进了水的释放（尤其是来自细胞外区的水）及其被溶质替代。此外，一些残余水可能会紧密结合在大分子如蛋白质上，这也导致样品的熔融焓（ΔH）下降（Arjona-Román 等人, 2017）；以及；（3）热容（Cp）的变化，因为图 3b 显示了组织的 Cp 变化，这是衡量提高系统温度所需能量以及样品经历的结构变化的关键指标，正如扫描电子显微镜（SEM）微图所示。在这种情况下，自由水的减少和组织成分的改变（通过溶质掺入及蛋白质重构）倾向于降低组织的整体 Cp（Arjona-Román 等人, 2017）。这意味着渗透脱水和超声处理的样品样品可能需要更少的能量来加热，这在随后的工艺中如烹饪或冷冻时具有相关性，从而影响产品的热效率和稳定性。此外，更低的比热容可能与更致密、更紧凑的组织结构有关，这是由细胞塌陷和水分流失引起的，这直接影响肉类的最终质地（Coria-Hernández & Meléndez-Pérez, 2024b）。"
       },
       {
         "type": "p",
@@ -4155,7 +4010,7 @@
       },
       {
         "type": "p",
-        "text": "超声波在猪里脊渗透脱水中的应用显示出提高工艺效率的效果，其作用取决于振幅和占空比。UA3条UA3 条件显著增加了水分损失、溶质吸收和扩散系数（Dw和Ds），而未对组织结构或成分产生负面影响。与最强处理（UA4）相比，它们还降低了水分活度（aw），并保持了持水能力和颜色在可接受范围内。微观结构和热分析证实了组织结构和水分状态的改变，通过熔融焓和转变温度的变化体现出，更高的溶质吸收和较低的自由水含量。一些处理降低了剪切力，表明可能增加嫩度，尽管过度条件可能会影响产品完整性。总体而言，超声波的使用超声波作为肉类渗透脱水的辅助技术，在受控方式下应用，可优化该过程并改善猪里脊的技术性能，为食品工业确立了一种可行的替代方案。"
+        "text": "超声波在猪里脊渗透脱水中的应用显示出提高工艺效率的效果，其作用取决于振幅和占空比。UA3 条件显著增加了水分损失、溶质吸收和扩散系数（Dw和Ds），而未对组织结构或成分产生负面影响。与最强处理（UA4）相比，它们还降低了水分活度（aw），并保持了持水能力和颜色在可接受范围内。微观结构和热分析证实了组织结构和水分状态的改变，通过熔融焓和转变温度的变化体现出，更高的溶质吸收和较低的自由水含量。一些处理降低了剪切力，表明可能增加嫩度，尽管过度条件可能会影响产品完整性。总体而言，超声波的使用超声波作为肉类渗透脱水的辅助技术，在受控方式下应用，可优化该过程并改善猪里脊的技术性能，为食品工业确立了一种可行的替代方案。"
       },
       {
         "type": "h3",
@@ -4167,10 +4022,50 @@
       }
     ],
     "full_text_meta": {
-      "scope": "正文、图表题注与数据表",
-      "characters": 16589,
+      "scope": "简体中文正文，原始英文图片与表格数据",
+      "characters": 16580,
       "blocks": 113,
       "references": "参考文献题录保留英文原文，不纳入中文正文"
-    }
+    },
+    "figures": [
+      {
+        "number": 1,
+        "label": "Fig. 1",
+        "caption_en": "Fig. 1. Osmotic parameters obtained water loss () and solids gain () from the treated samples. Control: Conventional OD; UA1: 50 % – 0.5; UA2: 50 % – 0.8; UA3: 90 % – 0.5; and UA4: 90 % – 0.8.",
+        "path": "assets/figures/p10/fig1.jpg"
+      },
+      {
+        "number": 2,
+        "label": "Fig. 2",
+        "caption_en": "Fig. 2. SEM micrographs at 250× of the analyzed samples. (a) Control: Conventional OD. (b) UA1: 50 % – 0.5. (c) UA2: 50 % – 0.8. (d) UA3: 90 % – 0.5. (e) UA4: 90 % – 0.8.",
+        "path": "assets/figures/p10/fig2.jpg"
+      },
+      {
+        "number": 3,
+        "label": "Fig. 3",
+        "caption_en": "Fig. 3. Thermal profiles obtained by Modulated DSC of the analyzed samples. (a) Heat flow (W/g). (b) Heat capacity (J/g·°C). Control: Conventional OD; UA1: 50 % – 0.5; UA2: 50 % – 0.8; UA3: 90 % – 0.5; and UA4: 90 % – 0.8.",
+        "path": "assets/figures/p10/fig3.jpg"
+      }
+    ],
+    "tables_en": [
+      {
+        "number": 1,
+        "label": "Table 1",
+        "caption_en": "Table 1. Diffusion coefficients of NaCl and water in pork loin meat for different treated samples.",
+        "content_en": "Empty Cell\n\tSample\nEmpty Cell\n\tControl\tUA1\tUA2\tUA3\tUA4\nDw (×10−10 m2/s)\t0.11 ± 0.01a\t0.13 ± 0.04a\t0.18 ± 0.02b\t0.33 ± 0.06d\t0.24 ± 0.01c\nDs (×10−10 m2/s)\t1.02 ± 0.02a\t1.07 ± 0.05a\t1.24 ± 0.07b\t2.36 ± 0.01d\t1.58 ± 0.10c\nControl: Conventional OD; UA1: 50 % – 0.5; UA2: 50 % – 0.8; UA3: 90 % – 0.5; and UA4: 90 % – 0.8. Mean ± Standard error. Means with different letter in the same row, are statistically different (P < 0.05).\nDw represents the diffusion of water from the interior of the meat into the osmotic solution. In this sense, it was found that the Control and UA1 samples showed no difference (P > 0.05) in this parameter. However, the remaining samples (UA2, UA3, and UA4) presented higher values, with sample UA3 diffusing the greatest amount of water into the medium, which is consistent with the WL values  obtained previously. This is mainly attributed to the wave amplitude and duty cycle conditions, as the UA1 samples are the least intense conditions, which caused less diffusion of the osmotic solution into the meat and vice versa, and which agrees with what was reported by Ojha et al. (2016).\nAs reported by Kailaje et al. (2025) and Kang et al. (2016), Dw is closely related to intrinsic factors of the product, in this case pork loin, such as its structure and tissue composition, and processing conditions. Therefore, knowing the values of these coefficients allows for greater control over the system's behavior and allows for adjusting ultrasonic parameters to achieve the required degree of dehydration.\nIn contrast, Ds allows for the evaluation of the number of solutes entering the meat samples, where the same phenomenon as with Dw occurred. The Control and UA1 samples were not different (P > 0.05). However, UA2, UA3, and UA4 were different (P < 0.05) from the Control samples, with UA3 presenting the highest values, indicating that the combination of wave amplitude and ultrasonic cycle variables favored the entry of salt into the meat.\nIn this regard, according to Nowacka et al. (2021) and Yu et al. (2024), who mentions that these two variables of the ultrasound process intensify the OD, which can significantly modify these coefficients (Dw and Ds), since the acoustic cavitation generated induces mechanical effects, such as the disruption of cell membranes, the formation of microchannels, and increased tissue porosity. This favors the diffusion of both water to the outside and solutes to the interior of the food, reducing processing time and improving dehydration efficiency. Therefore, from a practical point of view, the precise determination of these coefficients allows the development of mathematical mass transfer models, useful for the design, scaling, and control of industrial osmotic dehydration processes."
+      },
+      {
+        "number": 2,
+        "label": "Table 2",
+        "caption_en": "Table 2. Chemical and physicochemical composition parameters of the different treated pork loin meat samples.",
+        "content_en": "Empty Cell\n\tSample\nControl\tUA1\tUA2\tUA3\tUA4\nMoisture (%)\t75.3 ± 1.2b\t75.7 ± 2.0b,c\t75.4 ± 0.9b\t73.4 ± 1.0a\t75.5 ± 0.9b\nProteins (%)\t22.7 ± 1.1b\t21.9 ± 1.1a\t22.0 ± 1.0a\t22.6 ± 0.9b\t21.8 ± 1.1a\nLipids (%)\t1.0 ± 0.0a\t1.0 ± 0.1a\t1.0 ± 0.1a\t1.0 ± 0.0a\t1.0 ± 0.1a\nTotal ash (%)\t1.0 ± 0.0a\t1.4 ± 0.2b\t1.6 ± 0.1c\t3.0 ± 0.0d\t1.7 ± 0.1c\npH\t5.5 ± 0.2a\t5.4 ± 0.1a\t5.4 ± 0.1a\t5.4 ± 0.1a\t5.3 ± 0.1a\naw\t0.98 ± 0.03d\t0.97 ± 0.02d\t0.96 ± 0.05c\t0.91 ± 0.00a\t0.94 ± 0.00b\nWHC (%)\t90.1 ± 1.6d\t90.2 ± 1.2d\t88.6 ± 1.4b\t90.0 ± 0.5c\t81.3 ± 0.7a\nL*\t41.8 ± 1.0a,b\t40.3 ± 1.5a\t40.0 ± 1.2a\t40.2 ± 0.8a\t44.2 ± 1.2c\na*\t6.0 ± 0.6c\t5.7 ± 0.9a\t6.4 ± 0.8d\t6.2 ± 0.1c\t5.9 ± 0.0b\nb*\t5.1 ± 0.2b\t4.9 ± 0.7a\t5.0 ± 0.5a,b\t5.3 ± 0.1b\t5.2 ± 0.0b\n∆E\t–\t1.6 ± 0.4a\t1.9 ± 0.4c\t1.6 ± 0.0b\t2.3 ± 0.0d\nShear force (N)\t83.94 ± 3.62c\t82.86 ± 9.61b\t79.72 ± 8.82a\t83.35 ± 1.96c\t77.37 ± 0.29a\nControl: Conventional OD; UA1: 50 % – 0.5; UA2: 50 % – 0.8; UA3: 90 % – 0.5; and UA4: 90 % – 0.8. Mean ± Standard error. Means with different letter in the same row, are statistically different (P < 0.05).\nRegarding the moisture content of the samples, it was found to vary significantly (P < 0.05) between treatments, with UA3 samples presenting the lowest moisture content, significantly lower than the Control samples and the remaining ultrasound treatments (UA1, UA2, and UA4), which did not show differences (P > 0.05) compared to the Control. This result suggests that the ultrasound amplitude and cycle conditions applied in UA3 were more effective in facilitating water release from the muscle tissue, possibly due to the acoustic cavitation effect, which increases cell permeability and improves mass transfer during the osmotic process (Ozuna et al., 2013). This is consistent with the results obtained for the mass transfer parameters.\nRegarding protein content, it was significantly higher (P < 0.05) in the Control and UA3 samples, compared to UA1, UA2, and UA4, which presented lower values  without significant differences (P > 0.05). The preservation of protein content in UA3 suggests that, despite the release of water and the incorporation of NaCl into the meat, this condition did not negatively affect the structural integrity of the tissue proteins, unlike the other conditions evaluated, which could have induced partial solubilization or diffusion losses (Rashid et al., 2024). These results demonstrate the effectiveness of the UA3 treatment in achieving greater dehydration without compromising the product's protein content, which is directly related to the evaluated quality attributes such as color and texture.\nIn the case of lipid content, no significant differences were found between samples (P > 0.05). This indicates that ultrasound-assisted treatment, under none of the evaluated wave amplitude and cycle conditions, significantly affected the fat content of pork loin meat, which is consistent with the limited solubility of these compounds in saline solutions for OD.\nFinally, the ash content increased significantly (P < 0.05) in all treatments where ultrasound was applied compared to the Control, reaching its maximum value in sample UA3, consistent with the results obtained from SG and Ds. This progressive increase suggests greater incorporation of solutes from the osmotic solution into the tissue, an effect intensified by the action of HIUS. The cavitation generated during the treatment, as mentioned above, may have promoted the formation of microchannels in the cell membranes and localized microagitation, facilitating the penetration of mineral compounds and intensifying the phenomenon of molecular counter diffusion (Ahmad & Zaidi, 2023). In this regard, HIUS has demonstrated improvements in various processes involving mass transfer, and the OD of meat is no exception, as it allows for faster and more uniform diffusion of the brine solution into the meat tissues. Cárcel et al. (2007) and Ozuna et al. (2013) reported in their studies an increase in ash content while simultaneously decreasing moisture content after ultrasound treatment, thus demonstrating the existence of the “sponge” phenomenon during the different treatments and its impact on the physicochemical properties and structural and thermal changes."
+      },
+      {
+        "number": 3,
+        "label": "Table 3",
+        "caption_en": "Table 3. Thermal transitions in melting obtained by MDSC for meat samples.",
+        "content_en": "Empty Cell\n\tSample\nControl\tUA1\tUA2\tUA3\tUA4\nTonset (°C)\t−5.63 ± 0.01e\t−11.02 ± 0.02d\t−19.24 ± 0.01c\t−22.05 ± 0.00b\t−26.79 ± 0.02a\nTpeak (°C)\t−1.34 ± 0.00e\t−2.25 ± 0.01d\t−5.06 ± 0.01c\t−8.10 ± 0.02b\t−11.92 ± 0.02a\n∆H (J/g)\t184.60 ± 0.50e\t121.02 ± 0.61d\t103.64 ± 0.37c\t86.13 ± 0.12b\t59.73 ± 0.28a\nControl: Conventional OD; UA1: 50 % – 0.5; UA2: 50 % – 0.8; UA3: 90 % – 0.5; and UA4: 90 % – 0.8. Mean ± Standard error. Means with different letter in the same row, are statistically different (P < 0.05).\nThe results obtained in the control samples reflect a high free water content in the tissue, with thermal behavior close to that of pure water. As ultrasound treatments were applied (UA1–UA4), a progressive shift toward lower melting temperatures and a significant decrease in the enthalpy of fusion were observed, with UA4 being the most intense treatment with the lowest values.\nThese changes can be explained primarily by three mechanisms: (1) the colligative effect of NaCl, which, during the OD process, allows solutes (in this case, sodium chloride) to penetrate the meat tissue, increasing the internal solute concentration. According to colligative properties, this increase causes a decrease in the freezing point of water in the system, which is reflected in the shift of ice melting to lower temperatures. The greater the wave amplitude and duty cycle of the ultrasound, the greater the solute incorporation efficiency and, therefore, the more pronounced this effect (Ostojić et al., 2025); (2) the reduction in free water content, which is generally water that can change from a liquid to a solid state, where the decrease in ΔH is directly related to a lower amount of freezable water, being one of the most important critical factors (Coria-Hernández et al., 2022). The application of HIUS facilitates the release of water (especially from the extracellular compartment) and its replacement by solutes. In addition, some of the residual water may be tightly bound to macromolecules such as proteins, which also contributes to the decrease in the ΔH of fusion in the samples (Arjona-Román et al., 2017); and; (3) changes in heat capacity (Cp), since Fig. 3b shows changes in the Cp of the tissue, which is a key indicator of the amount of energy required to increase the temperature of the system and the structural changes undergone by the samples, as found in the SEM micrographs. In this context, the decrease in free water and the modification of the tissue composition (by incorporation of solutes and protein restructuring) tend to reduce the overall Cp of the tissue (Arjona-Román et al., 2017). This implies that osmotically dehydrated and ultrasound-treated samples may require less energy to heat, which is relevant in subsequent processes such as cooking or freezing, affecting the thermal efficiency and stability of the product. Furthermore, a lower Cp may be related to a denser and more compact tissue structure, resulting from cell collapse and water loss, which directly influences the final texture of the meat (Coria-Hernández & Meléndez-Pérez, 2024b).\nTherefore, the effect of ultrasound was clear when progressively comparing treatments UA1 to UA4. At higher wave amplitudes and duty cycles, cavitation phenomena intensified, generating greater mechanical effects on the tissue (Li et al., 2017). This led to greater loss of free water and greater absorption of osmotic solutes, resulting in a lower enthalpy of fusion, changes in Cp, and a greater decrease in the ice melting temperature."
+      }
+    ]
   }
 ]

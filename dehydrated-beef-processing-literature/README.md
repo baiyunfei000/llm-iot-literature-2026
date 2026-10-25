@@ -9,7 +9,7 @@ PubMed 检索词：`Dehydrated Beef Processing Technology`
 
 页面通过数据文件保留标题、作者、期刊、年份、PMID、DOI、免费全文来源及 PDF 入口。PDF 优先链接到 PubMed Central、Europe PMC、出版社开放页面或 HAL 机构库。
 
-中文译文入口为 `translations.html?id=1` 至 `translations.html?id=10`，逐篇提供覆盖正文、图表题注与数据表的完整简体中文译文，并附摘要、核心结果和加工应用启示。完整译集也可通过 `assets/dehydrated-beef-10-papers-zh-CN.pdf` 在线阅读。
+中文译文入口为 `translations.html?id=1` 至 `translations.html?id=10`，逐篇提供完整简体中文正文，并配原始图片、英文图注和原始表格数据；另附摘要、核心结果和加工应用启示。完整译集也可通过 `assets/dehydrated-beef-10-papers-zh-CN.pdf` 在线阅读。
 
 ## 本地预览
 

@@ -176,6 +176,57 @@
         font-size: 8.2pt;
       }
 
+      .original-media {
+        margin-top: 5mm;
+        break-before: page;
+        page-break-before: always;
+      }
+
+      .figure-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4mm;
+        margin-top: 3mm;
+      }
+
+      .figure-grid figure {
+        margin: 0;
+        padding: 3mm;
+        border: 1px solid var(--line);
+        page-break-inside: avoid;
+      }
+
+      .figure-grid img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+
+      .figure-grid figcaption {
+        margin-top: 2mm;
+        color: var(--muted);
+        font-size: 7.3pt;
+        line-height: 1.5;
+      }
+
+      .figure-grid strong {
+        color: var(--rust);
+      }
+
+      .original-table {
+        margin: 3mm 0;
+        page-break-inside: avoid;
+      }
+
+      .original-table .caption {
+        margin-bottom: 0;
+        border-bottom: 0;
+      }
+
+      .original-table pre {
+        margin-top: 0;
+      }
+
       pre {
         padding: 2.5mm;
         overflow-wrap: anywhere;
@@ -242,6 +293,39 @@
             })
             .join("");
 
+        const renderOriginalMedia = (paper) => {
+          const figures = paper.figures ?? [];
+          const tables = paper.tables_en ?? [];
+          if (!figures.length && !tables.length) return "";
+          return `
+            <section class="original-media">
+              <h2 class="section-title">原始图表与数据（保留英文）</h2>
+              <p>图片和表格保持论文原貌，不翻译图中标签、坐标轴或数据内容。</p>
+              ${
+                figures.length
+                  ? `<div class="figure-grid">${figures
+                      .map(
+                        (figure) => `
+                          <figure>
+                            <img src="${escapeHtml(figure.path)}" alt="Fig. ${figure.number}" />
+                            <figcaption><strong>Fig. ${figure.number}</strong> ${escapeHtml(figure.caption_en)}</figcaption>
+                          </figure>`
+                      )
+                      .join("")}</div>`
+                  : ""
+              }
+              ${tables
+                .map(
+                  (table) => `
+                    <div class="original-table">
+                      <div class="caption"><strong>Table ${table.number}</strong> ${escapeHtml(table.caption_en)}</div>
+                      <pre>${escapeHtml(table.content_en)}</pre>
+                    </div>`
+                )
+                .join("")}
+            </section>`;
+        };
+
         fetch("translations.json")
           .then((response) => {
             if (!response.ok) throw new Error(`HTTP ${response.status}`);
@@ -271,6 +355,7 @@
                       <h2 class="section-title">摘要</h2>
                       <p>${escapeHtml(paper.abstract_zh)}</p>
                     </section>
+                    ${renderOriginalMedia(paper)}
                     <section class="full-text">
                       <h2 class="section-title">完整译文</h2>
                       ${renderBlocks(paper.full_text)}

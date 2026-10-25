@@ -1149,6 +1149,107 @@ footer p {
   border-top: 1px solid var(--line-strong);
 }
 
+.original-media-section {
+  padding-top: 2.4rem;
+  margin-top: 2rem;
+  border-top: 1px solid var(--line-strong);
+}
+
+.original-figure-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.original-figure {
+  min-width: 0;
+  padding: 0.75rem;
+  margin: 0;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 5px;
+}
+
+.original-figure-link {
+  display: grid;
+  min-height: 150px;
+  place-items: center;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #e6e2d9;
+}
+
+.original-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.original-figure figcaption {
+  display: grid;
+  gap: 0.35rem;
+  padding-top: 0.65rem;
+  color: var(--ink-soft);
+  font-size: 0.73rem;
+  line-height: 1.62;
+}
+
+.original-figure figcaption strong {
+  color: var(--rust);
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+}
+
+.original-figure figcaption span {
+  display: block;
+  overflow-wrap: anywhere;
+}
+
+.original-table-list {
+  display: grid;
+  gap: 0.65rem;
+  margin-top: 1rem;
+}
+
+.original-table {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 5px;
+}
+
+.original-table summary {
+  display: grid;
+  grid-template-columns: 72px minmax(0, 1fr);
+  gap: 0.7rem;
+  padding: 0.65rem 0.8rem;
+  color: var(--ink-soft);
+  font-size: 0.72rem;
+  line-height: 1.55;
+  cursor: pointer;
+  list-style-position: outside;
+}
+
+.original-table summary strong {
+  color: var(--rust);
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+}
+
+.original-table pre {
+  max-height: 520px;
+  padding: 0.75rem;
+  margin: 0;
+  overflow: auto;
+  color: #31443e;
+  background: #efede5;
+  border-top: 1px solid var(--line);
+  font-family: var(--font-mono);
+  font-size: 0.63rem;
+  line-height: 1.65;
+  white-space: pre;
+}
+
 .full-text-heading {
   display: flex;
   gap: 1rem;
@@ -1303,6 +1404,10 @@ footer p {
     font-size: 0.88rem;
     text-align: left;
   }
+
+  .original-figure-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1324,6 +1429,11 @@ footer p {
 
   .full-text-heading {
     align-items: start;
+  }
+
+  .original-table summary {
+    grid-template-columns: 1fr;
+    gap: 0.2rem;
   }
 }
 
